@@ -2,7 +2,7 @@ angular.module('app', [
 	'ui.router'
 ])
 .constant('URLPREFIX', {
-    url: 'http://localhost/cing/API/api/',
+    url: 'http://localhost/cing/api/api/',
     articleURL: 'apipressreleases'
 })
 .value('_', window._)
