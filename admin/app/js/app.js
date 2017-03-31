@@ -3,9 +3,7 @@ angular.module('app', [
 ])
 .constant('URLPREFIX', {
     url: 'http://localhost/cing/api/api/',
-    articleURL: 'apipressreleases'
+    articleURL: 'apiarticles'
 })
 .value('_', window._)
-.config(function ($urlRouterProvider) {
-    $urlRouterProvider.otherwise('/');
-});
+

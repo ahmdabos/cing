@@ -1,0 +1,11 @@
+﻿<section>
+  <div class="row" ng-repeat="article in articles">
+     <div class="col col-25">{{article.title}}</div>
+     <div class="col col-25">{{article.content}}</div>
+     <div class="col col-25">{{article.date}}</div>
+     <div class="col col-25" ng-click="goTo(article.id)">Edit</div>
+     <div class="col col-25">Delete</div>
+  </div>
+</section>
+
+

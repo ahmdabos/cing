@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
 
 <head>
     <meta charset="utf-8">
@@ -7,21 +7,19 @@
     <meta name="description" content="Description about the Articles, this is related to SEO">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link href="assets/css/en/site.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all"/>
 </head>
+<body>
 
-<body class="home" ng-app="app" ng-controller="HomeController">
-
-<form role="form" ng-submit="submit()">
-    <input type="text" ng-model="title" placeholder="Enter" required>
-    <button type="submit">Add</button>
-</form>
-
+<div ng-include="'views/partials/header.html'"></div>
+<div ui-view></div>
+<div ng-include="'views/partials/footer.html'"></div>
 
 <script src="app/lib/angular/angular.min.js"></script>
 <script src="app/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="app/lib/lodash/lodash.js"></script>
 <script src="app/js/app.js"></script>
+<script src="app/js/routes.js"></script>
 <script src="app/js/controller.js"></script>
 <script src="app/js/service.js"></script>
 

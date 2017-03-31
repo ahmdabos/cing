@@ -2,18 +2,35 @@
 angular.module('app')
 
 // Data Service
-    .factory('DataService', function ($http, $q) {
+    .factory('DataService', ['$http', '$q', function ($http, $q) {
         return {
-            getAll: function (url) {
+            getOne: function (url, id) {
                 var deferred = $q.defer();
-                return $http.get(URLPREFIX.URL + url)
+                return $http({
+                    url: url,
+                    method: "GET",
+                    params: {id: id}
+                })
                     .then(function (response) {
-                        deferred.resolve(response.data);
+                        deferred.resolve(response);
                         return deferred.promise;
                     }, function (response) {
                         deferred.reject(response);
                         return deferred.promise;
                     });
+            },
+            getAll: function (url) {
+                var deferred = $q.defer();
+                return $http({
+                    url: url,
+                    method: "GET"
+                }).then(function (response) {
+                    deferred.resolve(response);
+                    return deferred.promise;
+                }, function (response) {
+                    deferred.reject(response);
+                    return deferred.promise;
+                });
             },
             post: function (url, data) {
                 var deferred = $q.defer();
@@ -22,7 +39,7 @@ angular.module('app')
                     url: url,
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                     data: data,
-                    transformRequest: function(obj) {
+                    transformRequest: function (obj) {
                         var p, str;
                         str = [];
                         for (p in obj) {
@@ -41,16 +58,17 @@ angular.module('app')
             }
 
         }
-    })
+    }])
 
-    // Article Serive
-    .factory('NewsService', ['DataService', function (DataService) {
+    // Article Service
+    .factory('ArticlesService', ['DataService', function (DataService) {
         return {
-
-            getArticle: function getArticle() {
-                return DataService.getAll();
+            getArticle: function getArticle(url, id) {
+                return DataService.getOne(url, id);
             },
-
+            getArticles: function getArticles(url) {
+                return DataService.getAll(url);
+            },
             postArticle: function postArticle(url, data) {
                 return DataService.post(url, data);
             }

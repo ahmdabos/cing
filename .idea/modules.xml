@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Majilis/.idea/Majilis.iml" filepath="$PROJECT_DIR$/../Majilis/.idea/Majilis.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/cing.iml" filepath="$PROJECT_DIR$/.idea/cing.iml" />
     </modules>
   </component>

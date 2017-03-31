@@ -1,21 +1,28 @@
-'use strict';
- 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
- 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
-});
- 
-gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+var minifyCss = require('gulp-minify-css');
+var rename = require('gulp-rename');
+
+var paths = {
+    sass: ['./sass/**/*.scss']
+};
+
+gulp.task('default', ['sass']);
+
+gulp.task('sass', function(done) {
+    gulp.src('./sass/style.scss')
+        .pipe(sass())
+        .on('error', sass.logError)
+        .pipe(gulp.dest('./assets/css/'))
+        .pipe(minifyCss({
+            keepSpecialComments: 0
+        }))
+        .pipe(rename({ extname: '.min.css' }))
+        .pipe(gulp.dest('./assets/css/'))
+        .on('end', done);
 });
 
-
-gulp.task('watch', function() {
-    gulp.watch('./sass/**/*.scss', ['sass']);  // Watch all the .less files, then run the less task
+gulp.task('watch', ['sass'], function() {
+    gulp.watch(paths.sass, ['sass']);
 });
 
-gulp.task('default', ['watch']); // Default will run the 'entry' watch task

@@ -1,16 +1,31 @@
-define(['./app'], function (app) {
-    'use strict';
-    return app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
-		$stateProvider
-		.state('view1', {
-			url: '/view1',
-			templateUrl: 'views/view1.html'
-		})
-		.state('view2', {
-			url: '/view2',
-			templateUrl: 'views/view2.html'
-		});
-		$urlRouterProvider.otherwise('views/view1.html');
+'use strict';
+angular.module('app')
+    .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
+        $stateProvider
+            .state('/', {
+                url: '/',
+                templateUrl: 'views/home.html'
+            })
+            .state('articles', {
+                url: '/articles',
+                template: '<ui-view/>'
+            })
+            .state('articles.index', {
+                url: '/index',
+                templateUrl: 'views/articles/articles.index.html',
+                controller: 'ArticlesController'
+            })
+            .state('articles.add', {
+                url: '/add',
+                templateUrl: 'views/articles/articles.add.html',
+                controller: 'AddArticleController'
+            })
+            .state('articles.edit', {
+                url: '/edit/:id',
+                templateUrl: 'views/articles/articles.edit.html',
+                controller: 'EditArticleController'
+            });
+        $urlRouterProvider.otherwise('views/home.html');
 
     }]);
-});
+
