@@ -122,7 +122,7 @@ angular.module('app')
     }])
 
 
-    .factory('PagerService', ['$http', function ($http) {
+    .factory('PagerService',  function () {
         return {
             getPager: function getPager(totalItems, currentPage, pageSize) {
                 // default to first page
@@ -158,7 +158,7 @@ angular.module('app')
                 var endIndex = Math.min(startIndex + pageSize - 1, totalItems - 1);
 
                 // create an array of pages to ng-repeat in the pager control
-                var pages = _.range(startPage, endPage + 1);
+                var pages = _.range(startPage, endPage+1);
 
                 // return object with all pager properties required by the view
                 return {
@@ -175,5 +175,5 @@ angular.module('app')
             }
         }
 
-    }]);
+    });
 

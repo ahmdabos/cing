@@ -6,34 +6,36 @@ angular.module('app')
 
         $scope.articles = [];
         $scope.pager = {};
-
+        $scope.searchKeyword = '';
         $scope.setPage = function(page) {
             if (page < 1 || page > $scope.pager.totalPages) {
                 return;
             }
-            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL+'/?page='+page)
+
+            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL+'/?page='+page+'&search='+ $scope.searchKeyword+'&limit=4&offset=4')
                 .then(function (res) {
                     $scope.articles = res.data.result;
                     $scope.totalItems = res.data.length;
-                    $scope.pager = PagerService.getPager(res.data.length, page,5);
+                    $scope.pager = PagerService.getPager(res.data.length, page,4);
                     $scope.items = $scope.articles.slice($scope.pager.startIndex, $scope.pager.endIndex + 1);
                     $log.debug($scope.articles);
                 }, function (err) {
                     $log.debug(err);
                 });
-
         }
 
         $scope.setPage(1);
 
+
         $scope.search = function (searchKeyword) {
-            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL+'/?search='+searchKeyword)
-                .then(function (res) {
-                    $scope.articles = res.data;
-                    $log.debug($scope.articles);
-                }, function (err) {
-                    $log.debug(err);
-                });
+            if(searchKeyword){
+                $scope.searchKeyword = searchKeyword;
+            }
+            else{
+                $scope.searchKeyword = '';
+            }
+            $scope.setPage(1);
+
         }
         $scope.delete = function (id) {
             ArticlesService.deleteArticle(URLPREFIX.url + URLPREFIX.articleURL+'/'+id)
