@@ -57,7 +57,7 @@ angular.module('app')
                 title: $scope.title,
                 content: $scope.content
             };
-            ArticlesService.postArticle(URLPREFIX.url + URLPREFIX.articleURL, data)
+            ArticlesService.putArticle(URLPREFIX.url + URLPREFIX.articleURL, data)
                 .then(function (res) {
                     $log.debug(res);
                     $state.go('articles.index');

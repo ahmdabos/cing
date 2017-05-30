@@ -19,11 +19,10 @@ angular.module('app')
                         return deferred.promise;
                     });
             },
-            getAll: function (url, data) {
+            getAll: function (url) {
                 var deferred = $q.defer();
                 return $http({
                     url: url,
-                    data: data,
                     method: "GET"
                 }).then(function (response) {
                     deferred.resolve(response);
@@ -105,8 +104,8 @@ angular.module('app')
             getArticle: function getArticle(url, id) {
                 return DataService.getOne(url, id);
             },
-            getArticles: function getArticles(url, search) {
-                return DataService.getAll(url, search);
+            getArticles: function getArticles(url) {
+                return DataService.getAll(url);
             },
             postArticle: function postArticle(url, data) {
                 return DataService.post(url, data);
@@ -114,7 +113,7 @@ angular.module('app')
             putArticle: function putArticle(url, data) {
                 return DataService.put(url, data);
             },
-            deleteArticle: function postArticle(url) {
+            deleteArticle: function deleteArticle(url) {
                 return DataService.delete(url);
             }
         }
