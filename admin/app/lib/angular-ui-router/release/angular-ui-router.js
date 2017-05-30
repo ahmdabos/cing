@@ -1507,7 +1507,7 @@ function $UrlMatcherFactory() {
    * <pre>
    * // Defines a custom type that gets a value from a service,
    * // where each service gets different types of values from
-   * // a backend api:
+   * // a backend restfull:
    * $urlMatcherFactoryProvider.type('dbObject', {}, function(Users, Posts) {
    *
    *   // Matches up services to URL parameter names
@@ -2664,7 +2664,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    * <pre>resolve: {
    *     myResolve1:
    *       function($http, $stateParams) {
-   *         return $http.get("/api/foos/"+stateParams.fooID);
+   *         return $http.get("/restfull/foos/"+stateParams.fooID);
    *       }
    *     }</pre>
    *

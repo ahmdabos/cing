@@ -1,15 +1,14 @@
 ﻿<section>
-    <input type="text" ng-model="searchKeyword"/>
+    <input type="text" ng-model="searchKeyword" placeholder="search"/>
     <button ng-click="search(searchKeyword)">search</button>
-  <div class="row" ng-repeat="article in articles | orderBy:'-date'">
-     <div class="col col-25">{{article.title}}</div>
-     <div class="col col-25">{{article.content}}</div>
-     <div class="col col-25">{{article.date}}</div>
-     <div class="col col-25" ng-click="goToEditArticles(article.id)">Edit</div>
-     <div class="col col-25" ng-click="delete(article.id)">Delete</div>
-  </div>
-    .................
-   <!-- <div ng-repeat="item in items">{{item}}</div>-->
+    <div class="row" ng-repeat="article in articles | orderBy:'-date'">
+        <div class="col col-25">{{article.title}}</div>
+        <div class="col col-25">{{article.content}}</div>
+        <div class="col col-25">{{article.date}}</div>
+        <div class="col col-25" ng-click="goToEditArticles(article.id)">Edit</div>
+        <div class="col col-25" ng-click="deleteArticle(article.id)">Delete</div>
+    </div>
+
     <ul ng-if="pager.pages.length" class="pagination">
         <li ng-class="{disabled:pager.currentPage === 1}">
             <a ng-click="setPage(1)">First</a>

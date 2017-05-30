@@ -2,8 +2,6 @@
 angular.module('app')
     //Articles Controller
     .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URLPREFIX', 'ArticlesService','PagerService', function ($scope, $http, $log, $state, URLPREFIX, ArticlesService,PagerService) {
-
-
         $scope.articles = [];
         $scope.pager = {};
         $scope.searchKeyword = '';
@@ -37,7 +35,7 @@ angular.module('app')
             $scope.setPage(1);
 
         }
-        $scope.delete = function (id) {
+        $scope.deleteArticle = function (id) {
             ArticlesService.deleteArticle(URLPREFIX.url + URLPREFIX.articleURL+'/'+id)
                 .then(function (res) {
                     $log.debug(res);
@@ -75,13 +73,13 @@ angular.module('app')
 
         ArticlesService.getArticle(URLPREFIX.url + URLPREFIX.articleURL, id)
             .then(function (res) {
-                var article = res.data[0];
+                var article = res.data.result[0];
                 $scope.data = {
                     id: id,
                     title: article.title,
                     content: article.content
                 };
-                $log.debug(article);
+                $log.debug('get article for edit',article);
             }, function (err) {
                 $log.debug(err);
             });

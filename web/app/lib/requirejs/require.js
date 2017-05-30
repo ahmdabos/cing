@@ -1617,7 +1617,7 @@ var requirejs, require, define;
              * moduleName may actually be just an URL.
              * Note that it **does not** call normalize on the moduleName,
              * it is assumed to have already been normalized. This is an
-             * internal api, not a public one. Use toUrl for the public api.
+             * internal restfull, not a public one. Use toUrl for the public restfull.
              */
             nameToUrl: function (moduleName, ext, skipExt) {
                 var paths, syms, i, parentModule, url,

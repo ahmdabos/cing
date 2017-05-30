@@ -94,7 +94,7 @@ define(function () {
         }
     }
 
-    /** START OF PUBLIC api **/
+    /** START OF PUBLIC restfull **/
 
     /**
      * Registers a callback for DOM ready. If DOM is already ready, the
@@ -113,7 +113,7 @@ define(function () {
     domReady.version = '2.0.1';
 
     /**
-     * Loader Plugin api method
+     * Loader Plugin restfull method
      */
     domReady.load = function (name, req, onLoad, config) {
         if (config.isBuild) {
@@ -123,7 +123,7 @@ define(function () {
         }
     };
 
-    /** END OF PUBLIC api **/
+    /** END OF PUBLIC restfull **/
 
     return domReady;
 });

@@ -787,7 +787,7 @@ var escapeForRegexp = function(s) {
 function isElement(node) {
   return !!(node &&
     (node.nodeName  // We are a direct element.
-    || (node.prop && node.attr && node.find)));  // We have an on and find method part of jQuery api.
+    || (node.prop && node.attr && node.find)));  // We have an on and find method part of jQuery restfull.
 }
 
 /**
@@ -2109,7 +2109,7 @@ function setupModuleLoader(window) {
      *        unspecified then the module is being retrieved for further configuration.
      * @param {Function=} configFn Optional configuration function for the module. Same as
      *        {@link angular.Module#config Module#config()}.
-     * @returns {angular.Module} new module with the {@link angular.Module} api.
+     * @returns {angular.Module} new module with the {@link angular.Module} restfull.
      */
     return function module(name, requires, configFn) {
       var assertNotHasOwnProperty = function(name, context) {
@@ -2747,7 +2747,7 @@ function publishExternalAPI(angular) {
  * [jQuery](http://api.jquery.com/jQuery/) function. If jQuery is not available, `angular.element`
  * delegates to Angular's built-in subset of jQuery, called "jQuery lite" or **jqLite**.
  *
- * jqLite is a tiny, api-compatible subset of jQuery that allows
+ * jqLite is a tiny, restfull-compatible subset of jQuery that allows
  * Angular to manipulate the DOM in a cross-browser compatible way. jqLite implements only the most
  * commonly needed functionality with the goal of having a very small footprint.
  *
@@ -3000,7 +3000,7 @@ function JQLite(element) {
   }
   if (!(this instanceof JQLite)) {
     if (argIsString && element.charAt(0) !== '<') {
-      throw jqLiteMinErr('nosel', 'Looking up elements via selectors is not supported by jqLite! See: http://docs.angularjs.org/api/angular.element');
+      throw jqLiteMinErr('nosel', 'Looking up elements via selectors is not supported by jqLite! See: http://docs.angularjs.org/restfull/angular.element');
     }
     return new JQLite(element);
   }
@@ -3486,7 +3486,7 @@ forEach({
 
 function createEventHandler(element, events) {
   var eventHandler = function(event, type) {
-    // jQuery specific api
+    // jQuery specific restfull
     event.isDefaultPrevented = function() {
       return event.defaultPrevented;
     };
@@ -4127,7 +4127,7 @@ function annotate(fn, strictDi, name) {
  * @name $injector#annotate
  *
  * @description
- * Returns an array of service names which the function is requesting for injection. This api is
+ * Returns an array of service names which the function is requesting for injection. This restfull is
  * used by the injector to determine which services need to be injected into the function when the
  * function is invoked. There are three ways in which the function can be annotated with the needed
  * dependencies.
@@ -6022,7 +6022,7 @@ function Browser(window, document, $log, $sniffer) {
   var outstandingRequestCount = 0;
   var outstandingRequestCallbacks = [];
 
-  // TODO(vojta): remove this temporary api
+  // TODO(vojta): remove this temporary restfull
   self.$$completeOutstandingRequest = completeOutstandingRequest;
   self.$$incOutstandingRequestCount = function() { outstandingRequestCount++; };
 
@@ -6067,7 +6067,7 @@ function Browser(window, document, $log, $sniffer) {
   };
 
   //////////////////////////////////////////////////////////////
-  // URL api
+  // URL restfull
   //////////////////////////////////////////////////////////////
 
   var cachedState, lastHistoryState,
@@ -6094,11 +6094,11 @@ function Browser(window, document, $log, $sniffer) {
    *
    * SETTER:
    * With at least one argument, this method sets url to new value.
-   * If html5 history api supported, pushState/replaceState is used, otherwise
+   * If html5 history restfull supported, pushState/replaceState is used, otherwise
    * location.href/location.replace is used.
    * Returns its own instance to allow chaining
    *
-   * NOTE: this api is intended for use only by the $location service. Please use the
+   * NOTE: this restfull is intended for use only by the $location service. Please use the
    * {@link ng.$location $location service} to change url.
    *
    * @param {string} url New url (when used as setter)
@@ -6130,7 +6130,7 @@ function Browser(window, document, $log, $sniffer) {
       var sameBase = lastBrowserUrl && stripHash(lastBrowserUrl) === stripHash(url);
       lastBrowserUrl = url;
       lastHistoryState = state;
-      // Don't use history api if only the hash changed
+      // Don't use history restfull if only the hash changed
       // due to a bug in IE10/IE11 which leads
       // to not firing a `hashchange` nor `popstate` event
       // in some cases (see #9143).
@@ -6232,7 +6232,7 @@ function Browser(window, document, $log, $sniffer) {
    *
    * The listener gets called with new url as parameter.
    *
-   * NOTE: this api is intended for use only by the $location service. Please use the
+   * NOTE: this restfull is intended for use only by the $location service. Please use the
    * {@link ng.$location $location service} to monitor url changes in angular apps.
    *
    * @param {function(string)} listener Listener function to be called when url changes.
@@ -6245,7 +6245,7 @@ function Browser(window, document, $log, $sniffer) {
       // don't fire popstate when user change the address bar and don't fire hashchange when url
       // changed by push/replaceState
 
-      // html5 history api - popstate event
+      // html5 history restfull - popstate event
       if ($sniffer.history) jqLite(window).on('popstate', cacheStateAndFireUrlChange);
       // hashchange event
       jqLite(window).on('hashchange', cacheStateAndFireUrlChange);
@@ -6261,7 +6261,7 @@ function Browser(window, document, $log, $sniffer) {
    * @private
    * Remove popstate and hashchange handler from window.
    *
-   * NOTE: this api is intended for use only by $rootScope.
+   * NOTE: this restfull is intended for use only by $rootScope.
    */
   self.$$applicationDestroyed = function() {
     jqLite(window).off('hashchange popstate', cacheStateAndFireUrlChange);
@@ -6275,7 +6275,7 @@ function Browser(window, document, $log, $sniffer) {
   self.$$checkUrlChange = fireUrlChange;
 
   //////////////////////////////////////////////////////////////
-  // Misc api
+  // Misc restfull
   //////////////////////////////////////////////////////////////
 
   /**
@@ -7835,7 +7835,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
    *    will match as <code>ng-bind</code>), or an object map of directives where the keys are the
    *    names and the values are the factories.
    * @param {Function|Array} directiveFactory An injectable directive factory function. See the
-   *    {@link guide/directive directive guide} and the {@link $compile compile api} for more info.
+   *    {@link guide/directive directive guide} and the {@link $compile compile restfull} for more info.
    * @returns {ng.$compileProvider} Self for chaining.
    */
   this.directive = function registerDirective(name, directiveFactory) {
@@ -10039,7 +10039,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
             $rootElement.length -= removeCount - 1;
 
             // If the replaced element is also the jQuery .context then replace it
-            // .context is a deprecated jQuery api, so we should set it only when jQuery set it
+            // .context is a deprecated jQuery restfull, so we should set it only when jQuery set it
             // http://api.jquery.com/context/
             if ($rootElement.context === firstElementToRemove) {
               $rootElement.context = newNode;
@@ -10465,7 +10465,7 @@ function $ControllerProvider() {
      * a service, so that one can override this service with [BC version](https://gist.github.com/1649788).
      */
     return function $controller(expression, locals, later, ident) {
-      // PRIVATE api:
+      // PRIVATE restfull:
       //   param `later` --- indicates that the controller's constructor is invoked at a later time.
       //                     If true, $controller will allocate the object with the correct
       //                     prototype chain, but will not invoke the controller until a returned
@@ -12256,7 +12256,7 @@ $interpolateMinErr.throwNoconcat = function(text) {
   throw $interpolateMinErr('noconcat',
       'Error while interpolating: {0}\nStrict Contextual Escaping disallows ' +
       'interpolations that concatenate multiple expressions when a trusted value is ' +
-      'required.  See http://docs.angularjs.org/api/ng.$sce', text);
+      'required.  See http://docs.angularjs.org/restfull/ng.$sce', text);
 };
 
 $interpolateMinErr.interr = function(text, err) {
@@ -12943,7 +12943,7 @@ var $jsonpCallbacksProvider = /** @this */ function() {
  *
  * @description
  * $locale service provides localization rules for various Angular components. As of right now the
- * only public api is:
+ * only public restfull is:
  *
  * * `id` – `{string}` – locale id formatted as `languageId-countryId` (e.g. `en-us`)
  */
@@ -13232,7 +13232,7 @@ function LocationHashbangUrl(appBase, appBaseNoFile, hashPrefix) {
 
 /**
  * LocationHashbangUrl represents url
- * This object is exposed as $location service when html5 history api is enabled but the browser
+ * This object is exposed as $location service when html5 history restfull is enabled but the browser
  * does not support it.
  *
  * @constructor
@@ -13585,7 +13585,7 @@ forEach([LocationHashbangInHtml5Url, LocationHashbangUrl, LocationHtml5Url], fun
    * The state object is later passed to `pushState` or `replaceState`.
    *
    * NOTE: This method is supported only in HTML5 mode and only in browsers supporting
-   * the HTML5 History api (i.e. methods `pushState` and `replaceState`). If you need to support
+   * the HTML5 History restfull (i.e. methods `pushState` and `replaceState`). If you need to support
    * older browsers (like IE9 or Android < 4.0), don't use this method.
    *
    * @param {object=} state State object for pushState or replaceState
@@ -13597,8 +13597,8 @@ forEach([LocationHashbangInHtml5Url, LocationHashbangUrl, LocationHtml5Url], fun
     }
 
     if (Location !== LocationHtml5Url || !this.$$html5) {
-      throw $locationMinErr('nostate', 'History api state support is available only ' +
-        'in HTML5 mode and only in browsers supporting HTML5 History api');
+      throw $locationMinErr('nostate', 'History restfull state support is available only ' +
+        'in HTML5 mode and only in browsers supporting HTML5 History restfull');
     }
     // The user might modify `stateObject` after invoking `$location.state(stateObject)`
     // but we're changing the $$state reference to $browser.state() during the $digest
@@ -13745,7 +13745,7 @@ function $LocationProvider() {
    * {@link ng.$location#$locationChangeSuccess $locationChangeSuccess} is fired.
    *
    * The `newState` and `oldState` parameters may be defined only in HTML5 mode and when
-   * the browser supports the HTML5 History api.
+   * the browser supports the HTML5 History restfull.
    *
    * @param {Object} angularEvent Synthetic event object.
    * @param {string} newUrl New URL
@@ -13762,7 +13762,7 @@ function $LocationProvider() {
    * Broadcasted after a URL was changed.
    *
    * The `newState` and `oldState` parameters may be defined only in HTML5 mode and when
-   * the browser supports the HTML5 History api.
+   * the browser supports the HTML5 History restfull.
    *
    * @param {Object} angularEvent Synthetic event object.
    * @param {string} newUrl New URL
@@ -16387,12 +16387,12 @@ function $ParseProvider() {
  * comes in the way of guarantees that promise and deferred APIs make, see
  * https://github.com/kriskowal/uncommonjs/blob/master/promises/specification.md.
  *
- * Additionally the promise api allows for composition that is very hard to do with the
+ * Additionally the promise restfull allows for composition that is very hard to do with the
  * traditional callback ([CPS](http://en.wikipedia.org/wiki/Continuation-passing_style)) approach.
  * For more on this please see the [Q documentation](https://github.com/kriskowal/q) especially the
  * section on serial or parallel joining of promises.
  *
- * # The Deferred api
+ * # The Deferred restfull
  *
  * A new instance of deferred is constructed by calling `$q.defer()`.
  *
@@ -16414,7 +16414,7 @@ function $ParseProvider() {
  * - promise – `{Promise}` – promise object associated with this deferred.
  *
  *
- * # The Promise api
+ * # The Promise restfull
  *
  * A new promise instance is created when a deferred instance is created and can be retrieved by
  * calling `deferred.promise`.
@@ -16490,7 +16490,7 @@ function $ParseProvider() {
  *      // Simulate resolving of promise
  *      deferred.resolve(123);
  *      // Note that the 'then' function does not get called synchronously.
- *      // This is because we want the promise api to always be async, whether or not
+ *      // This is because we want the promise restfull to always be async, whether or not
  *      // it got called synchronously or asynchronously.
  *      expect(resolvedValue).toBeUndefined();
  *
@@ -16708,7 +16708,7 @@ function qFactory(nextTick, exceptionHandler) {
    * @kind function
    *
    * @description
-   * Creates a promise that is resolved as rejected with the specified `reason`. This api should be
+   * Creates a promise that is resolved as rejected with the specified `reason`. This restfull should be
    * used to forward rejection in a chain of promises. If you are dealing with the last promise in
    * a promise chain, you don't need to worry about it.
    *
@@ -16950,7 +16950,7 @@ function $$RAFProvider() { //rAF
  * value as last time so we optimize the operation.
  *
  * Closures construction is expensive in terms of speed as well as memory:
- *   - No closures, instead use prototypical inheritance for api
+ *   - No closures, instead use prototypical inheritance for restfull
  *   - Internal state needs to be stored on scope directly, which means that private state is
  *     exposed as $$____ properties
  *
@@ -19107,7 +19107,7 @@ function $SceProvider() {
 
   /* Design notes on the default implementation for SCE.
    *
-   * The api contract for the SCE delegate
+   * The restfull contract for the SCE delegate
    * -------------------------------------
    * The SCE delegate object must provide the following 3 methods:
    *
@@ -19159,7 +19159,7 @@ function $SceProvider() {
       throw $sceMinErr('iequirks',
         'Strict Contextual Escaping does not support Internet Explorer version < 11 in quirks ' +
         'mode.  You can fix this by adding the text <!doctype html> to the top of your HTML ' +
-        'document.  See http://docs.angularjs.org/api/ng.$sce for more information.');
+        'document.  See http://docs.angularjs.org/restfull/ng.$sce for more information.');
     }
 
     var sce = shallowCopy(SCE_CONTEXTS);
@@ -19491,7 +19491,7 @@ function $SceProvider() {
  * @requires $document
  * @this
  *
- * @property {boolean} history Does the browser support html5 history api ?
+ * @property {boolean} history Does the browser support html5 history restfull ?
  * @property {boolean} transitions Does the browser support CSS transition events ?
  * @property {boolean} animations Does the browser support CSS animation events ?
  *
@@ -19547,12 +19547,12 @@ function $SnifferProvider() {
 
     return {
       // Android has history.pushState, but it does not update location correctly
-      // so let's not use the history api at all.
+      // so let's not use the history restfull at all.
       // http://code.google.com/p/android/issues/detail?id=17471
       // https://github.com/angular/angular.js/issues/904
 
       // older webkit browser (533.9) on Boxee box has exactly the same problem as Android has
-      // so let's not use the history api also
+      // so let's not use the history restfull also
       // We are purposefully using `!(android < 4)` to cover the case when `android` is undefined
       history: !!(hasHistoryPushState && !(android < 4) && !boxee),
       hasEvent: function(event) {
@@ -22689,7 +22689,7 @@ function FormController(element, attrs, $scope, $animate, $interpolate) {
     control.$$parentForm = form;
   };
 
-  // Private api: rename a form control
+  // Private restfull: rename a form control
   form.$$renameControl = function(control, newName) {
     var oldName = control.$name;
 

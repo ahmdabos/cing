@@ -12,17 +12,17 @@ angular.module('app')
             })
             .state('articles.index', {
                 url: '/index',
-                templateUrl: 'views/articles/articles.index.html',
+                templateUrl: 'views/articles/index.html',
                 controller: 'ArticlesController'
             })
             .state('articles.add', {
                 url: '/add',
-                templateUrl: 'views/articles/articles.add.html',
+                templateUrl: 'views/articles/add.html',
                 controller: 'AddArticleController'
             })
             .state('articles.edit', {
                 url: '/edit/:id',
-                templateUrl: 'views/articles/articles.edit.html',
+                templateUrl: 'views/articles/edit.html',
                 controller: 'EditArticleController'
             });
         $urlRouterProvider.otherwise('views/home.html');
