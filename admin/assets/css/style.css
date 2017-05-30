@@ -4,56 +4,48 @@
   src: url("../fonts/Open_Sans/OpenSans.eot?#iefix") format("embedded-opentype"), url("../fonts/Open_Sans/OpenSans.woff") format("woff"), url("../fonts/Open_Sans/OpenSans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Open_Sans/OpenSans-Bold.eot");
   src: url("../fonts/Open_Sans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open_Sans/OpenSans-Bold.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
-
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Open_Sans/OpenSans-SemiboldItalic.eot");
   src: url("../fonts/Open_Sans/OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open_Sans/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-SemiboldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic; }
-
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Open_Sans/OpenSans-BoldItalic.eot");
   src: url("../fonts/Open_Sans/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open_Sans/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
-
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Open_Sans/OpenSans-Light.eot");
   src: url("../fonts/Open_Sans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
-
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Open_Sans/OpenSansLight-Italic.eot");
   src: url("../fonts/Open_Sans/OpenSansLight-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open_Sans/OpenSansLight-Italic.woff") format("woff"), url("../fonts/Open_Sans/OpenSansLight-Italic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
-
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Open_Sans/OpenSans-Semibold.eot");
   src: url("../fonts/Open_Sans/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open_Sans/OpenSans-Semibold.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
-
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/Open_Sans/OpenSans-Italic.eot");
   src: url("../fonts/Open_Sans/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open_Sans/OpenSans-Italic.woff") format("woff"), url("../fonts/Open_Sans/OpenSans-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
-
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -458,11 +450,8 @@ template {
 [hidden] {
   display: none; }
 
-body {
-  background-color: #c0c0c0; }
-
 header {
-  background-color: #ddffdd;
+  background-color: #ddd9ff;
   position: relative; }
 
 main {
@@ -488,6 +477,11 @@ ul, li {
 
 a {
   text-decoration: none; }
+
+.container {
+  width: 95%;
+  padding: 0 10px;
+  margin: 0 auto; }
 
 .row {
   width: 100%; }
@@ -515,6 +509,9 @@ a {
     width: 20%; }
   .row .col-10 {
     width: 10%; }
+
+.padding {
+  padding: 10px; }
 
 .mainmenu {
   display: flex;
@@ -558,75 +555,57 @@ a {
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   /* Styles */ }
-
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   /* Styles */ }
-
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */ }
-
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */ }
-
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */ }
-
 /*iPad 3**********/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   /* Styles */ }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   /* Styles */ }
-
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   /* Styles */ }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   /* Styles */ }
-
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */ }
-
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */ }
-
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */ }
-
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */ }
-
 /* iPhone 6+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */ }
-
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */ }
-
 /* Samsung Galaxy S3 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */ }
-
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */ }
-
 /* Samsung Galaxy S4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */ }
-
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */ }
-
 /* Samsung Galaxy S5 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */ }
-
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */ }
+
+/*# sourceMappingURL=style.css.map */

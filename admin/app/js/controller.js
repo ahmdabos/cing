@@ -1,20 +1,19 @@
 'use strict';
 angular.module('app')
-    //Articles Controller
-    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URLPREFIX', 'ArticlesService','PagerService', function ($scope, $http, $log, $state, URLPREFIX, ArticlesService,PagerService) {
+//Articles Controller
+    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URLPREFIX', 'ArticlesService', 'PagerService', function ($scope, $http, $log, $state, URLPREFIX, ArticlesService, PagerService) {
         $scope.articles = [];
         $scope.pager = {};
         $scope.searchKeyword = '';
-        $scope.setPage = function(page) {
+        $scope.setPage = function (page) {
             if (page < 1 || page > $scope.pager.totalPages) {
                 return;
             }
-
-            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL+'/?page='+page+'&search='+ $scope.searchKeyword+'&limit=4&offset=4')
+            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL + '/?page=' + page + '&search=' + $scope.searchKeyword + '&limit=4&offset=4')
                 .then(function (res) {
                     $scope.articles = res.data.result;
                     $scope.totalItems = res.data.length;
-                    $scope.pager = PagerService.getPager(res.data.length, page,4);
+                    $scope.pager = PagerService.getPager(res.data.length, page, 4);
                     $scope.items = $scope.articles.slice($scope.pager.startIndex, $scope.pager.endIndex + 1);
                     $log.debug($scope.articles);
                 }, function (err) {
@@ -26,17 +25,17 @@ angular.module('app')
 
 
         $scope.search = function (searchKeyword) {
-            if(searchKeyword){
+            if (searchKeyword) {
                 $scope.searchKeyword = searchKeyword;
             }
-            else{
+            else {
                 $scope.searchKeyword = '';
             }
             $scope.setPage(1);
 
         }
         $scope.deleteArticle = function (id) {
-            ArticlesService.deleteArticle(URLPREFIX.url + URLPREFIX.articleURL+'/'+id)
+            ArticlesService.deleteArticle(URLPREFIX.url + URLPREFIX.articleURL + '/' + id)
                 .then(function (res) {
                     $log.debug(res);
                     $state.reload();
@@ -79,7 +78,7 @@ angular.module('app')
                     title: article.title,
                     content: article.content
                 };
-                $log.debug('get article for edit',article);
+                $log.debug('get article for edit', article);
             }, function (err) {
                 $log.debug(err);
             });

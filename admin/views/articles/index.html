@@ -1,31 +1,48 @@
 ﻿<section>
-    <input type="text" ng-model="searchKeyword" placeholder="search"/>
-    <button ng-click="search(searchKeyword)">search</button>
-    <div class="row" ng-repeat="article in articles | orderBy:'-date'">
-        <div class="col col-25">{{article.title}}</div>
-        <div class="col col-25">{{article.content}}</div>
-        <div class="col col-25">{{article.date}}</div>
-        <div class="col col-25" ng-click="goToEditArticles(article.id)">Edit</div>
-        <div class="col col-25" ng-click="deleteArticle(article.id)">Delete</div>
+    <td class="container">
+        <input type="text" ng-model="searchKeyword" placeholder="search"/>
+        <button ng-click="search(searchKeyword)">search</button>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="article in articles | orderBy:'-date'">
+                <th scope="row">{{article.id}}</th>
+                <td>{{article.title}}</td>
+                <td>{{article.content}}</td>
+                <td>{{article.date}}</td>
+                <td><a href="" ng-click="goToEditArticles(article.id)">Edit</a></td>
+                <td><a href="" ng-click="deleteArticle(article.id)">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <ul ng-if="pager.pages.length" class="pagination">
+            <li ng-class="{disabled:pager.currentPage === 1}">
+                <a ng-click="setPage(1)">First</a>
+            </li>
+            <li ng-class="{disabled:pager.currentPage === 1}">
+                <a ng-click="setPage(pager.currentPage - 1)">Previous</a>
+            </li>
+            <li ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
+                <a ng-click="setPage(page)">{{page}}</a>
+            </li>
+            <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                <a ng-click="setPage(pager.currentPage + 1)">Next</a>
+            </li>
+            <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                <a ng-click="setPage(pager.totalPages)">Last</a>
+            </li>
+        </ul>
     </div>
 
-    <ul ng-if="pager.pages.length" class="pagination">
-        <li ng-class="{disabled:pager.currentPage === 1}">
-            <a ng-click="setPage(1)">First</a>
-        </li>
-        <li ng-class="{disabled:pager.currentPage === 1}">
-            <a ng-click="setPage(pager.currentPage - 1)">Previous</a>
-        </li>
-        <li ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
-            <a ng-click="setPage(page)">{{page}}</a>
-        </li>
-        <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
-            <a ng-click="setPage(pager.currentPage + 1)">Next</a>
-        </li>
-        <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
-            <a ng-click="setPage(pager.totalPages)">Last</a>
-        </li>
-    </ul>
 
 </section>
 

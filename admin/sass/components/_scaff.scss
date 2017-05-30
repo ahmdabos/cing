@@ -1,4 +1,7 @@
 ﻿.container{
+	width: 95%;
+	padding: 0 10px;
+	margin: 0 auto;
 }
 .row{
 	width:100%;
@@ -40,6 +43,9 @@
 	.col-10{
 		width:10%;
 	}
+}
+.padding{
+	padding:10px;
 }
 .mainmenu{
 	 display: flex;
