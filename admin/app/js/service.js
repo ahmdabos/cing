@@ -120,15 +120,15 @@ angular.module('app')
 
     }])
 
-
-    .factory('PagerService',  function () {
+    // Pager Service
+    .factory('PagerService', function () {
         return {
             getPager: function getPager(totalItems, currentPage, pageSize) {
                 // default to first page
                 currentPage = currentPage || 1;
 
                 // default page size is 10
-                pageSize = pageSize || 4;
+                pageSize = pageSize || 10;
 
                 // calculate total pages
                 var totalPages = Math.ceil(totalItems / pageSize);
@@ -157,7 +157,7 @@ angular.module('app')
                 var endIndex = Math.min(startIndex + pageSize - 1, totalItems - 1);
 
                 // create an array of pages to ng-repeat in the pager control
-                var pages = _.range(startPage, endPage+1);
+                var pages = _.range(startPage, endPage + 1);
 
                 // return object with all pager properties required by the view
                 return {

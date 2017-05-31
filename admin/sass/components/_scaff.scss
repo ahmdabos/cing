@@ -3,6 +3,12 @@
 	padding: 0 10px;
 	margin: 0 auto;
 }
+.sortorder:after {
+	content: '$';
+}
+.sortorder.reverse:after {
+	content: '!';
+}
 .row{
 	width:100%;
 	.col{
@@ -46,51 +52,4 @@
 }
 .padding{
 	padding:10px;
-}
-.mainmenu{
-	 display: flex;
-	 justify-content:space-around;
-	 li{
-		width:100px;
-		background-color:#ccc;
-		text-align:center;
-		a{
-			display:block;
-		}
-	 }
-}
-.panel{
-	width:100%;
-	background:#fff;
-	border:1px solid #000;
-	.panel-header{
-	
-	}
-	.panel-body{
-	
-	}
-}
-.letter-icon-wrapper{
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 2.6;
-    color: #fff;
-    display: inline-block;
-    margin: 3px;
-}
-.letter-color-a{
-	background:#e4ac54;
-}
-.letter-color-b{
-	background:#ffc8c8;
-}
-.letter-color-c{
-	background:#aca2ff;
-}
-.letter-color-d{
-	background:#86dc95;
-}
-.letter-color-e{
-	background:#c6d078;
 }

@@ -2,46 +2,68 @@
     <td class="container">
         <input type="text" ng-model="searchKeyword" placeholder="search"/>
         <button ng-click="search(searchKeyword)">search</button>
-        <table class="table table-striped">
+        <table class="table">
             <thead>
+
             <tr>
-                <th>#</th>
-                <th>Title</th>
-                <th>Content</th>
-                <th>Date</th>
+                <th>
+                    <a href="" ng-click="sortBy('id')">#</a>
+                    <i class="fa fa-arrow-down" ng-show="propertyName === 'id'"
+                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
+                </th>
+                <th>
+                    <a href="" ng-click="sortBy('title')" ng-class="{reverse: reverse}">Title</a>
+                    <i class="fa fa-arrow-down" ng-show="propertyName === 'title'"
+                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
+                </th>
+                <th>
+                    <a href="" ng-click="sortBy('content')" ng-class="{reverse: reverse}">Content</a>
+                    <i class="fa fa-arrow-down" ng-show="propertyName === 'content'"
+                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
+                </th>
+                <th>
+                    <a href="" ng-click="sortBy('date')" ng-class="{reverse: reverse}">Date</a>
+                    <i class="fa fa-arrow-down" ng-show="propertyName === 'date'"
+                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
+                </th>
+                <th>action</th>
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="article in articles | orderBy:'-date'">
+            <tr ng-repeat="article in articles | orderBy:propertyName:reverse">
                 <th scope="row">{{article.id}}</th>
                 <td>{{article.title}}</td>
                 <td>{{article.content}}</td>
                 <td>{{article.date}}</td>
-                <td><a href="" ng-click="goToEditArticles(article.id)">Edit</a></td>
-                <td><a href="" ng-click="deleteArticle(article.id)">Delete</a></td>
+                <td><a href="" ng-click="goToEditArticles(article.id)">Edit</a>|<a href=""
+                                                                                   ng-click="deleteArticle(article.id)">Delete</a>
+                </td>
+
             </tr>
             </tbody>
         </table>
 
 
         <ul ng-if="pager.pages.length" class="pagination">
-            <li ng-class="{disabled:pager.currentPage === 1}">
-                <a ng-click="setPage(1)">First</a>
+            <li class="page-item" ng-class="{disabled:pager.currentPage === 1}">
+                <a href="" class="page-link" ng-click="setPage(1)" title="First">&lt;&lt;</a>
             </li>
-            <li ng-class="{disabled:pager.currentPage === 1}">
-                <a ng-click="setPage(pager.currentPage - 1)">Previous</a>
+            <li class="page-item" ng-class="{disabled:pager.currentPage === 1}">
+                <a href="" class="page-link" ng-click="setPage(pager.currentPage - 1)" title="Previous">&lt;</a>
             </li>
-            <li ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
-                <a ng-click="setPage(page)">{{page}}</a>
+            <li class="page-item" ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
+                <a href="" class="page-link" ng-click="setPage(page)">{{page}}</a>
             </li>
-            <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
-                <a ng-click="setPage(pager.currentPage + 1)">Next</a>
+            <li class="page-item" ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                <a href="" class="page-link" ng-click="setPage(pager.currentPage + 1)" title="Next">&gt;</a>
             </li>
-            <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
-                <a ng-click="setPage(pager.totalPages)">Last</a>
+            <li class="page-item" ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                <a href="" class="page-link" ng-click="setPage(pager.totalPages)" title="Last">&gt;&gt;</a>
             </li>
         </ul>
-    </div>
+
+
+        </div>
 
 
 </section>

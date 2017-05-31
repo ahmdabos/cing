@@ -9,11 +9,11 @@ angular.module('app')
             if (page < 1 || page > $scope.pager.totalPages) {
                 return;
             }
-            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL + '/?page=' + page + '&search=' + $scope.searchKeyword + '&limit=4&offset=4')
+            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL + '/?page=' + page + '&search=' + $scope.searchKeyword + '&limit=10&offset=10')
                 .then(function (res) {
                     $scope.articles = res.data.result;
                     $scope.totalItems = res.data.length;
-                    $scope.pager = PagerService.getPager(res.data.length, page, 4);
+                    $scope.pager = PagerService.getPager(res.data.length, page, 10);
                     $scope.items = $scope.articles.slice($scope.pager.startIndex, $scope.pager.endIndex + 1);
                     $log.debug($scope.articles);
                 }, function (err) {
@@ -33,7 +33,7 @@ angular.module('app')
             }
             $scope.setPage(1);
 
-        }
+        };
         $scope.deleteArticle = function (id) {
             ArticlesService.deleteArticle(URLPREFIX.url + URLPREFIX.articleURL + '/' + id)
                 .then(function (res) {
@@ -42,10 +42,17 @@ angular.module('app')
                 }, function (err) {
                     $log.debug(err);
                 });
-        }
+        };
 
         $scope.goToEditArticles = function (currentId) {
             $state.go('articles.edit', {id: currentId});
+        };
+
+        $scope.propertyName = 'id';
+        $scope.reverse = true;
+        $scope.sortBy = function(propertyName) {
+            $scope.reverse = ($scope.propertyName === propertyName) ? !$scope.reverse : false;
+            $scope.propertyName = propertyName;
         };
     }])
 

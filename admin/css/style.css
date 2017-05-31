@@ -450,8 +450,11 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  background-color: #c0c0c0; }
+
 header {
-  background-color: #ddd9ff;
+  background-color: #ddffdd;
   position: relative; }
 
 main {
@@ -477,58 +480,6 @@ ul, li {
 
 a {
   text-decoration: none; }
-
-.table {
-  width: 100%; }
-  .table thead {
-    background: #cccccc; }
-    .table thead th {
-      text-align: left; }
-  .table tbody tr {
-    background: #ffe4e4; }
-
-.pagination {
-  display: flex;
-  padding-left: 0;
-  list-style: none;
-  border-radius: 3px;
-  width: 50%;
-  margin: 0 auto; }
-
-.page-item:first-child .page-link {
-  margin-left: 0;
-  border-radius: 3px; }
-.page-item:last-child .page-link {
-  border-radius: 3px; }
-.page-item.active .page-link {
-  z-index: 2;
-  color: #ff6d6d;
-  background-color: #3a3a3a;
-  border: #ffa8a8 solid 1px; }
-.page-item.disabled .page-link {
-  color: #afafaf;
-  pointer-events: none;
-  cursor: pointer;
-  background-color: #dadada; }
-
-.page-link {
-  position: relative;
-  display: block;
-  padding: 3px 5px;
-  margin-left: -1px;
-  line-height: 1;
-  border: #ff9595 solid 1px; }
-
-.container {
-  width: 95%;
-  padding: 0 10px;
-  margin: 0 auto; }
-
-.sortorder:after {
-  content: '$'; }
-
-.sortorder.reverse:after {
-  content: '!'; }
 
 .row {
   width: 100%; }
@@ -559,6 +510,45 @@ a {
 
 .padding {
   padding: 10px; }
+
+.mainmenu {
+  display: flex;
+  justify-content: space-around; }
+  .mainmenu li {
+    width: 100px;
+    background-color: #ccc;
+    text-align: center; }
+    .mainmenu li a {
+      display: block; }
+
+.panel {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #000; }
+
+.letter-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 2.6;
+  color: #fff;
+  display: inline-block;
+  margin: 3px; }
+
+.letter-color-a {
+  background: #e4ac54; }
+
+.letter-color-b {
+  background: #ffc8c8; }
+
+.letter-color-c {
+  background: #aca2ff; }
+
+.letter-color-d {
+  background: #86dc95; }
+
+.letter-color-e {
+  background: #c6d078; }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
