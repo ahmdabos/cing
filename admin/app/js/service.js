@@ -174,5 +174,17 @@ angular.module('app')
             }
         }
 
-    });
+    })
+    // Loader Service
+    .factory('LoaderService', function () {
+        return {
+            showLoader: function showLoader() {
+                angular.element(document.querySelector( 'body' )).addClass('loader');
+            },
+            hideLoader: function hideLoader() {
+                angular.element(document.querySelector( 'body' )).removeClass('loader');
+            }
+        }
+
+    })
 
