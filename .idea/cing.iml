@@ -14,8 +14,6 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="Majilis" />
-    <orderEntry type="module" module-name="Majilis" />
-    <orderEntry type="module" module-name="Majilis" />
+    <orderEntry type="module" module-name="wordpress" />
   </component>
 </module>

@@ -6,9 +6,7 @@ angular.module('app')
         $scope.pager = {};
         $scope.searchKeyword = '';
         $scope.setPage = function (page) {
-            if (page < 1 || page > $scope.pager.totalPages) {
-                return;
-            }
+
             ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL + '/?page=' + page + '&search=' + $scope.searchKeyword + '&limit=10&offset=10')
                 .then(function (res) {
                     $scope.articles = res.data.result;
@@ -19,18 +17,16 @@ angular.module('app')
                 }, function (err) {
                     $log.debug(err);
                 });
+            if (page < 1 || page > $scope.pager.totalPages) {
+                return;
+            }
         }
 
         $scope.setPage(1);
 
 
         $scope.search = function (searchKeyword) {
-            if (searchKeyword) {
-                $scope.searchKeyword = searchKeyword;
-            }
-            else {
-                $scope.searchKeyword = '';
-            }
+            $scope.searchKeyword = searchKeyword;
             $scope.setPage(1);
 
         };
@@ -50,7 +46,7 @@ angular.module('app')
 
         $scope.propertyName = 'id';
         $scope.reverse = true;
-        $scope.sortBy = function(propertyName) {
+        $scope.sortBy = function (propertyName) {
             $scope.reverse = ($scope.propertyName === propertyName) ? !$scope.reverse : false;
             $scope.propertyName = propertyName;
         };
