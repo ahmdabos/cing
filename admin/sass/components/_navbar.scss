@@ -1,0 +1,14 @@
+.nav {
+  background:#f0f789;
+  display: flex;
+  .nav-item {
+    .nav-link {
+      display: block;
+      padding: .5em 1em;
+      color:#9a6c74;
+      &.active{
+        color:black;
+      }
+    }
+  }
+}

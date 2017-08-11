@@ -1,5 +1,5 @@
 ﻿<section>
-    <td class="container">
+    <div class="container">
         <input type="text" ng-model="searchKeyword" placeholder="search"/>
         <button ng-click="search(searchKeyword)">search</button>
         <table class="table">
@@ -35,8 +35,11 @@
                 <td>{{article.title}}</td>
                 <td>{{article.content}}</td>
                 <td>{{article.date}}</td>
-                <td><a href="" ng-click="goToEditArticles(article.id)">Edit</a>|<a href=""
-                                                                                   ng-click="deleteArticle(article.id)">Delete</a>
+                <td><a href="" title="Edit" ng-click="goToEditArticles(article.id)"><i
+                        class="fa fa-pencil-square-o fa-lg"></i></a>|<a href=""
+                                                                        title="Delete"
+                                                                        ng-click="deleteArticle(article.id)"><i
+                        class="fa fa-trash-o fa-lg"></i></a>
                 </td>
 
             </tr>

@@ -1,5 +1,6 @@
-﻿body{
-
+﻿
+html,body{
+font-family:$font-family-base;
 }
 header{
 	background-color: #ddd9ff;
@@ -14,9 +15,6 @@ footer{
 section{
 	background-color: #c3ffe4;
     border-bottom: 1px solid #000;
-}
-nav{
-	background-color:#f4ff4e;
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;
