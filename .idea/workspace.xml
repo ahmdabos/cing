@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32bc48b2-e21e-42b2-bdb5-e32f22241f7c" name="Default" comment="fixing stuff">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" />
@@ -424,7 +425,7 @@
       <workItem from="1501922263171" duration="7559000" />
       <workItem from="1502302461179" duration="829000" />
       <workItem from="1502460618044" duration="2937000" />
-      <workItem from="1502465177965" duration="49000" />
+      <workItem from="1502465177965" duration="231000" />
     </task>
     <task id="LOCAL-00001" summary="fixing stuff">
       <created>1496174475759</created>
@@ -447,11 +448,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496177687400</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixing stuff">
+      <created>1502465237109</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1502465237109</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80212000" />
+    <option name="totallyTimeSpent" value="80394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
