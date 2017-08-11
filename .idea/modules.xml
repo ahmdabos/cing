@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cing.iml" filepath="$PROJECT_DIR$/.idea/cing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../wordpress/.idea/wordpress.iml" filepath="$PROJECT_DIR$/../wordpress/.idea/wordpress.iml" />
     </modules>
   </component>
 </project>

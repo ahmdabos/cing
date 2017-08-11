@@ -5,16 +5,19 @@ angular.module('app')
         $scope.articles = [];
         $scope.pager = {};
         $scope.searchKeyword = '';
+        $scope.waiting = false;
         $scope.setPage = function (page) {
-
+            $scope.waiting = true;
             ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL + '/?page=' + page + '&search=' + $scope.searchKeyword + '&limit=10&offset=10')
                 .then(function (res) {
+                    $scope.waiting = false;
                     $scope.articles = res.data.result;
                     $scope.totalItems = res.data.length;
                     $scope.pager = PagerService.getPager(res.data.length, page, 10);
                     $scope.items = $scope.articles.slice($scope.pager.startIndex, $scope.pager.endIndex + 1);
                     $log.debug($scope.articles);
                 }, function (err) {
+                    $scope.waiting = false;
                     $log.debug(err);
                 });
             if (page < 1 || page > $scope.pager.totalPages) {
