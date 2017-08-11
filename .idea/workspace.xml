@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32bc48b2-e21e-42b2-bdb5-e32f22241f7c" name="Default" comment="fixing stuff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/assets/css/style.min.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/css/style.css.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" />
@@ -64,12 +61,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/config/rest.php" afterPath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/config/rest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" afterPath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cing.iml" afterPath="$PROJECT_DIR$/.idea/cing.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/controller.js" afterPath="$PROJECT_DIR$/admin/app/js/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/css/style.css" afterPath="$PROJECT_DIR$/admin/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/style.scss" afterPath="$PROJECT_DIR$/admin/sass/style.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -155,7 +147,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/views/articles/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="414">
               <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
@@ -278,9 +270,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/admin/node_modules" />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -313,20 +302,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restfull" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,6 +424,7 @@
       <workItem from="1501922263171" duration="7559000" />
       <workItem from="1502302461179" duration="829000" />
       <workItem from="1502460618044" duration="2937000" />
+      <workItem from="1502465177965" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="fixing stuff">
       <created>1496174475759</created>
@@ -475,7 +451,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80163000" />
+    <option name="totallyTimeSpent" value="80212000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -490,7 +466,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2171825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21931697" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33044422" sideWeight="0.50213444" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -693,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="75" lean-forward="false" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,11 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1501488764724" expanded="true" signature="1303:1341" ph="SELECT * FRO... ${$table_cfs_name}" />
-            <marker date="1501488764724" expanded="true" signature="1425:1505" ph="SELECT * FRO... ${$table_cf_name}" />
-            <marker date="1501488764724" expanded="true" signature="28921:28954" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,9 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23184">
           <caret line="1008" column="0" lean-forward="false" selection-start-line="1008" selection-start-column="0" selection-end-line="1008" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12144">
           <caret line="535" column="0" lean-forward="false" selection-start-line="535" selection-start-column="0" selection-end-line="535" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,19 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1501929548348" expanded="true" signature="2064:2071" ph="—" />
-            <marker date="1501929548348" expanded="true" signature="2206:2213" ph="—" />
-            <marker date="1501929548348" expanded="true" signature="2472:2479" ph="—" />
-            <marker date="1501929548348" expanded="true" signature="2612:2619" ph="..." />
-            <marker date="1501929548348" expanded="true" signature="2628:2635" ph="..." />
-            <marker date="1501929548348" expanded="true" signature="2977:2984" ph="—" />
-            <marker date="1501929548348" expanded="true" signature="3161:3168" ph="—" />
-            <marker date="1501929548348" expanded="true" signature="3431:3438" ph="—" />
-            <marker date="1501929548348" expanded="true" signature="3754:3761" ph="—" />
-            <marker date="1501929548348" expanded="true" signature="4045:4052" ph="—" />
-            <marker date="1501929548348" expanded="true" signature="4297:4304" ph="—" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,69 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#wp_w2_contact_form#0;n#!!top" expanded="false" />
-            <element signature="e#119006#119096#0#PHP" expanded="false" />
-            <element signature="n#w2_contact_form#0;n#!!top" expanded="false" />
-            <element signature="e#119469#119604#0#PHP" expanded="false" />
-            <marker date="1501929238762" expanded="true" signature="4593:4607" ph="SELECT * FRO... ${$wpdb-&gt;table_cfs_name}" />
-            <marker date="1501929238762" expanded="true" signature="5077:5189" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="5333:5412" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="5572:5627" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="5698:5802" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="5904:5959" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="9179:9224" ph="CREATE TABLE... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="15927:16007" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="16070:16144" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="16272:16318" ph="CREATE TABLE... ${$wpdb-&gt;table_cfs_name}" />
-            <marker date="1501929238762" expanded="true" signature="19521:19573" ph="CREATE TABLE... ${$wpdb-&gt;table_cfmessage_name}" />
-            <marker date="1501929238762" expanded="true" signature="20145:20195" ph="CREATE TABLE... ${$wpdb-&gt;table_cffield_name}" />
-            <marker date="1501929238762" expanded="true" signature="20706:20762" ph="alter table ${$wpdb-&gt;table_cffield_name}... " />
-            <marker date="1501929238762" expanded="true" signature="21072:21086" ph="SELECT * FRO... ${$wpdb-&gt;table_cfs_name}" />
-            <marker date="1501929238762" expanded="true" signature="28820:28863" ph="ALTER TABLE `${$wpdb-&gt;table_cfs_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="29402:29505" ph="UPDATE `${$w... " />
-            <marker date="1501929238762" expanded="true" signature="29526:29568" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="29820:29863" ph="ALTER TABLE `${$wpdb-&gt;table_cfs_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="30125:30167" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="30420:30475" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="30879:30922" ph="ALTER TABLE `${$wpdb-&gt;table_cfs_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="31217:31259" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="31544:31587" ph="ALTER TABLE `${$wpdb-&gt;table_cfs_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="31976:32018" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="32319:32361" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="32616:32658" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="32921:32963" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="33572:33614" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="34756:34799" ph="ALTER TABLE `${$wpdb-&gt;table_cfs_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="35055:35097" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="35390:35433" ph="ALTER TABLE `${$wpdb-&gt;table_cfs_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="35713:35793" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="35840:35914" ph="ALTER TABLE `${$wpdb-&gt;table_cf_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="36071:36114" ph="ALTER TABLE `${$wpdb-&gt;table_cfs_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="36535:36578" ph="ALTER TABLE `${$wpdb-&gt;table_cfs_name}`... " />
-            <marker date="1501929238762" expanded="true" signature="37012:37068" ph="alter table ${$wpdb-&gt;table_cffield_name}... " />
-            <marker date="1501929238762" expanded="true" signature="38865:38879" ph="SELECT * FRO... ${$wpdb-&gt;table_cfs_name}" />
-            <marker date="1501929238762" expanded="true" signature="50341:50824" ph="SELECT ${$wp... ${$wpdb-&gt;table_cffield_name}" />
-            <marker date="1501929238762" expanded="true" signature="57506:57586" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="73712:73731" ph="..." />
-            <marker date="1501929238762" expanded="true" signature="74296:74310" ph="SELECT * FRO... ${$wpdb-&gt;table_cfs_name}" />
-            <marker date="1501929238762" expanded="true" signature="74848:75041" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
-            <marker date="1501929238762" expanded="true" signature="75146:75311" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
-            <marker date="1501929238762" expanded="true" signature="75416:75509" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
-            <marker date="1501929238762" expanded="true" signature="75614:75677" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
-            <marker date="1501929238762" expanded="true" signature="75781:75974" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
-            <marker date="1501929238762" expanded="true" signature="76981:77060" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="79013:79234" ph="SELECT m.*, ${$wpdb-&gt;table_cfmessage_name}" />
-            <marker date="1501929238762" expanded="true" signature="81020:81109" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="92697:92766" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="93821:93890" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="94775:94844" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="96282:96351" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-            <marker date="1501929238762" expanded="true" signature="112762:112823" ph="DELETE FROM " />
-            <marker date="1501929238762" expanded="true" signature="112933:112996" ph="DELETE FROM " />
-            <marker date="1501929238762" expanded="true" signature="113493:113575" ph="INSERT INTO ${$table}... " />
-            <marker date="1501929238762" expanded="true" signature="114701:114786" ph="SELECT * FRO... ${$wpdb-&gt;table_cf_name}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -838,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="943">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,10 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
           <caret line="1515" column="14" lean-forward="true" selection-start-line="1515" selection-start-column="14" selection-end-line="1515" selection-end-column="14" />
-          <folding>
-            <element signature="e#2176#3752#0#PHP" expanded="false" />
-            <marker date="1501954679160" expanded="true" signature="49158:49164" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -887,7 +770,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/views/articles/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="414">
           <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
