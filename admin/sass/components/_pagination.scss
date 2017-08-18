@@ -3,7 +3,7 @@
   justify-content: center;
   padding-left: 0;
   list-style: none;
-  border-radius: 3px;
+  border-radius: rem(3px);
   width: 50%;
   margin: 0 auto;
 }
@@ -12,12 +12,12 @@
   &:first-child {
     .page-link {
       margin-left: 0;
-      border-radius: 3px;
+      border-radius: rem(3px);
     }
   }
   &:last-child {
     .page-link {
-      border-radius: 3px;
+      border-radius: rem(3px);
     }
   }
 
@@ -25,7 +25,7 @@
     z-index: 2;
     color: #ff6d6d;
     background-color: #3a3a3a;
-    border: #ffa8a8 solid 1px;
+    border: #ffa8a8 solid rem(1px);;
   }
 
   &.disabled .page-link {
@@ -39,10 +39,10 @@
 .page-link {
   position: relative;
   display: block;
-  padding: 3px 5px;
-  margin-left: -1px;
+  padding: rem(3px) rem(5px);
+  margin-left: rem(-1px);
   line-height: 1;
-  border: #ff9595 solid 1px;
+  border: #ff9595 solid rem(1px);
 
 }
 

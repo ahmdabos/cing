@@ -4,7 +4,7 @@
   .nav-item {
     .nav-link {
       display: block;
-      padding: .5em 1em;
+      padding: rem(8px) rem(16px);
       color:#9a6c74;
       &.active{
         color:black;
