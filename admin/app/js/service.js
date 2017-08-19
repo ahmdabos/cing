@@ -1,6 +1,5 @@
 'use strict';
 angular.module('app')
-
 // Data Service
     .factory('DataService', ['$http', '$q', function ($http, $q) {
         return {
@@ -97,7 +96,6 @@ angular.module('app')
 
         }
     }])
-
     // Article Service
     .factory('ArticlesService', ['DataService', function (DataService) {
         return {
@@ -117,9 +115,7 @@ angular.module('app')
                 return DataService.delete(url);
             }
         }
-
     }])
-
     // Pager Service
     .factory('PagerService', function () {
         return {
@@ -173,16 +169,15 @@ angular.module('app')
                 };
             }
         }
-
     })
     // Loader Service
     .factory('LoaderService', function () {
         return {
             showLoader: function showLoader() {
-                angular.element(document.querySelector( 'body' )).addClass('loader');
+                angular.element(document.querySelector('body')).addClass('loader');
             },
             hideLoader: function hideLoader() {
-                angular.element(document.querySelector( 'body' )).removeClass('loader');
+                angular.element(document.querySelector('body')).removeClass('loader');
             }
         }
 

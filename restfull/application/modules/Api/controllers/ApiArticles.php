@@ -20,9 +20,9 @@ class ApiArticles extends REST_Controller
         $id = $this->get('id');
         $search = $this->get('search');
         $page = $this->get('page');
-        $limit= $this->get('limit');
+        $limit = $this->get('limit');
         $offset = $this->get('offset');
-        $response = $this->module->get($id,$search,$page,$limit,$offset);
+        $response = $this->module->get($id, $search, $page, $limit, $offset);
         return $this->response($response);
     }
 
@@ -34,12 +34,13 @@ class ApiArticles extends REST_Controller
         );
 
         $response = $this->module->post($data);
-       // print_r($response);exit;
+        // print_r($response);exit;
         return $this->response($response);
 
     }
 
-    public function index_put(){
+    public function index_put()
+    {
         $id = $this->put('id');
         $data = array(
             'title' => $this->put('title'),

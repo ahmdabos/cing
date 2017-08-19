@@ -1,1 +1,15 @@
-﻿
+﻿.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 0.0625rem solid #ffffff;
+  padding: rem(8px) rem(16px);
+  font-size: rem(16px);
+  color: #fff;
+  background-color: #82b5bf;
+  cursor: pointer;
+
+}

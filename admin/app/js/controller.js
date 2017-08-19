@@ -56,28 +56,32 @@ angular.module('app')
     }])
 
     //Add Article Controller
-    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', 'URLPREFIX', 'ArticlesService', function ($scope, $http, $state, $log, URLPREFIX, ArticlesService) {
+    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', 'URLPREFIX', 'ArticlesService','LoaderService', function ($scope, $http, $state, $log, URLPREFIX, ArticlesService,LoaderService) {
         $scope.submit = function () {
             var data = {
                 title: $scope.title,
                 content: $scope.content
             };
-            ArticlesService.putArticle(URLPREFIX.url + URLPREFIX.articleURL, data)
+            LoaderService.showLoader();
+            ArticlesService.postArticle(URLPREFIX.url + URLPREFIX.articleURL, data)
                 .then(function (res) {
+                    LoaderService.showLoader();
                     $log.debug(res);
                     $state.go('articles.index');
                 }, function (err) {
+                    LoaderService.showLoader();
                     $log.debug(err);
                 });
         }
     }])
 
     //Edit Article Controller
-    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URLPREFIX', 'ArticlesService', function ($scope, $http, $state, $log, $stateParams, URLPREFIX, ArticlesService) {
+    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URLPREFIX', 'ArticlesService','LoaderService', function ($scope, $http, $state, $log, $stateParams, URLPREFIX, ArticlesService,LoaderService) {
         var id = $stateParams.id;
-
+        LoaderService.showLoader();
         ArticlesService.getArticle(URLPREFIX.url + URLPREFIX.articleURL, id)
             .then(function (res) {
+                LoaderService.hideLoader();
                 var article = res.data.result[0];
                 $scope.data = {
                     id: id,
@@ -86,6 +90,7 @@ angular.module('app')
                 };
                 $log.debug('get article for edit', article);
             }, function (err) {
+                LoaderService.hideLoader();
                 $log.debug(err);
             });
         $scope.submit = function () {

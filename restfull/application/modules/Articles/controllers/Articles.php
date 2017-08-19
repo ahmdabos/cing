@@ -14,9 +14,9 @@ class Articles extends MY_Controller
     }
 
 
-    public function get($id,$search,$page,$limit,$offset)
+    public function get($id, $search, $page, $limit, $offset)
     {
-        return $this->article->get_article($id,$search,$page,$limit,$offset);
+        return $this->article->get_article($id, $search, $page, $limit, $offset);
     }
 
     public function post($data)
@@ -28,6 +28,7 @@ class Articles extends MY_Controller
     {
         return $this->article->update_article($id, $data);
     }
+
     public function delete($id)
     {
         return $this->article->delete_article($id);
