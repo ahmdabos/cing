@@ -76,7 +76,7 @@ angular.module('app')
     }])
 
     //Edit Article Controller
-    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URLPREFIX', 'ArticlesService','LoaderService', function ($scope, $http, $state, $log, $stateParams, URLPREFIX, ArticlesService,LoaderService) {
+    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URLPREFIX', 'ArticlesService','LoaderService','ToastService', function ($scope, $http, $state, $log, $stateParams, URLPREFIX, ArticlesService,LoaderService,ToastService) {
         var id = $stateParams.id;
         LoaderService.showLoader();
         ArticlesService.getArticle(URLPREFIX.url + URLPREFIX.articleURL, id)
@@ -97,7 +97,7 @@ angular.module('app')
             ArticlesService.putArticle(URLPREFIX.url + URLPREFIX.articleURL, $scope.data)
                 .then(function (res) {
                     $log.debug(res);
-                    $state.go('articles.index');
+                    ToastService.show('The article has been updated successfully');
                 }, function (err) {
                     $log.debug(err);
                 });

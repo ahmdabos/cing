@@ -57,3 +57,11 @@
     }
   }
 }
+.toaster{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: #a2a2a2;
+  padding: 7px;
+}

@@ -180,6 +180,17 @@ angular.module('app')
                 angular.element(document.querySelector('body')).removeClass('loader');
             }
         }
-
     })
 
+    // Toast Service
+    .factory('ToastService', ['$timeout', function ($timeout) {
+        return {
+            show: function showLoader(text) {
+
+                angular.element(document.querySelector('body')).prepend('<div class="toaster">' + text + '</div>');
+                $timeout(function () {
+                    angular.element(document.querySelector('.toaster')).remove();
+                }, 2000)
+            }
+        }
+    }])
