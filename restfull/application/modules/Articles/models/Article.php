@@ -15,21 +15,22 @@ class Article extends CI_Model
     {
         if ($id != NULL) {
             $this->db->where('id', $id);
-        }
-        if ($search != NULL) {
-            $this->db->like('title', $search);
+        } else {
+            if ($search != NULL) {
+                $this->db->like('title', $search);
+            }
+
+            $tempdb = clone $this->db;
+            $data['length'] = $tempdb->from($this->table)->count_all_results();
+
+
+            if ($page != NULL) {
+                $this->db->limit($limit, ($page - 1) * $offset);
+            }
         }
 
-        $tempdb = clone $this->db;
-        $data['length'] = $tempdb->from($this->table)->count_all_results();
-
-
-        if ($page != NULL) {
-            $this->db->limit($limit, ($page - 1) * $offset);
-        }
         $query = $this->db->get($this->table);
         $data['result'] = $query->result();
-
         return $data;
     }
 

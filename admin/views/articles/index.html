@@ -28,11 +28,7 @@
                     <i class="fa fa-arrow-down" ng-show="propertyName === 'title'"
                        ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
                 </th>
-                <th>
-                    <a href="" ng-click="sortBy('content')" ng-class="{reverse: reverse}">Content</a>
-                    <i class="fa fa-arrow-down" ng-show="propertyName === 'content'"
-                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
-                </th>
+
                 <th>
                     <a href="" ng-click="sortBy('date')" ng-class="{reverse: reverse}">Date</a>
                     <i class="fa fa-arrow-down" ng-show="propertyName === 'date'"
@@ -45,7 +41,6 @@
             <tr ng-repeat="article in articles | orderBy:propertyName:reverse">
                 <th scope="row">{{article.id}}</th>
                 <td>{{article.title}}</td>
-                <td>{{article.content}}</td>
                 <td>{{article.date}}</td>
                 <td><a href="" title="Edit" ng-click="goToEditArticles(article.id)"><i
                         class="fa fa-pencil-square-o fa-lg"></i></a>|<a href=""
@@ -53,14 +48,12 @@
                                                                         ng-click="deleteArticle(article.id)"><i
                         class="fa fa-trash-o fa-lg"></i></a>
                 </td>
-
             </tr>
             <tr>
                 <td ng-if="articles.length==0">No Result</td>
             </tr>
             </tbody>
         </table>
-
 
         <ul ng-if="pager.pages.length" class="pagination">
             <li class="page-item" ng-class="{disabled:pager.currentPage === 1}">

@@ -16,7 +16,6 @@ class ApiArticles extends REST_Controller
 
     public function index_get()
     {
-
         $id = $this->get('id');
         $search = $this->get('search');
         $page = $this->get('page');

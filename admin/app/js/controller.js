@@ -1,7 +1,7 @@
 'use strict';
 angular.module('app')
 //Articles Controller
-    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URLPREFIX', 'ArticlesService', 'PagerService', 'LoaderService', function ($scope, $http, $log, $state, URLPREFIX, ArticlesService, PagerService, LoaderService) {
+    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URLPREFIX', 'ArticlesService', 'PagerService', 'LoaderService','ToastService', function ($scope, $http, $log, $state, URLPREFIX, ArticlesService, PagerService, LoaderService,ToastService) {
         $scope.articles = [];
         $scope.pager = {};
         $scope.searchKeyword = '';
@@ -39,9 +39,13 @@ angular.module('app')
         $scope.deleteArticle = function (id) {
             ArticlesService.deleteArticle(URLPREFIX.url + URLPREFIX.articleURL + '/' + id)
                 .then(function (res) {
+                    LoaderService.hide();
+                    ToastService.show('Deleted successfully');
                     $log.debug(res);
                     $state.reload();
                 }, function (err) {
+                    LoaderService.hide();
+                    ToastService.show('Something Went Wrong');
                     $log.debug(err);
                 });
         };
@@ -58,7 +62,7 @@ angular.module('app')
     }])
 
     //Add Article Controller
-    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', 'URLPREFIX', 'ArticlesService', 'LoaderService', function ($scope, $http, $state, $log, URLPREFIX, ArticlesService, LoaderService) {
+    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', 'URLPREFIX', 'ArticlesService', 'LoaderService','ToastService', function ($scope, $http, $state, $log, URLPREFIX, ArticlesService, LoaderService,ToastService) {
         $scope.submit = function () {
             var data = {
                 title: $scope.title,
@@ -67,11 +71,13 @@ angular.module('app')
             LoaderService.show();
             ArticlesService.postArticle(URLPREFIX.url + URLPREFIX.articleURL, data)
                 .then(function (res) {
-                    LoaderService.show();
+                    LoaderService.hide();
+                    ToastService.show('Added successfully');
                     $log.debug(res);
                     $state.go('articles.index');
                 }, function (err) {
-                    LoaderService.show();
+                    LoaderService.hide();
+                    ToastService.show('Something Went Wrong');
                     $log.debug(err);
                 });
         }
@@ -104,6 +110,7 @@ angular.module('app')
                     $log.debug(res);
                 }, function (err) {
                     LoaderService.hide();
+                    ToastService.show('Something Went Wrong');
                     $log.debug(err);
                 });
         }

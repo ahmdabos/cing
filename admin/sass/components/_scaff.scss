@@ -60,6 +60,7 @@
     height: 100%;
     text-align: center;
     background: rgba(0, 0, 0, 0.24);
+    z-index:$zindex-popover;
     .spinner {
       border: rem(4px) solid #d0d0d0;
       border-top: rem(4px) solid #7999af;
@@ -80,7 +81,7 @@
   right: 0;
   font-size: rem(13px);
   width: rem(130px);
-  z-index: 9999;
+  z-index: $zindex-tooltip;
   background: #ffebb6;
   padding: rem(10px);
   margin: 0 auto;
