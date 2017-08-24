@@ -5,7 +5,7 @@ angular.module('app')
         $scope.articles = [];
         $scope.pager = {};
         $scope.searchKeyword = '';
-        $scope.limit = 2;
+
         $scope.limitOptions = [1,2,3,4];
         $scope.setLimit = function (limit) {
             $scope.limit = limit;

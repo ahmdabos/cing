@@ -9,9 +9,8 @@
                     <button type="submit" class="btn btn-primary">Search</button>
                 </div>
                 <div class="form-group flex1">
-                    <select class="form-control" ng-model="limit" ng-change="setLimit(limit)">
-                        <option ng-repeat="limit in limitOptions" value="limit" selected>{{limit}}</option>
-
+                    <select class="form-control" ng-model="limit" ng-options="limit as limit for limit in limitOptions" ng-change="setLimit(limit)">
+                        <option value="" selected>Per Page</option>
                     </select>
                 </div>
             </div>
@@ -55,6 +54,9 @@
                         class="fa fa-trash-o fa-lg"></i></a>
                 </td>
 
+            </tr>
+            <tr>
+                <td ng-if="articles.length==0">No Result</td>
             </tr>
             </tbody>
         </table>
