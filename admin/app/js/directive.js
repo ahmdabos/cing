@@ -7,7 +7,6 @@ angular.module('app')
             link: function (scope, element) {
                 scope.location = $location;
                 scope.$watch('location.path()', function (currentPath) {
-
                     if ('#!' + currentPath == element[0].attributes['href'].nodeValue) {
                         element.addClass('active');
                     } else {
@@ -16,4 +15,4 @@ angular.module('app')
                 });
             }
         };
-    }])
+    }]);

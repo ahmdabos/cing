@@ -30,6 +30,21 @@
   .flex5 {
     flex: 5;
   }
+  .flex6 {
+    flex: 6;
+  }
+  .flex7 {
+    flex: 7;
+  }
+  .flex8 {
+    flex: 8;
+  }
+  .flex9 {
+    flex: 9;
+  }
+  .flex10 {
+    flex: 10;
+  }
 }
 
 .padding {
@@ -57,11 +72,20 @@
     }
   }
 }
-.toaster{
+
+.toaster {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  font-size: rem(13px);
+  width: rem(130px);
   z-index: 9999;
-  background: #a2a2a2;
-  padding: 7px;
+  background: #ffebb6;
+  padding: rem(10px);
+  margin: 0 auto;
+  border: rem(1px) solid #ccc;
+  animation-name: slideFromTop;
+  animation-duration: 1s;
+
 }

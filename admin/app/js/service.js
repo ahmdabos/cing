@@ -77,7 +77,6 @@ angular.module('app')
                     deferred.reject(response);
                     return deferred.promise;
                 });
-
             },
             delete: function (url) {
                 var deferred = $q.defer();
@@ -173,20 +172,18 @@ angular.module('app')
     // Loader Service
     .factory('LoaderService', function () {
         return {
-            showLoader: function showLoader() {
+            show: function showLoader() {
                 angular.element(document.querySelector('body')).addClass('loader');
             },
-            hideLoader: function hideLoader() {
+            hide: function hideLoader() {
                 angular.element(document.querySelector('body')).removeClass('loader');
             }
         }
     })
-
     // Toast Service
     .factory('ToastService', ['$timeout', function ($timeout) {
         return {
             show: function showLoader(text) {
-
                 angular.element(document.querySelector('body')).prepend('<div class="toaster">' + text + '</div>');
                 $timeout(function () {
                     angular.element(document.querySelector('.toaster')).remove();

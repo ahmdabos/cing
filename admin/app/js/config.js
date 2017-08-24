@@ -4,4 +4,4 @@ angular.module('app')
     url: 'http://localhost/cing/restfull/api/',
     articleURL: 'apiarticles'
 })
-.value('_', window._)
+.value('_', window._);

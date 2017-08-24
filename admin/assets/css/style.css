@@ -490,6 +490,22 @@ template {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+@-webkit-keyframes slideFromTop {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes slideFromTop {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
 html, body {
   font-family: "Open Sans";
   font-size: 16px; }
@@ -505,11 +521,7 @@ footer {
   background-color: #ffc7c7; }
 
 nav {
-  background: #fdffdb; }
-
-section {
-  background-color: #e1fff2;
-  border-bottom: rem(1px) solid #000; }
+  background: #e6e6e6; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -565,7 +577,7 @@ form {
     .table thead th {
       text-align: left; }
   .table tbody tr {
-    background: #ffe4e4; }
+    background: #fff; }
 
 .nav {
   display: -webkit-box;
@@ -653,6 +665,26 @@ form {
     -webkit-box-flex: 5;
     -ms-flex: 5;
     flex: 5; }
+  .flex .flex6 {
+    -webkit-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6; }
+  .flex .flex7 {
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7; }
+  .flex .flex8 {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8; }
+  .flex .flex9 {
+    -webkit-box-flex: 9;
+    -ms-flex: 9;
+    flex: 9; }
+  .flex .flex10 {
+    -webkit-box-flex: 10;
+    -ms-flex: 10;
+    flex: 10; }
 
 .padding {
   padding: 0.625rem; }
@@ -679,6 +711,19 @@ form {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  font-size: 0.8125rem;
+  width: 8.125rem;
   z-index: 9999;
-  background: #a2a2a2;
-  padding: 7px; }
+  background: #ffebb6;
+  padding: 0.625rem;
+  margin: 0 auto;
+  border: 0.0625rem solid #ccc;
+  -webkit-animation-name: slideFromTop;
+  animation-name: slideFromTop;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.home section {
+  background-color: #e1fff2;
+  border-bottom: 0.0625rem solid #000; }

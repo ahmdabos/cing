@@ -1,25 +1,23 @@
-﻿<section>
+﻿<section class="home">
     <div class="container">
-
         <form ng-submit="search(searchKeyword)">
             <div class="flex">
-                    <div class="form-group flex3">
-                        <input type="text" class="form-control" ng-model="searchKeyword" placeholder="Type keywords here..." required>
-                    </div>
+                <div class="form-group flex8">
+                    <input type="text" class="form-control" ng-model="searchKeyword" placeholder="Type keywords here...">
+                </div>
+                <div class="form-group flex1">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+                <div class="form-group flex1">
+                    <select class="form-control" ng-model="limit" ng-change="setLimit(limit)">
+                        <option ng-repeat="limit in limitOptions" value="limit" selected>{{limit}}</option>
 
-
-                    <div class="form-group flex1">
-                        <button type="submit" class="btn btn-primary">Search</button>
-                    </div>
-
+                    </select>
+                </div>
             </div>
-
-
         </form>
-
         <table class="table">
             <thead>
-
             <tr>
                 <th>
                     <a href="" ng-click="sortBy('id')">#</a>
