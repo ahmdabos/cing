@@ -1,12 +1,12 @@
 'use strict';
 angular.module('app')
 //Articles Controller
-    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URLPREFIX', 'ArticlesService', 'PagerService', 'LoaderService','ToastService', function ($scope, $http, $log, $state, URLPREFIX, ArticlesService, PagerService, LoaderService,ToastService) {
+    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URLPREFIX', 'ArticlesService', 'PagerService', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, URLPREFIX, ArticlesService, PagerService, LoaderService, ToastService) {
         $scope.articles = [];
         $scope.pager = {};
         $scope.searchKeyword = '';
 
-        $scope.limitOptions = [1,2,3,4];
+        $scope.limitOptions = [1, 2, 3, 4];
         $scope.setLimit = function (limit) {
             $scope.limit = limit;
             $scope.setPage(1);
@@ -62,7 +62,9 @@ angular.module('app')
     }])
 
     //Add Article Controller
-    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', 'URLPREFIX', 'ArticlesService', 'LoaderService','ToastService', function ($scope, $http, $state, $log, URLPREFIX, ArticlesService, LoaderService,ToastService) {
+    .controller('AddArticleController', ['$scope', '$http', '$state', '$log','$filter', 'URLPREFIX', 'ArticlesService', 'LoaderService', 'ToastService', function ($scope, $http, $state, $log,$filter, URLPREFIX, ArticlesService, LoaderService, ToastService) {
+        $scope.date = new Date();
+        $scope.date = $filter('date')(new Date(), 'dd-MM-yyyy hh:mm:ss');
         $scope.submit = function () {
             var data = {
                 title: $scope.title,
