@@ -1,15 +1,17 @@
 ﻿<section class="home">
     <div class="container">
-        <form ng-submit="search(searchKeyword)">
+        <form ng-submit="setSearch(searchKeyword)">
             <div class="flex">
                 <div class="form-group flex8">
-                    <input type="text" class="form-control" ng-model="searchKeyword" placeholder="Type keywords here...">
+                    <input type="text" class="form-control" ng-model="searchKeyword"
+                           placeholder="Type keywords here...">
                 </div>
                 <div class="form-group flex1">
                     <button type="submit" class="btn btn-primary">Search</button>
                 </div>
                 <div class="form-group flex1">
-                    <select class="form-control" ng-model="limit" ng-options="limit as limit for limit in limitOptions" ng-change="setLimit(limit)">
+                    <select class="form-control" ng-model="limit" ng-options="limit as limit for limit in limitOptions"
+                            ng-change="setLimit(limit)">
                         <option value="" selected>Per Page</option>
                     </select>
                 </div>
@@ -18,33 +20,40 @@
         <table class="table">
             <thead>
             <tr>
-                <th>
-                    <a href="" ng-click="sortBy('id')">#</a>
-                    <i class="fa fa-arrow-down" ng-show="propertyName === 'id'"
-                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
+                <th ng-click="sortBy('id')">
+                    <a href="">#</a>
+                    <i class="fa fa-arrow-down" ng-show="fieldName === 'id'"
+                       ng-class="{'fa-caret-down' : reverse, 'fa-caret-up' : !reverse}"></i>
                 </th>
-                <th>
-                    <a href="" ng-click="sortBy('title')" ng-class="{reverse: reverse}">Title</a>
-                    <i class="fa fa-arrow-down" ng-show="propertyName === 'title'"
+                <th ng-click="sortBy('title')">
+                    <a href="" ng-class="{reverse: reverse}">Title</a>
+                    <i class="fa fa-arrow-down" ng-show="fieldName === 'title'"
                        ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
                 </th>
 
-                <th>
-                    <a href="" ng-click="sortBy('date')" ng-class="{reverse: reverse}">Date</a>
-                    <i class="fa fa-arrow-down" ng-show="propertyName === 'date'"
+                <th ng-click="sortBy('date')">
+                    <a href="" ng-class="{reverse: reverse}">Date</a>
+                    <i class="fa fa-arrow-down" ng-show="fieldName === 'date'"
+                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
+                </th>
+                <th ng-click="sortBy('createdAt')">
+                    <a href="" ng-class="{reverse: reverse}">Created At</a>
+                    <i class="fa fa-arrow-down" ng-show="fieldName === 'createdAt'"
                        ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
                 </th>
                 <th>action</th>
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="article in articles | orderBy:propertyName:reverse">
+            <tr ng-repeat="article in articles | orderBy:fieldName:reverse">
                 <th scope="row">{{article.id}}</th>
                 <td>{{article.title}}</td>
                 <td>{{article.date}}</td>
+                <td>{{article.createdAt}}</td>
                 <td><a href="" title="Edit" ng-click="goToEditArticles(article.id)"><i
                         class="fa fa-pencil-square-o fa-lg"></i></a>|<a href=""
                                                                         title="Delete"
+                                                                        confirm-dialog="Are you sure you want to delete it?"
                                                                         ng-click="deleteArticle(article.id)"><i
                         class="fa fa-trash-o fa-lg"></i></a>
                 </td>
@@ -57,19 +66,23 @@
 
         <ul ng-if="pager.pages.length" class="pagination">
             <li class="page-item" ng-class="{disabled:pager.currentPage === 1}">
-                <a href="" class="page-link" ng-click="setPage(1)" title="First"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+                <a href="" class="page-link" ng-click="setPage(1)" title="First"><i class="fa fa-angle-double-left"
+                                                                                    aria-hidden="true"></i></a>
             </li>
             <li class="page-item" ng-class="{disabled:pager.currentPage === 1}">
-                <a href="" class="page-link" ng-click="setPage(pager.currentPage - 1)" title="Previous"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                <a href="" class="page-link" ng-click="setPage(pager.currentPage - 1)" title="Previous"><i
+                        class="fa fa-angle-left" aria-hidden="true"></i></a>
             </li>
             <li class="page-item" ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
                 <a href="" class="page-link" ng-click="setPage(page)">{{page}}</a>
             </li>
             <li class="page-item" ng-class="{disabled:pager.currentPage === pager.totalPages}">
-                <a href="" class="page-link" ng-click="setPage(pager.currentPage + 1)" title="Next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <a href="" class="page-link" ng-click="setPage(pager.currentPage + 1)" title="Next"><i
+                        class="fa fa-angle-right" aria-hidden="true"></i></a>
             </li>
             <li class="page-item" ng-class="{disabled:pager.currentPage === pager.totalPages}">
-                <a href="" class="page-link" ng-click="setPage(pager.totalPages)" title="Last"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                <a href="" class="page-link" ng-click="setPage(pager.totalPages)" title="Last"><i
+                        class="fa fa-angle-double-right" aria-hidden="true"></i></a>
             </li>
         </ul>
 

@@ -573,9 +573,17 @@ form {
 .table {
   width: 100%; }
   .table thead {
-    background: #cccccc; }
+    background: #f1f1f1; }
     .table thead th {
       text-align: left; }
+      .table thead th .fa-caret-down.icon-disabled {
+        color: #ccc; }
+      .table thead th .fa-caret-down.icon-enabled {
+        color: #000; }
+      .table thead th .fa-caret-up.icon-disabled {
+        color: #ccc; }
+      .table thead th .fa-caret-up.icon-enabled {
+        color: #000; }
   .table tbody tr {
     background: #fff; }
 
@@ -724,6 +732,11 @@ form {
   animation-name: slideFromTop;
   -webkit-animation-duration: 1s;
   animation-duration: 1s; }
+
+.progress-bar {
+  height: 5px;
+  background: #82b5bf;
+  display: inline-block; }
 
 .home section {
   background-color: #e1fff2;

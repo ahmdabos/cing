@@ -88,5 +88,10 @@
   border: rem(1px) solid #ccc;
   animation-name: slideFromTop;
   animation-duration: 1s;
+}
 
+.progress-bar{
+  height:5px;
+  background:#82b5bf;
+  display: inline-block;
 }

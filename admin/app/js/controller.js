@@ -5,20 +5,41 @@ angular.module('app')
         $scope.articles = [];
         $scope.pager = {};
         $scope.searchKeyword = '';
-
-        $scope.limitOptions = [1, 2, 3, 4];
+        $scope.limitOptions = [10, 25, 50, 100];
+        $scope.fieldName = 'createdAt';
+        $scope.reverse = true;
         $scope.setLimit = function (limit) {
             $scope.limit = limit;
-            $scope.setPage(1);
+            $scope.getArticls(1, $scope.limit, $scope.searchKeyword);
+        };
+        $scope.setSearch = function (searchKeyword) {
+            $scope.searchKeyword = searchKeyword;
+            $scope.getArticls(1, $scope.limit, $scope.searchKeyword);
         };
         $scope.setPage = function (page) {
+            $scope.getArticls(page, $scope.limit, $scope.searchKeyword);
+        };
+        $scope.sortBy = function (fieldName) {
+            $scope.reverse = ($scope.fieldName === fieldName) ? !$scope.reverse : false;
+            $scope.fieldName = fieldName;
+        };
+        $scope.getArticls = function (page, limit, keyword) {
+            if (!page) {
+                page = 1;
+            }
+            if (!limit || limit == '') {
+                limit = 25;
+            }
+            if (!keyword || keyword == '') {
+                keyword == '';
+            }
             LoaderService.show();
-            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL + '/?page=' + page + '&search=' + $scope.searchKeyword + '&limit=' + $scope.limit + '&offset=' + $scope.limit)
+            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL + '/?page=' + page + '&search=' + keyword + '&limit=' + limit + '&offset=' + limit)
                 .then(function (res) {
                     LoaderService.hide();
                     $scope.articles = res.data.result;
                     $scope.totalItems = res.data.length;
-                    $scope.pager = PagerService.getPager(res.data.length, page, $scope.limit);
+                    $scope.pager = PagerService.getPager(res.data.length, page, limit);
                     $scope.items = $scope.articles.slice($scope.pager.startIndex, $scope.pager.endIndex + 1);
                     $log.debug($scope.articles);
                 }, function (err) {
@@ -29,13 +50,7 @@ angular.module('app')
                 return;
             }
         };
-        $scope.search = function (searchKeyword) {
-            $scope.searchKeyword = searchKeyword;
-            $scope.setPage(1);
-
-
-        };
-        $scope.setPage(1);
+        $scope.getArticls(1, 25, '');
         $scope.deleteArticle = function (id) {
             ArticlesService.deleteArticle(URLPREFIX.url + URLPREFIX.articleURL + '/' + id)
                 .then(function (res) {
@@ -52,22 +67,14 @@ angular.module('app')
         $scope.goToEditArticles = function (currentId) {
             $state.go('articles.edit', {id: currentId});
         };
-
-        $scope.propertyName = 'id';
-        $scope.reverse = true;
-        $scope.sortBy = function (propertyName) {
-            $scope.reverse = ($scope.propertyName === propertyName) ? !$scope.reverse : false;
-            $scope.propertyName = propertyName;
-        };
     }])
-
     //Add Article Controller
-    .controller('AddArticleController', ['$scope', '$http', '$state', '$log','$filter', 'URLPREFIX', 'ArticlesService', 'LoaderService', 'ToastService', function ($scope, $http, $state, $log,$filter, URLPREFIX, ArticlesService, LoaderService, ToastService) {
-        $scope.date = new Date();
-        $scope.date = $filter('date')(new Date(), 'dd-MM-yyyy hh:mm:ss');
+    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'URLPREFIX', 'ArticlesService', 'LoaderService', 'ToastService', function ($scope, $http, $state, $log, $filter, URLPREFIX, ArticlesService, LoaderService, ToastService) {
+        $scope.date = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
         $scope.submit = function () {
             var data = {
                 title: $scope.title,
+                date: $scope.date,
                 content: $scope.content
             };
             LoaderService.show();
@@ -84,7 +91,6 @@ angular.module('app')
                 });
         }
     }])
-
     //Edit Article Controller
     .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URLPREFIX', 'ArticlesService', 'LoaderService', 'ToastService', function ($scope, $http, $state, $log, $stateParams, URLPREFIX, ArticlesService, LoaderService, ToastService) {
         var id = $stateParams.id;
@@ -96,6 +102,7 @@ angular.module('app')
                 $scope.data = {
                     id: id,
                     title: article.title,
+                    date: article.date,
                     content: article.content
                 };
                 $log.debug('get article for edit', article);
@@ -116,4 +123,70 @@ angular.module('app')
                     $log.debug(err);
                 });
         }
+    }])
+
+
+
+    .controller('AppController', ['$scope', 'FileUploader','URLPREFIX', function($scope, FileUploader,URLPREFIX) {
+        var uploader = $scope.uploader = new FileUploader({
+            url: URLPREFIX.url + 'apiupload'
+        });
+
+        // FILTERS
+
+        // a sync filter
+        uploader.filters.push({
+            name: 'syncFilter',
+            fn: function(item /*{File|FileLikeObject}*/, options) {
+                console.log('syncFilter');
+                return this.queue.length < 10;
+            }
+        });
+
+        // an async filter
+        uploader.filters.push({
+            name: 'asyncFilter',
+            fn: function(item /*{File|FileLikeObject}*/, options, deferred) {
+                console.log('asyncFilter');
+                setTimeout(deferred.resolve, 1e3);
+            }
+        });
+
+        // CALLBACKS
+
+        uploader.onWhenAddingFileFailed = function(item /*{File|FileLikeObject}*/, filter, options) {
+            console.info('onWhenAddingFileFailed', item, filter, options);
+        };
+        uploader.onAfterAddingFile = function(fileItem) {
+            console.info('onAfterAddingFile', fileItem);
+        };
+        uploader.onAfterAddingAll = function(addedFileItems) {
+            console.info('onAfterAddingAll', addedFileItems);
+        };
+        uploader.onBeforeUploadItem = function(item) {
+            console.info('onBeforeUploadItem', item);
+        };
+        uploader.onProgressItem = function(fileItem, progress) {
+            console.info('onProgressItem', fileItem, progress);
+        };
+        uploader.onProgressAll = function(progress) {
+            console.info('onProgressAll', progress);
+        };
+        uploader.onSuccessItem = function(fileItem, response, status, headers) {
+            console.info('onSuccessItem', fileItem, response, status, headers);
+        };
+        uploader.onErrorItem = function(fileItem, response, status, headers) {
+            console.info('onErrorItem', fileItem, response, status, headers);
+        };
+        uploader.onCancelItem = function(fileItem, response, status, headers) {
+            console.info('onCancelItem', fileItem, response, status, headers);
+        };
+        uploader.onCompleteItem = function(fileItem, response, status, headers) {
+            console.info('onCompleteItem', fileItem, response, status, headers);
+        };
+        uploader.onCompleteAll = function() {
+            console.info('onCompleteAll');
+        };
+
+        console.info('uploader', uploader);
     }]);

@@ -28,7 +28,7 @@ class Article extends CI_Model
                 $this->db->limit($limit, ($page - 1) * $offset);
             }
         }
-
+        $this->db->order_by("createdAt","desc");
         $query = $this->db->get($this->table);
         $data['result'] = $query->result();
         return $data;

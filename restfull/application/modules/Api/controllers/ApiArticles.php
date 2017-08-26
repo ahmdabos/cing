@@ -29,6 +29,7 @@ class ApiArticles extends REST_Controller
     {
         $data = array(
             'title' => $this->post('title'),
+            'date' => $this->post('date'),
             'content' => $this->post('content')
         );
 
@@ -43,6 +44,7 @@ class ApiArticles extends REST_Controller
         $id = $this->put('id');
         $data = array(
             'title' => $this->put('title'),
+            'date' => $this->put('date'),
             'content' => $this->put('content')
         );
         $response = $this->module->update($id, $data);
@@ -54,5 +56,8 @@ class ApiArticles extends REST_Controller
         $response = $this->module->delete($id);
         return $this->response($response);
     }
+
+
+
 
 }
