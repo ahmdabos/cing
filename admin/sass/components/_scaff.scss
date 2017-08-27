@@ -4,14 +4,6 @@
   margin: 0 auto;
 }
 
-.sortorder:after {
-  content: '$';
-}
-
-.sortorder.reverse:after {
-  content: '!';
-}
-
 .flex {
   display: flex;
 

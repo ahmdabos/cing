@@ -642,12 +642,6 @@ form {
   padding: 0 0.625rem;
   margin: 0 auto; }
 
-.sortorder:after {
-  content: '$'; }
-
-.sortorder.reverse:after {
-  content: '!'; }
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
