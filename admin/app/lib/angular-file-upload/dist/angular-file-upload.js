@@ -1185,7 +1185,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                removeAfterUpload: uploader.removeAfterUpload,
 	                withCredentials: uploader.withCredentials,
 	                disableMultipart: uploader.disableMultipart,
-	                method: uploader.method
+	                method: uploader.method,
+
 	            }, options, {
 	                uploader: uploader,
 	                file: new FileLikeObject(some),

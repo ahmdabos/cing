@@ -17,7 +17,7 @@
                           required></textarea>
             </div>
 
-            <div class="form-group" ng-controller="AppController">
+            <div class="form-group" >
                 <input type="file" nv-file-select="" uploader="uploader" multiple/><br/>
                 <p>Queue length: {{ uploader.queue.length }}</p>
                 <div ng-repeat="item in uploader.queue">

@@ -69,15 +69,15 @@ angular.module('app')
         };
     }])
     //Add Article Controller
-    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'URLPREFIX', 'ArticlesService', 'LoaderService', 'ToastService', function ($scope, $http, $state, $log, $filter, URLPREFIX, ArticlesService, LoaderService, ToastService) {
+    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'URLPREFIX', 'ArticlesService', 'LoaderService', 'ToastService','FileUploader', function ($scope, $http, $state, $log, $filter, URLPREFIX, ArticlesService, LoaderService, ToastService,FileUploader) {
         $scope.date = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
         $scope.submit = function () {
+            LoaderService.show();
             var data = {
                 title: $scope.title,
                 date: $scope.date,
                 content: $scope.content
             };
-            LoaderService.show();
             ArticlesService.postArticle(URLPREFIX.url + URLPREFIX.articleURL, data)
                 .then(function (res) {
                     LoaderService.hide();
@@ -90,6 +90,12 @@ angular.module('app')
                     $log.debug(err);
                 });
         }
+        var uploader = $scope.uploader = new FileUploader({
+            url: URLPREFIX.url + 'apiupload'
+        });
+        uploader.onCompleteItem = function(fileItem, response, status, headers) {
+            console.info('onCompleteItem', fileItem, response, status, headers);
+        };
     }])
     //Edit Article Controller
     .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URLPREFIX', 'ArticlesService', 'LoaderService', 'ToastService', function ($scope, $http, $state, $log, $stateParams, URLPREFIX, ArticlesService, LoaderService, ToastService) {
@@ -124,20 +130,16 @@ angular.module('app')
                 });
         }
     }])
-
-
-
-    .controller('AppController', ['$scope', 'FileUploader','URLPREFIX', function($scope, FileUploader,URLPREFIX) {
+    //Upload File Controller
+   /* .controller('UploadFile', ['$scope', 'FileUploader','URLPREFIX', function($scope, FileUploader,URLPREFIX) {
         var uploader = $scope.uploader = new FileUploader({
             url: URLPREFIX.url + 'apiupload'
         });
 
-        // FILTERS
-
         // a sync filter
         uploader.filters.push({
             name: 'syncFilter',
-            fn: function(item /*{File|FileLikeObject}*/, options) {
+            fn: function(item /!*{File|FileLikeObject}*!/, options) {
                 console.log('syncFilter');
                 return this.queue.length < 10;
             }
@@ -146,7 +148,7 @@ angular.module('app')
         // an async filter
         uploader.filters.push({
             name: 'asyncFilter',
-            fn: function(item /*{File|FileLikeObject}*/, options, deferred) {
+            fn: function(item /!*{File|FileLikeObject}*!/, options, deferred) {
                 console.log('asyncFilter');
                 setTimeout(deferred.resolve, 1e3);
             }
@@ -154,7 +156,7 @@ angular.module('app')
 
         // CALLBACKS
 
-        uploader.onWhenAddingFileFailed = function(item /*{File|FileLikeObject}*/, filter, options) {
+        uploader.onWhenAddingFileFailed = function(item /!*{File|FileLikeObject}*!/, filter, options) {
             console.info('onWhenAddingFileFailed', item, filter, options);
         };
         uploader.onAfterAddingFile = function(fileItem) {
@@ -183,6 +185,7 @@ angular.module('app')
         };
         uploader.onCompleteItem = function(fileItem, response, status, headers) {
             console.info('onCompleteItem', fileItem, response, status, headers);
+
         };
         uploader.onCompleteAll = function() {
             console.info('onCompleteAll');
@@ -190,3 +193,4 @@ angular.module('app')
 
         console.info('uploader', uploader);
     }]);
+*/
