@@ -13,11 +13,11 @@ class ApiUploads extends REST_Controller
         parent::__construct();
         $this->module = modules::load('uploads');
     }
-
+    public function index_get()
+    {}
     public function index_post()
     {
         $response = $this->module->uploadFile();
-
        return $this->response($response);
     }
 

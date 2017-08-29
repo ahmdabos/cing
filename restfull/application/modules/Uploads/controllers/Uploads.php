@@ -37,7 +37,6 @@ class Uploads extends MY_Controller
         $check = getimagesize($_FILES["file"]["tmp_name"]);
         if ($check !== false) {
             //echo "File is an image - " . $check["mime"] . ".";
-
             $data['status'] = 1;
         } else {
             // echo "File is not an image.";

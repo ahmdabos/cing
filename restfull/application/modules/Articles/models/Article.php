@@ -22,13 +22,11 @@ class Article extends CI_Model
 
             $tempdb = clone $this->db;
             $data['length'] = $tempdb->from($this->table)->count_all_results();
-
-
             if ($page != NULL) {
                 $this->db->limit($limit, ($page - 1) * $offset);
             }
         }
-        $this->db->order_by("createdAt","desc");
+        $this->db->order_by("createdAt", "desc");
         $query = $this->db->get($this->table);
         $data['result'] = $query->result();
         return $data;
@@ -36,7 +34,9 @@ class Article extends CI_Model
 
     public function post_article($data)
     {
-        return $this->db->insert($this->table, $data);
+        $result['status'] = $this->db->insert($this->table, $data);
+        $result['id'] = $this->db->insert_id();
+        return $result;
     }
 
     public function update_article($id, $data)

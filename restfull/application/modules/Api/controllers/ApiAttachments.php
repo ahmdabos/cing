@@ -25,9 +25,11 @@ class ApiAttachments extends REST_Controller
     public function index_post()
     {
         $data = array(
+
             'name' => $this->post('name'),
             'type' => $this->post('type'),
-            'path' => $this->post('path')
+            'path' => $this->post('path'),
+            'articleId' => $this->post('articleId')
         );
 
         $response = $this->module->post($data);

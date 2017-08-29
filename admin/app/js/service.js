@@ -116,14 +116,7 @@ angular.module('app')
         }
     }])
     //Uploads Service
-   /* .factory('UploadsService', ['DataService', function (DataService) {
-        return {
-            postUpload: function postUpload(url, data) {
-                return DataService.post(url, data);
-            }
 
-        }
-    }])*/
     //Attachment Service
     .factory('AttachmentsService', ['DataService', function (DataService) {
         return {
