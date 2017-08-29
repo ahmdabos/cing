@@ -1,13 +1,14 @@
 'use strict';
 angular.module('app')
 //Articles Controller
-    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URLPREFIX', 'ArticlesService', 'PagerService', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, URLPREFIX, ArticlesService, PagerService, LoaderService, ToastService) {
+    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'PrefixURL', 'ArticlesService', 'PagerService', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, PrefixURL, ArticlesService, PagerService, LoaderService, ToastService) {
         $scope.articles = [];
         $scope.pager = {};
         $scope.searchKeyword = '';
         $scope.limitOptions = [10, 25, 50, 100];
         $scope.fieldName = 'createdAt';
         $scope.reverse = true;
+
         $scope.setLimit = function (limit) {
             $scope.limit = limit;
             $scope.getArticls(1, $scope.limit, $scope.searchKeyword);
@@ -34,7 +35,7 @@ angular.module('app')
                 keyword == '';
             }
             LoaderService.show();
-            ArticlesService.getArticles(URLPREFIX.url + URLPREFIX.articleURL + '/?page=' + page + '&search=' + keyword + '&limit=' + limit + '&offset=' + limit)
+            ArticlesService.getArticles(PrefixURL.apiURL + PrefixURL.uploadURL + '/?page=' + page + '&search=' + keyword + '&limit=' + limit + '&offset=' + limit)
                 .then(function (res) {
                     LoaderService.hide();
                     $scope.articles = res.data.result;
@@ -52,7 +53,7 @@ angular.module('app')
         };
         $scope.getArticls(1, 25, '');
         $scope.deleteArticle = function (id) {
-            ArticlesService.deleteArticle(URLPREFIX.url + URLPREFIX.articleURL + '/' + id)
+            ArticlesService.deleteArticle(PrefixURL.apiURL + PrefixURL.articleURL + '/' + id)
                 .then(function (res) {
                     LoaderService.hide();
                     ToastService.show('Deleted successfully');
@@ -69,8 +70,27 @@ angular.module('app')
         };
     }])
     //Add Article Controller
-    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'URLPREFIX', 'ArticlesService', 'AttachmentService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $filter, URLPREFIX, ArticlesService, AttachmentService, LoaderService, ToastService, FileUploader) {
+    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'PrefixURL', 'ArticlesService', 'AttachmentsService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $filter, PrefixURL, ArticlesService, AttachmentsService, LoaderService, ToastService, FileUploader) {
         $scope.date = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
+        $scope.isAttachments = '';
+        var uploader = $scope.uploader = new FileUploader({
+            url: PrefixURL.apiURL + PrefixURL.uploadURL,
+            queueLimit: 2
+        });
+        uploader.onAfterAddingAll = function (addedFileItems) {
+            $scope.isAttachments = false;
+            return addedFileItems.length > 0;
+        };
+        uploader.onCompleteAll = function (fileItem, response, status, headers) {
+            $scope.isAttachments = true;
+            var responseData = JSON.parse(response);
+            var attachmentsData = {
+                name: responseData.name,
+                type: responseData.type,
+                path: responseData.path
+            };
+        };
+
         $scope.submit = function () {
             LoaderService.show();
             var data = {
@@ -78,46 +98,91 @@ angular.module('app')
                 date: $scope.date,
                 content: $scope.content
             };
-            ArticlesService.postArticle(URLPREFIX.url + URLPREFIX.articleURL, data)
-                .then(function (res) {
-                    LoaderService.hide();
-                    ToastService.show('Added successfully');
-                    $log.debug(res);
-                    $state.go('articles.index');
-                }, function (err) {
-                    LoaderService.hide();
-                    ToastService.show('Something Went Wrong');
-                    $log.debug(err);
+            if ($scope.isAttachments === false) {
+                uploader.uploadAll();
+                $scope.$watch('isAttachments', function (newValue) {
+                    if (newValue === true) {
+                        ArticlesService.postArticle(PrefixURL.apiURL + PrefixURL.articleURL, data)
+                            .then(function (res) {
+                                UploadsService.postAttachment(PrefixURL.apiURL + PrefixURL.attachmentURL, attachmentsData)
+                                    .then(function (res) {
+                                        LoaderService.hide();
+                                         ToastService.show('Added successfully');
+                                         $log.debug(res);
+                                         $state.go('articles.index');
+                                    }, function (err) {
+                                         LoaderService.hide();
+                                        ToastService.show('Something Went Wrong');
+                                         $log.debug(res);
+
+                                    });
+
+                            }, function (err) {
+                                LoaderService.hide();
+                                ToastService.show('Something Went Wrong');
+                                $log.debug(err);
+                            });
+
+                    }
                 });
+            }
+            else{
+                ArticlesService.postArticle(PrefixURL.apiURL + PrefixURL.articleURL, data)
+                    .then(function (res) {
+                        LoaderService.hide();
+                         ToastService.show('Added successfully');
+                         $log.debug(res);
+                         $state.go('articles.index');
+                    }, function (err) {
+                        LoaderService.hide();
+                        ToastService.show('Something Went Wrong');
+                        $log.debug(err);
+                    });
+            }
+
+
         };
-        var uploader = $scope.uploader = new FileUploader({
-            url: URLPREFIX.url + URLPREFIX.uploadURL,
-            queueLimit: 2
-        });
-        uploader.onAfterAddingAll = function (addedFileItems) {
-            console.info('onAfterAddingAll', addedFileItems);
-        };
+
+
+        /*
+         UploadsService.postUpload(PrefixURL.apiURL + PrefixURL.attachmentURL, attachmentsData)
+         .then(function (res) {
+
+         }, function (err) {
+
+         });
+         var fileData = {
+         name: response.fileName,
+         type: response.imageFileType,
+         path: response.targetFile
+         };*/
+        /*AttachmentsService.postAttachment(PrefixURL.apiURL + PrefixURL.attachmentURL, attachmentsData)
+         .then(function (res) {
+
+         }, function (err) {
+
+         });*/
         uploader.onCompleteItem = function (fileItem, response, status, headers) {
             var response = JSON.parse(response);
-            console.log(response);
-            var fileData = {
-                name: response.fileName,
-                type: response.imageFileType,
-                path: response.targetFile
-            };
-            AttachmentService.postAttachment(URLPREFIX.url + URLPREFIX.uploadURL, fileData)
-                .then(function (res) {
+            $log.debug(response);
+            /* var fileData = {
+             name: response.fileName,
+             type: response.imageFileType,
+             path: response.targetFile
+             };*/
+            /*AttachmentsService.postAttachment(PrefixURL.apiURL + PrefixURL.attachmentURL, fileData)
+             .then(function (res) {
 
-                }, function (err) {
+             }, function (err) {
 
-                });
+             });*/
         };
     }])
     //Edit Article Controller
-    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URLPREFIX', 'ArticlesService', 'LoaderService', 'ToastService', function ($scope, $http, $state, $log, $stateParams, URLPREFIX, ArticlesService, LoaderService, ToastService) {
+    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'PrefixURL', 'ArticlesService', 'LoaderService', 'ToastService', function ($scope, $http, $state, $log, $stateParams, PrefixURL, ArticlesService, LoaderService, ToastService) {
         var id = $stateParams.id;
         LoaderService.show();
-        ArticlesService.getArticle(URLPREFIX.url + URLPREFIX.articleURL, id)
+        ArticlesService.getArticle(PrefixURL.apiURL + PrefixURL.articleURL, id)
             .then(function (res) {
                 LoaderService.hide();
                 var article = res.data.result[0];
@@ -134,7 +199,7 @@ angular.module('app')
             });
         $scope.submit = function () {
             LoaderService.show();
-            ArticlesService.putArticle(URLPREFIX.url + URLPREFIX.articleURL, $scope.data)
+            ArticlesService.putArticle(PrefixURL.apiURL + PrefixURL.articleURL, $scope.data)
                 .then(function (res) {
                     LoaderService.hide();
                     ToastService.show('Updated successfully');

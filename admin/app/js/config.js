@@ -1,8 +1,9 @@
 'use strict';
 angular.module('app')
-.constant('URLPREFIX', {
-    url: 'http://localhost/cing/restfull/api/',
+.constant('PrefixURL', {
+    apiURL: 'http://localhost/cing/restfull/api/',
     articleURL: 'apiarticles',
-    uploadURL:'apiupload'
+    uploadURL:'apiuploads',
+    attachmentURL:'apiattachments'
 })
 .value('_', window._);

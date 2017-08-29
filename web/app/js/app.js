@@ -1,7 +1,7 @@
 angular.module('app', [
 	'ui.router',
 ])
-.constant('URLPREFIX', {
+.constant('PrefixURL', {
     url: 'http://localhost/cing/restfull/restfull/'
 })
 .value('_', window._)

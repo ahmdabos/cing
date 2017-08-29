@@ -2,11 +2,11 @@
 angular.module('app')
 
 // Data Service
-    .factory('DataService', function (URLPREFIX, $http, $q, _) {
-            var newsUrl = URLPREFIX.url + 'apipressreleases';
-            var slidersUrl = URLPREFIX.url + 'apisliders';
-            var storiesUrl = URLPREFIX.url + 'apistories';
-            var menusUrl = URLPREFIX.url + 'apimenus';
+    .factory('DataService', function (PrefixURL, $http, $q, _) {
+            var newsUrl = PrefixURL.apiURL + 'apipressreleases';
+            var slidersUrl = PrefixURL.apiURL + 'apisliders';
+            var storiesUrl = PrefixURL.apiURL + 'apistories';
+            var menusUrl = PrefixURL.apiURL + 'apimenus';
             var articles = [];
             var sliders = [];
             var stories = [];
