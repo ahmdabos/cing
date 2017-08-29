@@ -2,6 +2,7 @@
 angular.module('app')
 .constant('URLPREFIX', {
     url: 'http://localhost/cing/restfull/api/',
-    articleURL: 'apiarticles'
+    articleURL: 'apiarticles',
+    uploadURL:'apiupload'
 })
 .value('_', window._);

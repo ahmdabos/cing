@@ -69,7 +69,7 @@ angular.module('app')
         };
     }])
     //Add Article Controller
-    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'URLPREFIX', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $filter, URLPREFIX, ArticlesService, LoaderService, ToastService, FileUploader) {
+    .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'URLPREFIX', 'ArticlesService', 'AttachmentService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $filter, URLPREFIX, ArticlesService, AttachmentService, LoaderService, ToastService, FileUploader) {
         $scope.date = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
         $scope.submit = function () {
             LoaderService.show();
@@ -89,14 +89,28 @@ angular.module('app')
                     ToastService.show('Something Went Wrong');
                     $log.debug(err);
                 });
-        }
+        };
         var uploader = $scope.uploader = new FileUploader({
-            url: URLPREFIX.url + 'apiupload'
+            url: URLPREFIX.url + URLPREFIX.uploadURL,
+            queueLimit: 2
         });
-
+        uploader.onAfterAddingAll = function (addedFileItems) {
+            console.info('onAfterAddingAll', addedFileItems);
+        };
         uploader.onCompleteItem = function (fileItem, response, status, headers) {
             var response = JSON.parse(response);
-            console.log(response.fileName);
+            console.log(response);
+            var fileData = {
+                name: response.fileName,
+                type: response.imageFileType,
+                path: response.targetFile
+            };
+            AttachmentService.postAttachment(URLPREFIX.url + URLPREFIX.uploadURL, fileData)
+                .then(function (res) {
+
+                }, function (err) {
+
+                });
         };
     }])
     //Edit Article Controller
@@ -131,4 +145,4 @@ angular.module('app')
                     $log.debug(err);
                 });
         }
-    }])
+    }]);

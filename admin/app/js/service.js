@@ -115,6 +115,15 @@ angular.module('app')
             }
         }
     }])
+    //Attachment Service
+    .factory('AttachmentService', ['DataService', function (DataService) {
+        return {
+            postAttachment: function postAttachment(url, data) {
+                return DataService.post(url, data);
+            }
+
+        }
+    }])
     // Pager Service
     .factory('PagerService', function () {
         return {
