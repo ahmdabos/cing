@@ -74,13 +74,13 @@ angular.module('app')
         $scope.date = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
         $scope.isAttachments = '';
         var attachmentsData = {};
+        var totalAttachmentsLength = 0;
         var uploader = $scope.uploader = new FileUploader({
             url: PrefixURL.apiURL + PrefixURL.uploadURL,
-            queueLimit: 2
+            queueLimit: 10
         });
         uploader.onAfterAddingAll = function (addedFileItems) {
             $scope.isAttachments = false;
-
         };
 
 
@@ -93,10 +93,8 @@ angular.module('app')
             };
             if ($scope.isAttachments === false) {
                 uploader.uploadAll();
-
                 ArticlesService.postArticle(PrefixURL.apiURL + PrefixURL.articleURL, data)
                     .then(function (res) {
-
                         uploader.onCompleteItem = function (fileItem, response, status, headers) {
                             var responseData = JSON.parse(response);
                             if (responseData.status == 1) {
@@ -109,10 +107,20 @@ angular.module('app')
                                 $scope.isAttachments = true;
                                 AttachmentsService.postAttachment(PrefixURL.apiURL + PrefixURL.attachmentURL, attachmentsData)
                                     .then(function (res) {
-                                        LoaderService.hide();
-                                        ToastService.show('Added successfully');
+                                        uploader.onCompleteAll = function () {
+                                            ArticlesService.postArticle(PrefixURL.apiURL + PrefixURL.articleURL, data)
+                                                .then(function (res) {
+                                                    LoaderService.hide();
+                                                    ToastService.show('Added successfully');
+                                                    $log.debug(res);
+                                                    $state.go('articles.index');
+                                                }, function (err) {
+                                                    LoaderService.hide();
+                                                    ToastService.show('Something Went Wrong');
+                                                    $log.debug(res);
+                                                });
+                                        }
                                         $log.debug(res);
-                                        $state.go('articles.index');
                                     }, function (err) {
                                         LoaderService.hide();
                                         ToastService.show('Something Went Wrong');
@@ -129,15 +137,14 @@ angular.module('app')
                                 path: responseData.targetDir
                             };
                         };
+
                     }, function (err) {
                         LoaderService.hide();
                         ToastService.show('Something Went Wrong');
                         $log.debug(err);
                     });
-
-
             }
-            else {
+            else if($scope.isAttachments === '') {
                 ArticlesService.postArticle(PrefixURL.apiURL + PrefixURL.articleURL, data)
                     .then(function (res) {
                         LoaderService.hide();
@@ -150,8 +157,6 @@ angular.module('app')
                         $log.debug(err);
                     });
             }
-
-
         };
 
     }])
