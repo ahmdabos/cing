@@ -18,5 +18,14 @@
       border: rem(1px) solid rgba(0, 0, 0, .15);
 
     }
+    .attachments {
+      margin-top: rem(20px);
+      .attachments-item {
+        max-width: rem(200px);
+        canvas {
+          width: 100%;
+        }
+      }
+    }
   }
 }
