@@ -83,21 +83,6 @@ angular.module('app')
 
         };
 
-        uploader.onCompleteItem = function (fileItem, response, status, headers) {
-            var responseData = JSON.parse(response);
-            if (responseData.status == 1) {
-                $scope.isAttachments = true;
-            } else {
-                LoaderService.hide();
-                ToastService.show('Something Went Wrong');
-            }
-            $log.debug(JSON.parse(response));
-            attachmentsData = {
-                name: responseData.fileName,
-                type: responseData.imageFileType,
-                path: responseData.targetDir
-            };
-        };
 
         $scope.submit = function () {
             LoaderService.show();
@@ -108,11 +93,20 @@ angular.module('app')
             };
             if ($scope.isAttachments === false) {
                 uploader.uploadAll();
-                $scope.$watch('isAttachments', function (newValue) {
-                    if (newValue === true) {
-                        ArticlesService.postArticle(PrefixURL.apiURL + PrefixURL.articleURL, data)
-                            .then(function (res) {
-                                attachmentsData.articleId = res.id;
+
+                ArticlesService.postArticle(PrefixURL.apiURL + PrefixURL.articleURL, data)
+                    .then(function (res) {
+
+                        uploader.onCompleteItem = function (fileItem, response, status, headers) {
+                            var responseData = JSON.parse(response);
+                            if (responseData.status == 1) {
+                                attachmentsData = {
+                                    name: responseData.fileName,
+                                    type: responseData.imageFileType,
+                                    path: responseData.targetDir,
+                                    articleId: res.id
+                                };
+                                $scope.isAttachments = true;
                                 AttachmentsService.postAttachment(PrefixURL.apiURL + PrefixURL.attachmentURL, attachmentsData)
                                     .then(function (res) {
                                         LoaderService.hide();
@@ -124,14 +118,24 @@ angular.module('app')
                                         ToastService.show('Something Went Wrong');
                                         $log.debug(res);
                                     });
-                            }, function (err) {
+                            } else {
                                 LoaderService.hide();
                                 ToastService.show('Something Went Wrong');
-                                $log.debug(err);
-                            });
+                            }
+                            $log.debug(JSON.parse(response));
+                            attachmentsData = {
+                                name: responseData.fileName,
+                                type: responseData.imageFileType,
+                                path: responseData.targetDir
+                            };
+                        };
+                    }, function (err) {
+                        LoaderService.hide();
+                        ToastService.show('Something Went Wrong');
+                        $log.debug(err);
+                    });
 
-                    }
-                });
+
             }
             else {
                 ArticlesService.postArticle(PrefixURL.apiURL + PrefixURL.articleURL, data)
