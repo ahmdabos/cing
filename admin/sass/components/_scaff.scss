@@ -6,6 +6,7 @@
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   .flex1 {
     flex: 1;
   }
@@ -128,4 +129,34 @@
   height: 5px;
   background: #82b5bf;
   display: inline-block;
+}
+
+.panel-group {
+  margin-top: rem(20px);
+  .panel {
+    margin:rem(5px);
+    max-width: rem(200px);
+    .panel-header {
+      font-size:rem(14px);
+      background: #e0e0e0;
+      padding: rem(7px);
+    }
+    .panel-body {
+      border: 1px solid #ececec;
+      &.align-center{
+        text-align: center;
+      }
+
+    }
+    .panel-footer {
+
+    }
+    canvas {
+      height: 100%;
+    }
+    i{
+      cursor: pointer;
+      color: #c13e15;
+    }
+  }
 }

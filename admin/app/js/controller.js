@@ -74,16 +74,13 @@ angular.module('app')
         $scope.date = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
         $scope.isAttachments = '';
         var attachmentsData = {};
-        var totalAttachmentsLength = 0;
         var uploader = $scope.uploader = new FileUploader({
             url: PrefixURL.apiURL + PrefixURL.uploadURL,
-            queueLimit: 10
+            queueLimit: 30
         });
         uploader.onAfterAddingAll = function (addedFileItems) {
             $scope.isAttachments = false;
         };
-
-
         $scope.submit = function () {
             LoaderService.show();
             var data = {
@@ -144,7 +141,7 @@ angular.module('app')
                         $log.debug(err);
                     });
             }
-            else if($scope.isAttachments === '') {
+            else if ($scope.isAttachments === '') {
                 ArticlesService.postArticle(PrefixURL.apiURL + PrefixURL.articleURL, data)
                     .then(function (res) {
                         LoaderService.hide();
