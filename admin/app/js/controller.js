@@ -79,19 +79,23 @@ angular.module('app')
             queueLimit: 1
         });
         uploader.onAfterAddingFile = function (addedFileItems) {
+
             $scope.isAttachments = true;
             if (addedFileItems.file.size > 2097152) {
                 $scope.isFileSizeError = true;
                 addedFileItems.remove();
-            }else{
+            } else {
                 $scope.isFileSizeError = false;
             }
             if (addedFileItems.file.type != 'image/jpeg' && addedFileItems.file.type != 'image/jpg') {
                 $scope.isFileTypeError = true;
                 addedFileItems.remove();
-            }else{
+            } else {
                 $scope.isFileTypeError = false;
             }
+        };
+        $scope.onRemoveFileBeforeUpload = function () {
+            $scope.isAttachments = false;
         };
         $scope.submit = function () {
             if ($scope.form.$valid && !$scope.isFileTypeError && !$scope.isFileSizeError) {
@@ -141,8 +145,30 @@ angular.module('app')
         };
     }])
     //Edit Article Controller
-    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', function ($scope, $http, $state, $log, $stateParams, URL, ArticlesService, LoaderService, ToastService) {
+    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $stateParams, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
+        $scope.dateTimePattern = /^([0-2][0-9]{3})-([0-1][0-9])-([0-3][0-9]) ([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(([\-\+]([0-1][0-9])\:00))?/;
         var id = $stateParams.id;
+        $scope.isAttachments = false;
+
+        var uploader = $scope.uploader = new FileUploader({
+            url: URL.baseApi + URL.uploadApi,
+            queueLimit: 1
+        });
+        uploader.onAfterAddingFile = function (addedFileItems) {
+            $scope.isAttachments = true;
+            if (addedFileItems.file.size > 2097152) {
+                $scope.isFileSizeError = true;
+                addedFileItems.remove();
+            } else {
+                $scope.isFileSizeError = false;
+            }
+            if (addedFileItems.file.type != 'image/jpeg' && addedFileItems.file.type != 'image/jpg') {
+                $scope.isFileTypeError = true;
+                addedFileItems.remove();
+            } else {
+                $scope.isFileTypeError = false;
+            }
+        };
         LoaderService.show();
         ArticlesService.getArticle(URL.baseApi + URL.articleApi, id)
             .then(function (res) {
@@ -152,24 +178,57 @@ angular.module('app')
                     id: id,
                     title: article.title,
                     date: article.date,
-                    content: article.content
+                    content: article.content,
+                    image: article.image
                 };
+
                 $log.debug('get article for edit', article);
             }, function (err) {
                 LoaderService.hide();
                 $log.debug(err);
             });
+        $scope.onRemoveFileBeforeUpload = function () {
+            $scope.isAttachments = false;
+            $scope.data.image = '';
+        };
         $scope.submit = function () {
             LoaderService.show();
-            ArticlesService.putArticle(URL.baseApi + URL.articleApi, $scope.data)
-                .then(function (res) {
-                    LoaderService.hide();
-                    ToastService.show('Updated successfully');
-                    $log.debug(res);
-                }, function (err) {
-                    LoaderService.hide();
-                    ToastService.show('Something Went Wrong');
-                    $log.debug(err);
-                });
+
+            if ($scope.isAttachments === true) {
+                uploader.uploadAll();
+                uploader.onCompleteItem = function (fileItem, response, status, headers) {
+                    var responseData = JSON.parse(response);
+                    if (responseData.status == 1) {
+                        $scope.data.image = responseData.fileNewName;
+                        ArticlesService.putArticle(URL.baseApi + URL.articleApi, $scope.data)
+                            .then(function (res) {
+                                LoaderService.hide();
+                                ToastService.show('Updated successfully');
+                                $log.debug(res);
+                            }, function (err) {
+                                LoaderService.hide();
+                                ToastService.show('Something Went Wrong');
+                                $log.debug(err);
+                            });
+                    } else {
+                        LoaderService.hide();
+                        ToastService.show('could not upload attachment');
+                    }
+                };
+            }
+            else if ($scope.isAttachments === false) {
+                ArticlesService.putArticle(URL.baseApi + URL.articleApi, $scope.data)
+                    .then(function (res) {
+                        LoaderService.hide();
+                        ToastService.show('Updated successfully');
+                        $log.debug(res);
+                    }, function (err) {
+                        LoaderService.hide();
+                        ToastService.show('Something Went Wrong');
+                        $log.debug(err);
+                    });
+            }
+
+
         }
     }]);

@@ -46,7 +46,8 @@ class ApiArticles extends REST_Controller
         $data = array(
             'title' => $this->put('title'),
             'date' => $this->put('date'),
-            'content' => $this->put('content')
+            'content' => $this->put('content'),
+            'image' => $this->put('image')
         );
         $response = $this->module->update($id, $data);
         return $this->response($response);

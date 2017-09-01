@@ -33,7 +33,7 @@
                 <div class="flex panel-group">
                     <div ng-repeat="item in uploader.queue" class="panel">
                         <div class="panel-header">
-                            <i ng-click="item.remove()" class="fa fa-trash-o"></i>
+                            <i ng-click="item.remove();onRemoveFileBeforeUpload()" class="fa fa-trash-o"></i>
                             <span><strong>{{ item.file.name | limitTo:10}}</strong> - {{ item.file.size/1024/1024|number:2 }} MB</span>
                         </div>
                         <div class="panel-body align-center" ng-show="uploader.isHTML5"
