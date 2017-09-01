@@ -24,7 +24,7 @@ class Uploads extends MY_Controller
 
     public function uploadFile()
     {
-        $data['filePath'] = FCPATH . '../uploads/';
+        $data['filePath'] = FCPATH.'../uploads/';
         $data['filePathWithOldName'] = $data['filePath'] . basename($_FILES["file"]["name"]);
         $data['fileExtension'] = pathinfo($data['filePathWithOldName'], PATHINFO_EXTENSION);
         $data['fileNewName'] = $this->generateRandomString(20) . '.' . $data['fileExtension'];

@@ -1,15 +1,12 @@
 ﻿<section class="home">
     <div class="container">
-        <form ng-submit="setSearch(searchKeyword)">
+        <form>
             <div class="flex">
                 <div class="form-group flex8">
-                    <input type="text" class="form-control" ng-model="searchKeyword"
+                    <input type="text" class="form-control" ng-model="searchKeyword" ng-change="setSearch(searchKeyword)"
                            placeholder="Type keywords here...">
                 </div>
-                <div class="form-group flex1">
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </div>
-                <div class="form-group flex1">
+                <div class="form-group flex2">
                     <select class="form-control" ng-model="limit" ng-options="limit as limit for limit in limitOptions"
                             ng-change="setLimit(limit)">
                         <option value="" selected>Per Page</option>

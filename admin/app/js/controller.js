@@ -186,6 +186,7 @@ angular.module('app')
             }, function (err) {
                 LoaderService.hide();
                 $log.debug(err);
+
             });
         $scope.onRemoveFileBeforeUpload = function () {
             $scope.isAttachments = false;
