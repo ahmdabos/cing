@@ -115,17 +115,6 @@ angular.module('app')
             }
         }
     }])
-    //Uploads Service
-
-    //Attachment Service
-    .factory('AttachmentsService', ['DataService', function (DataService) {
-        return {
-            postAttachment: function postAttachment(url, data) {
-                return DataService.post(url, data);
-            }
-
-        }
-    }])
     // Pager Service
     .factory('PagerService', function () {
         return {

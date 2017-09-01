@@ -30,7 +30,8 @@ class ApiArticles extends REST_Controller
         $data = array(
             'title' => $this->post('title'),
             'date' => $this->post('date'),
-            'content' => $this->post('content')
+            'content' => $this->post('content'),
+            'image' => $this->post('image')
         );
 
         $response = $this->module->post($data);
