@@ -62,15 +62,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" afterPath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/app.js" afterPath="$PROJECT_DIR$/admin/app/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/config.js" afterPath="$PROJECT_DIR$/admin/app/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/controller.js" afterPath="$PROJECT_DIR$/admin/app/js/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/routes.js" afterPath="$PROJECT_DIR$/admin/app/js/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/service.js" afterPath="$PROJECT_DIR$/admin/app/js/service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/login/index.html" afterPath="$PROJECT_DIR$/admin/views/login/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" afterPath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php" afterPath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php" afterPath="$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -216,8 +208,8 @@
       <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/app/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="45" />
+            <state relative-caret-position="184">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -833,7 +825,7 @@
       <workItem from="1504029186258" duration="7599000" />
       <workItem from="1504123168210" duration="8391000" />
       <workItem from="1504166640355" duration="31140000" />
-      <workItem from="1504369509814" duration="4519000" />
+      <workItem from="1504369509814" duration="4622000" />
     </task>
     <task id="LOCAL-00001" summary="fixing stuff">
       <created>1496174475759</created>
@@ -961,11 +953,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504370188658</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="working with jwt">
+      <created>1504374062570</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1504374062570</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192062000" />
+    <option name="totallyTimeSpent" value="192165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1022,7 +1021,8 @@
     <MESSAGE value="edit article file upload" />
     <MESSAGE value="bower and libs" />
     <MESSAGE value="fixing head tag staff" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing head tag staff" />
+    <MESSAGE value="working with jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="working with jwt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1407,8 +1407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/app/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="45" />
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
