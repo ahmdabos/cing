@@ -2,47 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32bc48b2-e21e-42b2-bdb5-e32f22241f7c" name="Default" comment="fixing head tag staff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/0xfkGTyl4n858AGUmCrF.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/1s0mg3Jjq5elBKlrmLp3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/3rt0E0JEoPIXRDNr8EO2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/46i3p9zg79naoYGlYVXV.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/4QLgu81ukcmJNSLyCvH5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/5PWMvoq7xaGpp0HeOeVH.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/96WhLYqVxOj4iAasoL5i.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/9gpBjpzhVrLsYXGsW2y8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/9u7vyU3nQltGBvITVCEY.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/CF5gmtzDo8FeeKBRNS4U.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/EibzE02cXqksbgoNpJ4c.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/F2rzYLAWlNK6wtm8HDpE.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/F8b56YUyks5UzrHJyfd7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/G2PFr2omuthAMXdINzqA.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/H47HE1WQ94CrGjmlclUU.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/PmhbzfjgHEjiOhFIYnbw.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/Q8gJLaeGt81HUEn7ANtL.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/ViYzSVVBeMvoPPjFZwrE.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/YGlnDJpnZd6hKsTcakJI.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/bAsUII26dwutnli5q2pz.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/eha4jT7ILRSIkxVadMdE.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/ftWCDLPXA0naHVXI4Ioz.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/ppBoa5p8LnrEiuwUn8Zn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/soaN4aCMl6BBmrWfKS0a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/u2Yew5XHatUHvrEc8IyF.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/uUBxk4ZqjDiASIJQ0T2z.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/zH8LY8zzFIYLTijWlc3a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/angular-cookies.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/angular-cookies.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/angular-cookies.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/views/login/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/restfull/application/helpers/jwt_helper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/restfull/application/modules/Authentications/controllers/Authentications.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/1s0mg3Jjq5elBKlrmLp3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/3rt0E0JEoPIXRDNr8EO2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/46i3p9zg79naoYGlYVXV.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/4QLgu81ukcmJNSLyCvH5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/5PWMvoq7xaGpp0HeOeVH.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/5pws9WWpwaNYOOqD66Fl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/96WhLYqVxOj4iAasoL5i.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/9UegmMVBxJMLVCKkeLjp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/9gpBjpzhVrLsYXGsW2y8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/9u7vyU3nQltGBvITVCEY.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/CF5gmtzDo8FeeKBRNS4U.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/EibzE02cXqksbgoNpJ4c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/F2rzYLAWlNK6wtm8HDpE.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/F8b56YUyks5UzrHJyfd7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/G2PFr2omuthAMXdINzqA.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/H47HE1WQ94CrGjmlclUU.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/PmhbzfjgHEjiOhFIYnbw.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/Q8gJLaeGt81HUEn7ANtL.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ViYzSVVBeMvoPPjFZwrE.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/YGlnDJpnZd6hKsTcakJI.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/bAsUII26dwutnli5q2pz.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/eha4jT7ILRSIkxVadMdE.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ftWCDLPXA0naHVXI4Ioz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ppBoa5p8LnrEiuwUn8Zn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/soaN4aCMl6BBmrWfKS0a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/u2Yew5XHatUHvrEc8IyF.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/uUBxk4ZqjDiASIJQ0T2z.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/zH8LY8zzFIYLTijWlc3a.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" />
@@ -103,9 +90,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" afterPath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/.gitignore" afterPath="$PROJECT_DIR$/admin/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/bower.json" afterPath="$PROJECT_DIR$/admin/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.html" afterPath="$PROJECT_DIR$/admin/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -140,13 +124,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
               <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0xfkGTyl4n858AGUmCrF.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/uploads/0xfkGTyl4n858AGUmCrF.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -319,6 +310,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -450,7 +455,7 @@
       <workItem from="1504029186258" duration="7599000" />
       <workItem from="1504123168210" duration="8391000" />
       <workItem from="1504166640355" duration="31140000" />
-      <workItem from="1504369509814" duration="612000" />
+      <workItem from="1504369509814" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="fixing stuff">
       <created>1496174475759</created>
@@ -564,11 +569,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504280982616</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="bower and libs">
+      <created>1504370132907</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1504370132907</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188155000" />
+    <option name="totallyTimeSpent" value="188215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -623,7 +635,8 @@
     <MESSAGE value="css colors" />
     <MESSAGE value="update upload function in the api + browse button in the view" />
     <MESSAGE value="edit article file upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit article file upload" />
+    <MESSAGE value="bower and libs" />
+    <option name="LAST_COMMIT_MESSAGE" value="bower and libs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -632,13 +645,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/sass/components/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/views/partials/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1006,6 +1012,11 @@
           <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/0xfkGTyl4n858AGUmCrF.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
