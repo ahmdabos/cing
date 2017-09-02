@@ -23,11 +23,12 @@ class ApiAuthentications extends REST_Controller
         $username = $this->post('username');
         $password = $this->post('password');
         $invalidLogin = ['invalid' => $username];
-        if(!$username || !$password) $this->response($invalidLogin, REST_Controller::HTTP_NOT_FOUND);
+        if(!$username || !$password) {
+            $this->response($invalidLogin, REST_Controller::HTTP_NOT_FOUND);
+        }
         $id = $this->module->get($username,$password);
         if($id) {
             $token['id'] = $id;
-
             $token['username'] = $username;
             $date = new DateTime();
             $token['iat'] = $date->getTimestamp();
@@ -41,17 +42,6 @@ class ApiAuthentications extends REST_Controller
         }
 
     }
-
-    public function index_put()
-    {
-    }
-
-    public function index_delete($id)
-    {
-
-    }
-
-
 
 
 }

@@ -2,34 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32bc48b2-e21e-42b2-bdb5-e32f22241f7c" name="Default" comment="fixing head tag staff">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/1s0mg3Jjq5elBKlrmLp3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/3rt0E0JEoPIXRDNr8EO2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/46i3p9zg79naoYGlYVXV.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/4QLgu81ukcmJNSLyCvH5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/5PWMvoq7xaGpp0HeOeVH.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/5pws9WWpwaNYOOqD66Fl.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/96WhLYqVxOj4iAasoL5i.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/9UegmMVBxJMLVCKkeLjp.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/9gpBjpzhVrLsYXGsW2y8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/9u7vyU3nQltGBvITVCEY.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/CF5gmtzDo8FeeKBRNS4U.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/EibzE02cXqksbgoNpJ4c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/F2rzYLAWlNK6wtm8HDpE.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/F8b56YUyks5UzrHJyfd7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/G2PFr2omuthAMXdINzqA.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/H47HE1WQ94CrGjmlclUU.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/PmhbzfjgHEjiOhFIYnbw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/Q8gJLaeGt81HUEn7ANtL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ViYzSVVBeMvoPPjFZwrE.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/YGlnDJpnZd6hKsTcakJI.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/bAsUII26dwutnli5q2pz.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/eha4jT7ILRSIkxVadMdE.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ftWCDLPXA0naHVXI4Ioz.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ppBoa5p8LnrEiuwUn8Zn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/soaN4aCMl6BBmrWfKS0a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/u2Yew5XHatUHvrEc8IyF.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/uUBxk4ZqjDiASIJQ0T2z.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/zH8LY8zzFIYLTijWlc3a.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" />
@@ -90,6 +62,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" afterPath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/app.js" afterPath="$PROJECT_DIR$/admin/app/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/config.js" afterPath="$PROJECT_DIR$/admin/app/js/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/controller.js" afterPath="$PROJECT_DIR$/admin/app/js/controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/routes.js" afterPath="$PROJECT_DIR$/admin/app/js/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/service.js" afterPath="$PROJECT_DIR$/admin/app/js/service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/login/index.html" afterPath="$PROJECT_DIR$/admin/views/login/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" afterPath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php" afterPath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php" afterPath="$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -104,16 +85,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,20 +95,163 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/.gitignore">
+      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="322">
+              <caret line="14" column="97" lean-forward="false" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
+              <folding>
+                <element signature="e#1385#4159#0" expanded="false" />
+                <element signature="e#1643#1758#0" expanded="false" />
+                <element signature="e#1812#1943#0" expanded="false" />
+                <element signature="e#1986#2070#0" expanded="false" />
+                <element signature="e#2117#2259#0" expanded="false" />
+                <element signature="e#2321#3432#0" expanded="false" />
+                <element signature="e#2346#2387#0" expanded="false" />
+                <element signature="e#2427#2470#0" expanded="false" />
+                <element signature="e#2514#2560#0" expanded="false" />
+                <element signature="e#2785#3205#0" expanded="false" />
+                <element signature="e#3222#3320#0" expanded="false" />
+                <element signature="e#3383#3422#0" expanded="false" />
+                <element signature="e#3517#4027#0" expanded="false" />
+                <element signature="e#3639#3837#0" expanded="false" />
+                <element signature="e#3854#4015#0" expanded="false" />
+                <element signature="e#4084#4152#0" expanded="false" />
+                <element signature="e#8239#11822#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/app/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="0xfkGTyl4n858AGUmCrF.jpg" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/uploads/0xfkGTyl4n858AGUmCrF.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/app/js/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/views/login/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/app/js/service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="33" />
+              <folding>
+                <element signature="e#117#3622#0" expanded="false" />
+                <element signature="e#175#703#0" expanded="false" />
+                <element signature="e#249#370#0" expanded="false" />
+                <element signature="e#418#542#0" expanded="false" />
+                <element signature="e#564#687#0" expanded="false" />
+                <element signature="e#740#1185#0" expanded="false" />
+                <element signature="e#814#897#0" expanded="false" />
+                <element signature="e#924#1036#0" expanded="false" />
+                <element signature="e#1058#1169#0" expanded="false" />
+                <element signature="e#1226#2151#0" expanded="false" />
+                <element signature="e#1300#1857#0" expanded="false" />
+                <element signature="e#1537#1839#0" expanded="false" />
+                <element signature="e#1648#1771#0" expanded="false" />
+                <element signature="e#1884#2001#0" expanded="false" />
+                <element signature="e#2023#2134#0" expanded="false" />
+                <element signature="e#2191#3114#0" expanded="false" />
+                <element signature="e#2265#2821#0" expanded="false" />
+                <element signature="e#2501#2803#0" expanded="false" />
+                <element signature="e#2612#2735#0" expanded="false" />
+                <element signature="e#2848#2965#0" expanded="false" />
+                <element signature="e#2987#3098#0" expanded="false" />
+                <element signature="e#3151#3605#0" expanded="false" />
+                <element signature="e#3225#3311#0" expanded="false" />
+                <element signature="e#3338#3455#0" expanded="false" />
+                <element signature="e#3477#3588#0" expanded="false" />
+                <element signature="e#3978#4618#0" expanded="false" />
+                <element signature="e#4050#4117#0" expanded="false" />
+                <element signature="e#4170#4233#0" expanded="false" />
+                <element signature="e#4292#4359#0" expanded="false" />
+                <element signature="e#4416#4482#0" expanded="false" />
+                <element signature="e#4539#4602#0" expanded="false" />
+                <element signature="e#4683#6713#0" expanded="false" />
+                <element signature="e#4700#6707#0" expanded="false" />
+                <element signature="e#4777#6697#0" expanded="false" />
+                <element signature="e#5143#5299#0" expanded="false" />
+                <element signature="e#5305#5843#0" expanded="false" />
+                <element signature="e#5430#5530#0" expanded="false" />
+                <element signature="e#5571#5692#0" expanded="false" />
+                <element signature="e#5698#5825#0" expanded="false" />
+                <element signature="e#6292#6682#0" expanded="false" />
+                <element signature="e#6779#7097#0" expanded="false" />
+                <element signature="e#6796#7091#0" expanded="false" />
+                <element signature="e#6838#6937#0" expanded="false" />
+                <element signature="e#6979#7081#0" expanded="false" />
+                <element signature="e#7149#7539#0" expanded="false" />
+                <element signature="e#7182#7538#0" expanded="false" />
+                <element signature="e#7199#7532#0" expanded="false" />
+                <element signature="e#7245#7522#0" expanded="false" />
+                <element signature="e#7400#7501#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/app/js/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiArticles.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiAuthentications.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+              <folding>
+                <element signature="n#index_get#0;n#ApiAuthentications#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Authentication.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="29" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -212,10 +326,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/views/articles/articles.edit.html" />
-        <option value="$PROJECT_DIR$/admin/views/articles/articles.index.html" />
-        <option value="$PROJECT_DIR$/admin/app/js/routes.js" />
-        <option value="$PROJECT_DIR$/admin/views/articles/iindex.html" />
         <option value="$PROJECT_DIR$/../wordpress/wp-content/plugins/contact/wp_w2_contact_form.php" />
         <option value="$PROJECT_DIR$/../wordpress/wp-content/themes/twentyseventeen/functions.php" />
         <option value="$PROJECT_DIR$/../wordpress/wp-admin/index.php" />
@@ -235,7 +345,6 @@
         <option value="$PROJECT_DIR$/admin/sass/components/_pagination.scss" />
         <option value="$PROJECT_DIR$/admin/sass/components/_table.scss" />
         <option value="$PROJECT_DIR$/admin/package.json" />
-        <option value="$PROJECT_DIR$/admin/app/js/app.js" />
         <option value="$PROJECT_DIR$/restfull/application/config/routes.php" />
         <option value="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiUpload.php" />
         <option value="$PROJECT_DIR$/restfull/application/modules/Articles/controllers/Articles.php" />
@@ -250,19 +359,24 @@
         <option value="$PROJECT_DIR$/admin/sass/pages/_home.scss" />
         <option value="$PROJECT_DIR$/admin/sass/pages/_add-article.scss" />
         <option value="$PROJECT_DIR$/admin/sass/style.scss" />
-        <option value="$PROJECT_DIR$/admin/app/js/service.js" />
-        <option value="$PROJECT_DIR$/admin/app/js/config.js" />
-        <option value="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" />
         <option value="$PROJECT_DIR$/admin/views/articles/add.html" />
         <option value="$PROJECT_DIR$/admin/sass/components/_scaff.scss" />
         <option value="$PROJECT_DIR$/restfull/application/modules/Uploads/controllers/Uploads.php" />
-        <option value="$PROJECT_DIR$/admin/app/js/controller.js" />
         <option value="$PROJECT_DIR$/admin/views/articles/edit.html" />
         <option value="$PROJECT_DIR$/admin/sass/components/_forms.scss" />
         <option value="$PROJECT_DIR$/admin/views/articles/index.html" />
         <option value="$PROJECT_DIR$/admin/bower.json" />
         <option value="$PROJECT_DIR$/admin/index.html" />
         <option value="$PROJECT_DIR$/admin/.gitignore" />
+        <option value="$PROJECT_DIR$/admin/app/js/service.js" />
+        <option value="$PROJECT_DIR$/admin/app/js/routes.js" />
+        <option value="$PROJECT_DIR$/admin/views/login/index.html" />
+        <option value="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php" />
+        <option value="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" />
+        <option value="$PROJECT_DIR$/admin/app/js/controller.js" />
+        <option value="$PROJECT_DIR$/admin/app/js/app.js" />
+        <option value="$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php" />
+        <option value="$PROJECT_DIR$/admin/app/js/config.js" />
       </list>
     </option>
   </component>
@@ -320,7 +434,271 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
+              <option name="myItemId" value="restfull" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restfull" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restfull" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restfull" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Authentications" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restfull" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Authentications" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restfull" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restfull" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,7 +833,7 @@
       <workItem from="1504029186258" duration="7599000" />
       <workItem from="1504123168210" duration="8391000" />
       <workItem from="1504166640355" duration="31140000" />
-      <workItem from="1504369509814" duration="672000" />
+      <workItem from="1504369509814" duration="4519000" />
     </task>
     <task id="LOCAL-00001" summary="fixing stuff">
       <created>1496174475759</created>
@@ -576,11 +954,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504370132907</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fixing head tag staff">
+      <created>1504370188658</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1504370188658</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188215000" />
+    <option name="totallyTimeSpent" value="192062000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -636,7 +1021,8 @@
     <MESSAGE value="update upload function in the api + browse button in the view" />
     <MESSAGE value="edit article file upload" />
     <MESSAGE value="bower and libs" />
-    <option name="LAST_COMMIT_MESSAGE" value="bower and libs" />
+    <MESSAGE value="fixing head tag staff" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing head tag staff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -645,41 +1031,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/views/partials/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/assets/css/style.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/sass/components/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/sass/components/_pagination.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/sass/components/_table.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -691,13 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/app/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -768,84 +1112,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Attachments/models/Attachment.php" />
-    <entry file="file://$PROJECT_DIR$/admin/app/js/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#3623#0" expanded="false" />
-            <element signature="e#117#3622#0" expanded="false" />
-            <element signature="e#134#3616#0" expanded="false" />
-            <element signature="e#175#703#0" expanded="false" />
-            <element signature="e#249#370#0" expanded="false" />
-            <element signature="e#418#542#0" expanded="false" />
-            <element signature="e#564#687#0" expanded="false" />
-            <element signature="e#740#1185#0" expanded="false" />
-            <element signature="e#814#897#0" expanded="false" />
-            <element signature="e#924#1036#0" expanded="false" />
-            <element signature="e#1058#1169#0" expanded="false" />
-            <element signature="e#1226#2151#0" expanded="false" />
-            <element signature="e#1300#1857#0" expanded="false" />
-            <element signature="e#1537#1839#0" expanded="false" />
-            <element signature="e#1648#1771#0" expanded="false" />
-            <element signature="e#1884#2001#0" expanded="false" />
-            <element signature="e#2023#2134#0" expanded="false" />
-            <element signature="e#2191#3114#0" expanded="false" />
-            <element signature="e#2265#2821#0" expanded="false" />
-            <element signature="e#2501#2803#0" expanded="false" />
-            <element signature="e#2612#2735#0" expanded="false" />
-            <element signature="e#2848#2965#0" expanded="false" />
-            <element signature="e#2987#3098#0" expanded="false" />
-            <element signature="e#3151#3605#0" expanded="false" />
-            <element signature="e#3225#3311#0" expanded="false" />
-            <element signature="e#3338#3455#0" expanded="false" />
-            <element signature="e#3477#3588#0" expanded="false" />
-            <element signature="e#3680#4360#0" expanded="false" />
-            <element signature="e#3719#4359#0" expanded="false" />
-            <element signature="e#3736#4353#0" expanded="false" />
-            <element signature="e#3791#3858#0" expanded="false" />
-            <element signature="e#3911#3974#0" expanded="false" />
-            <element signature="e#4033#4100#0" expanded="false" />
-            <element signature="e#4157#4223#0" expanded="false" />
-            <element signature="e#4280#4343#0" expanded="false" />
-            <element signature="e#4424#6454#0" expanded="false" />
-            <element signature="e#4441#6448#0" expanded="false" />
-            <element signature="e#4518#6438#0" expanded="false" />
-            <element signature="e#4884#5040#0" expanded="false" />
-            <element signature="e#5046#5584#0" expanded="false" />
-            <element signature="e#5171#5271#0" expanded="false" />
-            <element signature="e#5312#5433#0" expanded="false" />
-            <element signature="e#5439#5566#0" expanded="false" />
-            <element signature="e#6033#6423#0" expanded="false" />
-            <element signature="e#6520#6838#0" expanded="false" />
-            <element signature="e#6537#6832#0" expanded="false" />
-            <element signature="e#6579#6678#0" expanded="false" />
-            <element signature="e#6720#6822#0" expanded="false" />
-            <element signature="e#6890#7280#0" expanded="false" />
-            <element signature="e#6923#7279#0" expanded="false" />
-            <element signature="e#6940#7273#0" expanded="false" />
-            <element signature="e#6986#7263#0" expanded="false" />
-            <element signature="e#7141#7242#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/app/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="49" column="40" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/app/js/directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -861,6 +1127,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -895,30 +1162,6 @@
         <state relative-caret-position="0">
           <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="192" column="34" lean-forward="true" selection-start-line="192" selection-start-column="34" selection-end-line="192" selection-end-column="34" />
-          <folding>
-            <element signature="e#313#3087#0" expanded="false" />
-            <element signature="e#571#686#0" expanded="false" />
-            <element signature="e#740#871#0" expanded="false" />
-            <element signature="e#914#998#0" expanded="false" />
-            <element signature="e#1045#1187#0" expanded="false" />
-            <element signature="e#1274#1315#0" expanded="false" />
-            <element signature="e#1355#1398#0" expanded="false" />
-            <element signature="e#1442#1488#0" expanded="false" />
-            <element signature="e#1713#2133#0" expanded="false" />
-            <element signature="e#2150#2248#0" expanded="false" />
-            <element signature="e#2311#2350#0" expanded="false" />
-            <element signature="e#2445#2955#0" expanded="false" />
-            <element signature="e#2567#2765#0" expanded="false" />
-            <element signature="e#2782#2943#0" expanded="false" />
-            <element signature="e#3012#3080#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,6 +1230,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -994,14 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -1017,6 +1253,164 @@
     <entry file="file://$PROJECT_DIR$/uploads/0xfkGTyl4n858AGUmCrF.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/controllers/Authentications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/app/js/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="33" />
+          <folding>
+            <element signature="e#117#3622#0" expanded="false" />
+            <element signature="e#175#703#0" expanded="false" />
+            <element signature="e#249#370#0" expanded="false" />
+            <element signature="e#418#542#0" expanded="false" />
+            <element signature="e#564#687#0" expanded="false" />
+            <element signature="e#740#1185#0" expanded="false" />
+            <element signature="e#814#897#0" expanded="false" />
+            <element signature="e#924#1036#0" expanded="false" />
+            <element signature="e#1058#1169#0" expanded="false" />
+            <element signature="e#1226#2151#0" expanded="false" />
+            <element signature="e#1300#1857#0" expanded="false" />
+            <element signature="e#1537#1839#0" expanded="false" />
+            <element signature="e#1648#1771#0" expanded="false" />
+            <element signature="e#1884#2001#0" expanded="false" />
+            <element signature="e#2023#2134#0" expanded="false" />
+            <element signature="e#2191#3114#0" expanded="false" />
+            <element signature="e#2265#2821#0" expanded="false" />
+            <element signature="e#2501#2803#0" expanded="false" />
+            <element signature="e#2612#2735#0" expanded="false" />
+            <element signature="e#2848#2965#0" expanded="false" />
+            <element signature="e#2987#3098#0" expanded="false" />
+            <element signature="e#3151#3605#0" expanded="false" />
+            <element signature="e#3225#3311#0" expanded="false" />
+            <element signature="e#3338#3455#0" expanded="false" />
+            <element signature="e#3477#3588#0" expanded="false" />
+            <element signature="e#3978#4618#0" expanded="false" />
+            <element signature="e#4050#4117#0" expanded="false" />
+            <element signature="e#4170#4233#0" expanded="false" />
+            <element signature="e#4292#4359#0" expanded="false" />
+            <element signature="e#4416#4482#0" expanded="false" />
+            <element signature="e#4539#4602#0" expanded="false" />
+            <element signature="e#4683#6713#0" expanded="false" />
+            <element signature="e#4700#6707#0" expanded="false" />
+            <element signature="e#4777#6697#0" expanded="false" />
+            <element signature="e#5143#5299#0" expanded="false" />
+            <element signature="e#5305#5843#0" expanded="false" />
+            <element signature="e#5430#5530#0" expanded="false" />
+            <element signature="e#5571#5692#0" expanded="false" />
+            <element signature="e#5698#5825#0" expanded="false" />
+            <element signature="e#6292#6682#0" expanded="false" />
+            <element signature="e#6779#7097#0" expanded="false" />
+            <element signature="e#6796#7091#0" expanded="false" />
+            <element signature="e#6838#6937#0" expanded="false" />
+            <element signature="e#6979#7081#0" expanded="false" />
+            <element signature="e#7149#7539#0" expanded="false" />
+            <element signature="e#7182#7538#0" expanded="false" />
+            <element signature="e#7199#7532#0" expanded="false" />
+            <element signature="e#7245#7522#0" expanded="false" />
+            <element signature="e#7400#7501#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/app/js/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="n#index_get#0;n#ApiAuthentications#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/app/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="97" lean-forward="false" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
+          <folding>
+            <element signature="e#1385#4159#0" expanded="false" />
+            <element signature="e#1643#1758#0" expanded="false" />
+            <element signature="e#1812#1943#0" expanded="false" />
+            <element signature="e#1986#2070#0" expanded="false" />
+            <element signature="e#2117#2259#0" expanded="false" />
+            <element signature="e#2321#3432#0" expanded="false" />
+            <element signature="e#2346#2387#0" expanded="false" />
+            <element signature="e#2427#2470#0" expanded="false" />
+            <element signature="e#2514#2560#0" expanded="false" />
+            <element signature="e#2785#3205#0" expanded="false" />
+            <element signature="e#3222#3320#0" expanded="false" />
+            <element signature="e#3383#3422#0" expanded="false" />
+            <element signature="e#3517#4027#0" expanded="false" />
+            <element signature="e#3639#3837#0" expanded="false" />
+            <element signature="e#3854#4015#0" expanded="false" />
+            <element signature="e#4084#4152#0" expanded="false" />
+            <element signature="e#8239#11822#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/app/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

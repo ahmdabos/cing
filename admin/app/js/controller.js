@@ -1,6 +1,28 @@
 'use strict';
 angular.module('app')
-//Articles Controller
+//Login Controller
+    .controller('LoginController', ['$scope', '$http', '$log', '$state','$cookies', 'AuthenticationsService', 'URL', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state,$cookies, AuthenticationsService, URL, LoaderService, ToastService) {
+
+        $scope.login = function () {
+            var data = {
+                username: $scope.username,
+                password: $scope.password
+            };
+            AuthenticationsService.login(URL.baseApi + URL.authenticationsApi, data)
+                .then(function (res) {
+                    LoaderService.hide();
+                    ToastService.show('Added successfully');
+                    $cookies.putObject('currentUser',{username:$scope.username,token:res.token});
+                    $log.debug(res);
+                    $state.go('articles.index');
+                }, function (err) {
+                    LoaderService.hide();
+                    ToastService.show('Something Went Wrong');
+                    $log.debug(err);
+                });
+        };
+    }])
+    //Articles Controller
     .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URL', 'ArticlesService', 'PagerService', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, URL, ArticlesService, PagerService, LoaderService, ToastService) {
         $scope.articles = [];
         $scope.pager = {};

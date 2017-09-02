@@ -95,6 +95,14 @@ angular.module('app')
 
         }
     }])
+    // Authentications Service
+    .factory('AuthenticationsService', ['DataService', function (DataService) {
+        return {
+            login: function login(url, data) {
+                return DataService.post(url, data);
+            }
+        }
+    }])
     // Article Service
     .factory('ArticlesService', ['DataService', function (DataService) {
         return {

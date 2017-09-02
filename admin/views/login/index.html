@@ -3,7 +3,7 @@
         <form ng-submit="login()" name="form">
             <div class="form-group">
                 <label for="username">Username</label>
-                <input ng-model="title" name="username" type="text" class="form-control" id="username"
+                <input ng-model="username" name="username" type="text" class="form-control" id="username"
                        placeholder="username" ng-maxlength="100" maxlength="100" required>
                 <p class="error" ng-if="form.username.$error.required && !form.username.$pristine">This field is required</p>
             </div>

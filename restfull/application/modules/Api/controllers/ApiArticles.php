@@ -33,9 +33,7 @@ class ApiArticles extends REST_Controller
             'content' => $this->post('content'),
             'image' => $this->post('image')
         );
-
         $response = $this->module->post($data);
-        // print_r($response);exit;
         return $this->response($response);
 
     }
@@ -58,8 +56,6 @@ class ApiArticles extends REST_Controller
         $response = $this->module->delete($id);
         return $this->response($response);
     }
-
-
 
 
 }

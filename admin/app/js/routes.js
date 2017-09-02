@@ -6,6 +6,15 @@ angular.module('app')
                 url: '/',
                 templateUrl: 'views/home.html'
             })
+            .state('login', {
+                url: '/login',
+                template: '<ui-view/>'
+            })
+            .state('login.index', {
+                url: '/index',
+                templateUrl: 'views/login/index.html',
+                controller: 'LoginController'
+            })
             .state('articles', {
                 url: '/articles',
                 template: '<ui-view/>'
