@@ -21,6 +21,9 @@
     "angular-ui-router": "^0.3.2",
     "font-awesome": "^4.7.0",
     "angular": "^1.6.5",
-    "angularjs-datepicker": "^2.1.23"
+    "angularjs-datepicker": "^2.1.23",
+    "angular-cookies": "^1.6.6",
+    "lodash": "^4.17.4",
+    "angular-file-upload": "^2.5.0"
   }
 }
