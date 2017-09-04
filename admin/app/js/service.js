@@ -199,3 +199,23 @@ angular.module('app')
             }
         }
     }])
+    // HttpRequestInterceptor Service
+    .factory('HttpRequestInterceptorService',['$cookies', function ($cookies) {
+        return {
+            request: function (config) {
+                if($cookies.get('currentUser')){
+                    var currentUser = JSON.parse($cookies.get('currentUser'));
+                    var token = currentUser.token;
+                    config.headers['Authorization'] = 'bearer ' + token;
+                    config.headers['Accept'] = 'application/json;odata=verbose';
+                }
+                else{
+                    //$state.go('login');
+                }
+                return config;
+            }
+        };
+    }]);
+
+
+
