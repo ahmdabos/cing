@@ -1,6 +1,6 @@
 'use strict';
 angular.module('app')
-    .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
+    .config(['$urlRouterProvider', '$stateProvider','$locationProvider', function ($urlRouterProvider, $stateProvider,$locationProvider) {
         $stateProvider
             .state('/', {
                 url: '/',
@@ -35,6 +35,7 @@ angular.module('app')
                 controller: 'EditArticleController'
             });
         $urlRouterProvider.otherwise('views/home.html');
-
+        $locationProvider.html5Mode(true);
+        $locationProvider.hashPrefix = '!';
     }]);
 

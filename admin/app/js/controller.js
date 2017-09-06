@@ -1,9 +1,10 @@
 'use strict';
 angular.module('app')
 //Login Controller
-    .controller('LoginController', ['$scope', '$http', '$log', '$state','$cookies', 'AuthenticationsService', 'URL', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state,$cookies, AuthenticationsService, URL, LoaderService, ToastService) {
+    .controller('LoginController', ['$scope', '$http', '$log', '$state', '$cookies', 'AuthenticationsService', 'URL', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, $cookies, AuthenticationsService, URL, LoaderService, ToastService) {
 
-        $scope.login = function () {
+        $scope.submit = function () {
+            LoaderService.show();
             var data = {
                 username: $scope.username,
                 password: $scope.password
@@ -11,13 +12,13 @@ angular.module('app')
             AuthenticationsService.login(URL.baseApi + URL.authenticationsApi, data)
                 .then(function (res) {
                     LoaderService.hide();
-                    ToastService.show('Added successfully');
-                    $cookies.putObject('currentUser',{username:$scope.username,token:res.token});
+                    ToastService.show('successfully logged in');
+                    $cookies.putObject('currentUser', {username: $scope.username, token: res.token});
+                    $state.go('/');
                     $log.debug(res);
-                    $state.go('articles.index');
                 }, function (err) {
                     LoaderService.hide();
-                    ToastService.show('Something Went Wrong');
+                    ToastService.show('Failed to login');
                     $log.debug(err);
                 });
         };
@@ -30,7 +31,6 @@ angular.module('app')
         $scope.limitOptions = [10, 25, 50, 100];
         $scope.fieldName = 'createdAt';
         $scope.reverse = true;
-
         $scope.setLimit = function (limit) {
             $scope.limit = limit;
             $scope.getArticls(1, $scope.limit, $scope.searchKeyword);
@@ -47,6 +47,7 @@ angular.module('app')
             $scope.fieldName = fieldName;
         };
         $scope.getArticls = function (page, limit, keyword) {
+            LoaderService.show();
             if (!page) {
                 page = 1;
             }
@@ -56,7 +57,6 @@ angular.module('app')
             if (!keyword || keyword == '') {
                 keyword == '';
             }
-            LoaderService.show();
             ArticlesService.getArticles(URL.baseApi + URL.articleApi + '/?page=' + page + '&search=' + keyword + '&limit=' + limit + '&offset=' + limit)
                 .then(function (res) {
                     LoaderService.hide();
