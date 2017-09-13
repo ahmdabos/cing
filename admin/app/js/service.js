@@ -92,16 +92,15 @@ angular.module('app')
                 });
 
             }
-
-        }
+        };
     }])
     // Authentications Service
-    .factory('AuthenticationsService', ['DataService', function (DataService) {
+    .factory('AuthService', ['DataService', function (DataService) {
         return {
             login: function login(url, data) {
                 return DataService.post(url, data);
             }
-        }
+        };
     }])
     // Article Service
     .factory('ArticlesService', ['DataService', function (DataService) {
@@ -121,7 +120,7 @@ angular.module('app')
             deleteArticle: function deleteArticle(url) {
                 return DataService.delete(url);
             }
-        }
+        };
     }])
     // Pager Service
     .factory('PagerService', function () {
@@ -175,7 +174,7 @@ angular.module('app')
                     pages: pages
                 };
             }
-        }
+        };
     })
     // Loader Service
     .factory('LoaderService', function () {
@@ -186,7 +185,7 @@ angular.module('app')
             hide: function hideLoader() {
                 angular.element(document.querySelector('body')).removeClass('loader');
             }
-        }
+        };
     })
     // Toast Service
     .factory('ToastService', ['$timeout', function ($timeout) {
@@ -197,25 +196,20 @@ angular.module('app')
                     angular.element(document.querySelector('.toaster')).remove();
                 }, 2000)
             }
-        }
+        };
     }])
     // HttpRequestInterceptor Service
-    .factory('HttpRequestInterceptorService',['$cookies', function ($cookies) {
+    .factory('HttpRequestInterceptorService', ['$cookies', function ($cookies) {
         return {
             request: function (config) {
-                if($cookies.get('currentUser')){
+                if ($cookies.get('currentUser')) {
                     var currentUser = JSON.parse($cookies.get('currentUser'));
                     var token = currentUser.token;
                     config.headers['Authorization'] = 'bearer ' + token;
                     config.headers['Accept'] = 'application/json;odata=verbose';
                 }
-                else{
-                    //$state.go('login');
-                }
+
                 return config;
             }
         };
     }]);
-
-
-

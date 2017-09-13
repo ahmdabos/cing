@@ -1,7 +1,7 @@
 'use strict';
 angular.module('app')
 //Login Controller
-    .controller('LoginController', ['$scope', '$http', '$log', '$state', '$cookies', 'AuthenticationsService', 'URL', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, $cookies, AuthenticationsService, URL, LoaderService, ToastService) {
+    .controller('LoginController', ['$scope', '$http', '$log', '$state', '$cookies', 'AuthService', 'URL', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, $cookies, AuthService, URL, LoaderService, ToastService) {
 
         $scope.submit = function () {
             LoaderService.show();
@@ -9,7 +9,7 @@ angular.module('app')
                 username: $scope.username,
                 password: $scope.password
             };
-            AuthenticationsService.login(URL.baseApi + URL.authenticationsApi, data)
+            AuthService.login(URL.baseApi + URL.authenticationsApi, data)
                 .then(function (res) {
                     LoaderService.hide();
                     ToastService.show('successfully logged in');
