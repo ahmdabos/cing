@@ -8,6 +8,7 @@ class ApiArticles extends REST_Controller
 {
     private $module;
     protected $headers;
+
     public function __construct()
     {
         parent::__construct();
@@ -17,82 +18,93 @@ class ApiArticles extends REST_Controller
 
     public function index_get()
     {
-        /*  $id = $this->get('id');
-        $search = $this->get('search');
-        $page = $this->get('page');
-        $limit = $this->get('limit');
-        $offset = $this->get('offset');
-        $response = $this->module->get($id, $search, $page, $limit, $offset);
-        return $this->response($response);*/
-        if(isset($this->headers["Authorization"]) || !empty($this->headers["Authorization"]))
-        {
+        if (isset($this->headers["Authorization"]) || !empty($this->headers["Authorization"])) {
             $token = explode(" ", $this->headers["Authorization"]);
-            $user = JWT::decode(trim($token[1]),'a');
+            $user = JWT::decode(trim($token[1]), 'secret');
+            print_r($user);
+            $this->load->model("Authentications/Authentication", "auth");
+            if ($this->auth->checkUser($user->id) !== false) {
 
-            $this->load->model("Authentications/Authentication","auth");
-            if($this->auth->checkUser($user->id) !== false)
-            {
                 $id = $this->get('id');
                 $search = $this->get('search');
                 $page = $this->get('page');
                 $limit = $this->get('limit');
                 $offset = $this->get('offset');
                 $response = $this->module->get($id, $search, $page, $limit, $offset);
+                return $this->response($response);
 
-
-                $user->iat = time();
-                $user->exp = time() + 300;
-                $jwt = JWT::encode($user, '');
-                return json_encode(
-                    array(
-                        "code" => 0,
-                        "response" => array(
-                            "token" => $jwt,
-                            "movies"=> $this->response($response)
-                        )
-                    )
-                );
             }
+        } else {
+            return $this->response('bad request', REST_Controller::HTTP_BAD_REQUEST);
         }
-        else
-        {
-
-        }
-
-
 
     }
 
     public function index_post()
     {
-        $data = array(
-            'title' => $this->post('title'),
-            'date' => $this->post('date'),
-            'content' => $this->post('content'),
-            'image' => $this->post('image')
-        );
-        $response = $this->module->post($data);
-        return $this->response($response);
+        if (isset($this->headers["Authorization"]) || !empty($this->headers["Authorization"])) {
+            $token = explode(" ", $this->headers["Authorization"]);
+            $user = JWT::decode(trim($token[1]), 'secret');
+            $this->load->model("Authentications/Authentication", "auth");
+            if ($this->auth->checkUser($user->id) !== false) {
 
+
+                $data = array(
+                    'title' => $this->post('title'),
+                    'date' => $this->post('date'),
+                    'content' => $this->post('content'),
+                    'image' => $this->post('image')
+                );
+                $response = $this->module->post($data);
+                return $this->response($response);
+
+
+            } else {
+                return $this->response('bad request', REST_Controller::HTTP_BAD_REQUEST);
+            }
+
+        }
     }
 
     public function index_put()
     {
-        $id = $this->put('id');
-        $data = array(
-            'title' => $this->put('title'),
-            'date' => $this->put('date'),
-            'content' => $this->put('content'),
-            'image' => $this->put('image')
-        );
-        $response = $this->module->update($id, $data);
-        return $this->response($response);
+        if (isset($this->headers["Authorization"]) || !empty($this->headers["Authorization"])) {
+            $token = explode(" ", $this->headers["Authorization"]);
+            $user = JWT::decode(trim($token[1]), 'secret');
+            $this->load->model("Authentications/Authentication", "auth");
+            if ($this->auth->checkUser($user->id) !== false) {
+
+
+                $id = $this->put('id');
+                $data = array(
+                    'title' => $this->put('title'),
+                    'date' => $this->put('date'),
+                    'content' => $this->put('content'),
+                    'image' => $this->put('image')
+                );
+                $response = $this->module->update($id, $data);
+                return $this->response($response);
+            }
+        } else {
+            return $this->response('bad request', REST_Controller::HTTP_BAD_REQUEST);
+        }
     }
 
     public function index_delete($id)
     {
-        $response = $this->module->delete($id);
-        return $this->response($response);
+
+        if (isset($this->headers["Authorization"]) || !empty($this->headers["Authorization"])) {
+            $token = explode(" ", $this->headers["Authorization"]);
+            $user = JWT::decode(trim($token[1]), 'secret');
+            $this->load->model("Authentications/Authentication", "auth");
+            if ($this->auth->checkUser($user->id) !== false) {
+                $response = $this->module->delete($id);
+                return $this->response($response);
+            }
+        } else {
+            return $this->response('bad request', REST_Controller::HTTP_BAD_REQUEST);
+        }
+
     }
 
 

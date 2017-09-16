@@ -14,30 +14,25 @@ class ApiAuthentications extends REST_Controller
         $this->module = modules::load('Authentications');
     }
 
-    public function index_get()
-    {
-    }
-
     public function index_post()
     {
         $username = $this->post('username');
         $password = $this->post('password');
         $invalidLogin = ['invalid' => $username];
-        if(!$username || !$password) {
+        if (!$username || !$password) {
             $this->response($invalidLogin, REST_Controller::HTTP_NOT_FOUND);
         }
-        $id = $this->module->get($username,$password);
-        if($id) {
+        $id = $this->module->get($username, $password);
+        if ($id) {
             $token['id'] = $id;
             $token['username'] = $username;
             $date = new DateTime();
             $token['iat'] = $date->getTimestamp();
-            $token['exp'] = $date->getTimestamp() + 60*60*5;
-            $output['token'] = JWT::encode($token, "a");
+            $token['exp'] = $date->getTimestamp() + 60 * 60 * 5;
+            $output['token'] = JWT::encode($token, 'secret');
 
             return $this->response($output, REST_Controller::HTTP_OK);
-        }
-        else {
+        } else {
             return $this->response($invalidLogin, REST_Controller::HTTP_NOT_FOUND);
         }
 
