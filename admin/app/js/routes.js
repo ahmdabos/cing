@@ -15,6 +15,10 @@ angular.module('app')
                 templateUrl: 'views/login/index.html',
                 controller: 'LoginController'
             })
+            .state('logout', {
+                url: '/logout',
+                controller: 'LogoutController'
+            })
             .state('articles', {
                 url: '/articles',
                 template: '<ui-view/>'

@@ -169,9 +169,9 @@ angular.module('app')
     //Edit Article Controller
     .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $stateParams, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
         $scope.dateTimePattern = /^([0-2][0-9]{3})-([0-1][0-9])-([0-3][0-9]) ([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(([\-\+]([0-1][0-9])\:00))?/;
+        LoaderService.show();
         var id = $stateParams.id;
         $scope.isAttachments = false;
-
         var uploader = $scope.uploader = new FileUploader({
             url: URL.baseApi + URL.uploadApi,
             queueLimit: 1
@@ -191,7 +191,6 @@ angular.module('app')
                 $scope.isFileTypeError = false;
             }
         };
-        LoaderService.show();
         ArticlesService.getArticle(URL.baseApi + URL.articleApi, id)
             .then(function (res) {
                 LoaderService.hide();
@@ -254,4 +253,12 @@ angular.module('app')
 
 
         }
+    }])
+    //Logout Controller
+    .controller('LogoutController', ['$scope', '$http', '$log', '$state', '$cookies', 'AuthService', 'URL', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, $cookies, AuthService, URL, LoaderService, ToastService) {
+        LoaderService.show();
+        $cookies.remove('currentUser');
+        $state.go('login.index');
+        LoaderService.hide();
+        ToastService.show('You logged out');
     }]);

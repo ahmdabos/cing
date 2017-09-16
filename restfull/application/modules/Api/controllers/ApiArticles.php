@@ -21,7 +21,6 @@ class ApiArticles extends REST_Controller
         if (isset($this->headers["Authorization"]) || !empty($this->headers["Authorization"])) {
             $token = explode(" ", $this->headers["Authorization"]);
             $user = JWT::decode(trim($token[1]), 'secret');
-            print_r($user);
             $this->load->model("Authentications/Authentication", "auth");
             if ($this->auth->checkUser($user->id) !== false) {
 
@@ -39,6 +38,7 @@ class ApiArticles extends REST_Controller
         }
 
     }
+
 
     public function index_post()
     {
