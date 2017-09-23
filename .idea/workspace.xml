@@ -2,70 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32bc48b2-e21e-42b2-bdb5-e32f22241f7c" name="Default" comment="fixing head tag staff">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller-.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/app/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/angular-recaptcha.min.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/angular-recaptcha.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/header-animation.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/header-animation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/angular-cookie/angular-cookies.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/angular-cookie/angular-cookies.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/angular-ui-router/release/angular-ui-router.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/angular-ui-router/release/angular-ui-router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/angular-ui-router/src/state.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/angular-ui-router/src/state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/angular/angular.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/jquery/dist/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/jquery/src/event.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/jquery/src/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/dist/owl.carousel.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/dist/owl.carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/dist/owl.carousel.min.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/dist/owl.carousel.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/docs/assets/owlcarousel/owl.carousel.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/docs/assets/owlcarousel/owl.carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/docs/assets/owlcarousel/owl.carousel.min.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/docs/assets/owlcarousel/owl.carousel.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/src/js/owl.video.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/assets/js/lib/owl.carousel/src/js/owl.video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/user_dashboard/user_dashboard_app.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/user_dashboard/user_dashboard_app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/FrontEnd/user_dashboard/user_dashboard_controller.js" afterPath="$PROJECT_DIR$/../Majilis/FrontEnd/user_dashboard/user_dashboard_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/config/database.php" afterPath="$PROJECT_DIR$/../Majilis/application/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/config/routes.php" afterPath="$PROJECT_DIR$/../Majilis/application/config/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/core/MY_Controller.php" afterPath="$PROJECT_DIR$/../Majilis/application/core/MY_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/modules/Api/config/rest.php" afterPath="$PROJECT_DIR$/../Majilis/application/modules/Api/config/rest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/modules/Api/controllers/ApiLogin.php" afterPath="$PROJECT_DIR$/../Majilis/application/modules/Api/controllers/ApiLogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/modules/Api/controllers/ApiRegisteration.php" afterPath="$PROJECT_DIR$/../Majilis/application/modules/Api/controllers/ApiRegisteration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/modules/Api/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/../Majilis/application/modules/Api/libraries/REST_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/modules/Users/models/User.php" afterPath="$PROJECT_DIR$/../Majilis/application/modules/Users/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Adapter.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Adapter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Model.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Model_OAuth1.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Model_OAuth1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Model_OAuth2.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Model_OAuth2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Model_OpenID.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Provider_Model_OpenID.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Facebook.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Facebook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Foursquare.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Foursquare.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Google.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Google.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Instagram.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Instagram.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/LinkedIn.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/LinkedIn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Live.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Live.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/MySpace.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/MySpace.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Twitter.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Twitter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Yahoo.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/Providers/Yahoo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/Facebook/base_facebook.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/Facebook/base_facebook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/LinkedIn/LinkedIn.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/LinkedIn/LinkedIn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/OAuth/OAuth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/OAuth/OAuth1Client.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/OAuth/OAuth1Client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/OAuth/OAuth2Client.php" afterPath="$PROJECT_DIR$/../Majilis/application/third_party/hybridauth/Hybrid/thirdparty/OAuth/OAuth2Client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/assets/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/../Majilis/assets/bootstrap/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/assets/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/../Majilis/assets/bootstrap/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" afterPath="$PROJECT_DIR$/../Majilis/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/assets/plugins/datatables/jquery.dataTables.js" afterPath="$PROJECT_DIR$/../Majilis/assets/plugins/datatables/jquery.dataTables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/assets/plugins/datepicker/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/../Majilis/assets/plugins/datepicker/bootstrap-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/assets/plugins/daterangepicker/daterangepicker.js" afterPath="$PROJECT_DIR$/../Majilis/assets/plugins/daterangepicker/daterangepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/assets/plugins/daterangepicker/moment.js" afterPath="$PROJECT_DIR$/../Majilis/assets/plugins/daterangepicker/moment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/live-site-files/application/config/routes.php" afterPath="$PROJECT_DIR$/../Majilis/live-site-files/application/config/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/live-site-files/application/core/MY_Controller.php" afterPath="$PROJECT_DIR$/../Majilis/live-site-files/application/core/MY_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/config/rest.php" afterPath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/config/rest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" afterPath="$PROJECT_DIR$/../Majilis/live-site-files/application/modules/Api/libraries/REST_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" afterPath="$PROJECT_DIR$/../Majilis/notification/execute-cronjobs-newsletter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/controller.js" afterPath="$PROJECT_DIR$/admin/app/js/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/routes.js" afterPath="$PROJECT_DIR$/admin/app/js/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/partials/header.html" afterPath="$PROJECT_DIR$/admin/views/partials/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" afterPath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/view1.html" afterPath="$PROJECT_DIR$/web/views/view1.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,30 +18,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="831">
-              <caret line="262" column="44" lean-forward="true" selection-start-line="262" selection-start-column="44" selection-end-line="262" selection-end-column="44" />
+            <state relative-caret-position="697">
+              <caret line="262" column="44" lean-forward="false" selection-start-line="262" selection-start-column="44" selection-end-line="262" selection-end-column="44" />
               <folding>
                 <element signature="e#330#1088#0" expanded="false" />
                 <element signature="e#1636#1751#0" expanded="false" />
                 <element signature="e#1805#1936#0" expanded="false" />
                 <element signature="e#1979#2063#0" expanded="false" />
                 <element signature="e#2110#2252#0" expanded="false" />
-                <element signature="e#2314#3425#0" expanded="false" />
-                <element signature="e#3510#4020#0" expanded="false" />
-                <element signature="e#4077#4145#0" expanded="false" />
-                <element signature="e#4778#4861#0" expanded="false" />
-                <element signature="e#4927#5479#0" expanded="false" />
-                <element signature="e#5535#5588#0" expanded="false" />
-                <element signature="e#5626#7904#0" expanded="false" />
-                <element signature="e#8539#8622#0" expanded="false" />
-                <element signature="e#8688#9239#0" expanded="false" />
-                <element signature="e#9343#9756#0" expanded="false" />
-                <element signature="e#9917#10006#0" expanded="false" />
-                <element signature="e#10044#11808#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/views/view1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,7 +49,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
               <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-              <folding />
+              <folding>
+                <marker date="1506200166890" expanded="true" signature="1497:1576" ph="/*...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/admin/views/partials/header.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -138,52 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/app/js/service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding>
-                <element signature="e#117#3622#0" expanded="false" />
-                <element signature="e#175#703#0" expanded="false" />
-                <element signature="e#249#370#0" expanded="false" />
-                <element signature="e#418#542#0" expanded="false" />
-                <element signature="e#564#687#0" expanded="false" />
-                <element signature="e#740#1185#0" expanded="false" />
-                <element signature="e#814#897#0" expanded="false" />
-                <element signature="e#924#1036#0" expanded="false" />
-                <element signature="e#1058#1169#0" expanded="false" />
-                <element signature="e#1226#2151#0" expanded="false" />
-                <element signature="e#1300#1857#0" expanded="false" />
-                <element signature="e#1537#1839#0" expanded="false" />
-                <element signature="e#1648#1771#0" expanded="false" />
-                <element signature="e#1884#2001#0" expanded="false" />
-                <element signature="e#2023#2134#0" expanded="false" />
-                <element signature="e#2191#3114#0" expanded="false" />
-                <element signature="e#2265#2821#0" expanded="false" />
-                <element signature="e#2501#2803#0" expanded="false" />
-                <element signature="e#2612#2735#0" expanded="false" />
-                <element signature="e#2848#2965#0" expanded="false" />
-                <element signature="e#2987#3098#0" expanded="false" />
-                <element signature="e#3151#3605#0" expanded="false" />
-                <element signature="e#3225#3311#0" expanded="false" />
-                <element signature="e#3338#3455#0" expanded="false" />
-                <element signature="e#3477#3588#0" expanded="false" />
-                <element signature="e#3968#4609#0" expanded="false" />
-                <element signature="e#4674#6705#0" expanded="false" />
-                <element signature="e#6771#7090#0" expanded="false" />
-                <element signature="e#7175#7532#0" expanded="false" />
-                <element signature="e#7652#8127#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ApiArticles.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="161">
+              <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -193,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="805">
-              <caret line="35" column="83" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="83" />
+              <caret line="35" column="83" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -203,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -213,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/controllers/Authentications.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -223,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiUploads.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -300,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../wordpress/wp-content/plugins/contact/wp_w2_contact_form.php" />
         <option value="$PROJECT_DIR$/../wordpress/wp-content/themes/twentyseventeen/functions.php" />
         <option value="$PROJECT_DIR$/../wordpress/wp-admin/index.php" />
         <option value="$PROJECT_DIR$/../wordpress/wp-admin/js/common.js" />
@@ -351,6 +247,7 @@
         <option value="$PROJECT_DIR$/admin/app/js/routes.js" />
         <option value="$PROJECT_DIR$/admin/views/partials/header.html" />
         <option value="$PROJECT_DIR$/admin/app/js/controller.js" />
+        <option value="$PROJECT_DIR$/web/views/view1.html" />
       </list>
     </option>
   </component>
@@ -359,9 +256,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/admin/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -386,26 +280,41 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
+              <option name="myItemId" value="lung" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
+              <option name="myItemId" value="lung" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
+              <option name="myItemId" value="lung" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
+              <option name="myItemId" value="lung" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lung" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -415,51 +324,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
+              <option name="myItemId" value="lung" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
+              <option name="myItemId" value="lung" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -468,34 +337,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -626,6 +472,7 @@
       <workItem from="1504369509814" duration="8483000" />
       <workItem from="1504549495647" duration="4760000" />
       <workItem from="1505581433100" duration="4751000" />
+      <workItem from="1506200180467" duration="68000" />
     </task>
     <task id="LOCAL-00001" summary="fixing stuff">
       <created>1496174475759</created>
@@ -785,7 +632,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205537000" />
+    <option name="totallyTimeSpent" value="205605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -800,7 +647,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18303095" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18516542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33044422" sideWeight="0.50213444" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -855,13 +702,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/restfull/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/upload.php" />
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiUpload.php" />
     <entry file="file://$PROJECT_DIR$/admin/sass/components/_buttons.scss">
@@ -1009,18 +849,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/0xfkGTyl4n858AGUmCrF.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/uploads/0xfkGTyl4n858AGUmCrF.jpg" />
     <entry file="file://$PROJECT_DIR$/admin/views/login/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1032,7 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,11 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#1;n#form#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#form#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#button#0;n#form#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1052,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,14 +883,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/app/js/service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
             <element signature="e#117#3622#0" expanded="false" />
             <element signature="e#175#703#0" expanded="false" />
@@ -1106,7 +928,7 @@
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiUploads.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1114,7 +936,7 @@
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1122,7 +944,7 @@
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/controllers/Authentications.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1130,7 +952,7 @@
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
-          <caret line="35" column="83" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="83" />
+          <caret line="35" column="83" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="83" />
           <folding />
         </state>
       </provider>
@@ -1139,14 +961,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-          <folding />
+          <folding>
+            <marker date="1506200166890" expanded="true" signature="1497:1576" ph="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="161">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1162,34 +986,30 @@
     <entry file="file://$PROJECT_DIR$/admin/views/partials/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="262" column="44" lean-forward="true" selection-start-line="262" selection-start-column="44" selection-end-line="262" selection-end-column="44" />
+        <state relative-caret-position="697">
+          <caret line="262" column="44" lean-forward="false" selection-start-line="262" selection-start-column="44" selection-end-line="262" selection-end-column="44" />
           <folding>
             <element signature="e#330#1088#0" expanded="false" />
             <element signature="e#1636#1751#0" expanded="false" />
             <element signature="e#1805#1936#0" expanded="false" />
             <element signature="e#1979#2063#0" expanded="false" />
             <element signature="e#2110#2252#0" expanded="false" />
-            <element signature="e#2314#3425#0" expanded="false" />
-            <element signature="e#3510#4020#0" expanded="false" />
-            <element signature="e#4077#4145#0" expanded="false" />
-            <element signature="e#4778#4861#0" expanded="false" />
-            <element signature="e#4927#5479#0" expanded="false" />
-            <element signature="e#5535#5588#0" expanded="false" />
-            <element signature="e#5626#7904#0" expanded="false" />
-            <element signature="e#8539#8622#0" expanded="false" />
-            <element signature="e#8688#9239#0" expanded="false" />
-            <element signature="e#9343#9756#0" expanded="false" />
-            <element signature="e#9917#10006#0" expanded="false" />
-            <element signature="e#10044#11808#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/view1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
