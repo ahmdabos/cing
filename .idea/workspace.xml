@@ -2,690 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32bc48b2-e21e-42b2-bdb5-e32f22241f7c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/cing.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/cache/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/cache/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/constants.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/doctypes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/foreign_chars.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/hooks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/memcached.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/migration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/mimes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/profiler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/routes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/smileys.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/config/user_agents.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/controllers/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/core/MY_Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/core/MY_Loader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/core/MY_Router.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/core/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/helpers/application_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/helpers/common_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/helpers/custom_string_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/helpers/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/helpers/jwt_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/hooks/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/arabic/acl_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/arabic/department_arabic_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/arabic/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/arabic/user_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/arabic/welcome_arabic_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/acl_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/brainstorm_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/campaign_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/category_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/category_questions_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/department_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/faq_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/general_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/listings_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/menu_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/page_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/pressrelease_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/slider_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/story_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/submission_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/user_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/english/welcome_english_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/language/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/libraries/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/models/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/config/auotload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/config/rest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiUploads.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/language/english/rest_controller_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/libraries/Format.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Api/libraries/REST_Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Articles/controllers/Articles.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Articles/models/Article.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Authentications/controllers/Authentications.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/modules/Uploads/controllers/Uploads.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/third_party/MX/Base.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/third_party/MX/Ci.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/third_party/MX/Config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/third_party/MX/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/third_party/MX/Lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/third_party/MX/Loader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/third_party/MX/Modules.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/third_party/MX/Router.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/third_party/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/cli/error_404.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/cli/error_db.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/cli/error_exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/cli/error_general.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/cli/error_php.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/cli/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/html/error_404.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/html/error_db.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/html/error_exception.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/html/error_general.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/html/error_php.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/html/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/errors/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/application/views/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/browser-compatibility.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/contributing.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/mmajlis.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/readme-ci.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Benchmark.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/CodeIgniter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Common.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Exceptions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Hooks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Input.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Loader.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Output.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Router.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Security.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/URI.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/Utf8.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/compat/hash.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/compat/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/compat/mbstring.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/compat/password.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/compat/standard.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/core/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/DB.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/DB_cache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/DB_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/DB_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/DB_query_builder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/DB_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/DB_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/cubrid/cubrid_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/cubrid/cubrid_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/cubrid/cubrid_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/cubrid/cubrid_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/cubrid/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/ibase/ibase_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/ibase/ibase_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/ibase/ibase_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/ibase/ibase_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/ibase/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mssql/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mssql/mssql_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mssql/mssql_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mssql/mssql_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mssql/mssql_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysql/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysql/mysql_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysql/mysql_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysql/mysql_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysql/mysql_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysqli/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysqli/mysqli_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysqli/mysqli_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysqli/mysqli_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/mysqli/mysqli_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/oci8/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/oci8/oci8_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/oci8/oci8_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/oci8/oci8_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/oci8/oci8_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/odbc/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/odbc/odbc_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/odbc/odbc_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/odbc/odbc_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/odbc/odbc_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/pdo_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/pdo_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/pdo_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/pdo_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_4d_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_4d_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_cubrid_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_cubrid_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_dblib_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_dblib_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_firebird_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_firebird_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_ibm_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_ibm_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_informix_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_informix_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_mysql_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_mysql_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_oci_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_oci_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_odbc_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_odbc_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_pgsql_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_pgsql_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_sqlite_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_sqlite_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/postgre/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/postgre/postgre_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/postgre/postgre_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/postgre/postgre_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/postgre/postgre_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite/sqlite_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite/sqlite_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite/sqlite_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite/sqlite_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite3/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite3/sqlite3_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite3/sqlite3_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite3/sqlite3_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlite3/sqlite3_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlsrv/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlsrv/sqlsrv_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlsrv/sqlsrv_forge.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlsrv/sqlsrv_result.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/drivers/sqlsrv/sqlsrv_utility.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/database/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/fonts/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/fonts/texb.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/array_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/captcha_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/cookie_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/date_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/directory_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/download_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/email_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/file_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/form_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/html_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/inflector_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/language_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/number_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/path_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/security_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/smiley_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/string_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/text_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/typography_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/url_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/helpers/xml_helper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/calendar_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/date_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/db_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/email_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/form_validation_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/ftp_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/imglib_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/migration_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/number_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/pagination_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/profiler_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/unit_test_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/english/upload_lang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/language/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cache/Cache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cache/drivers/Cache_apc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cache/drivers/Cache_dummy.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cache/drivers/Cache_file.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cache/drivers/Cache_memcached.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cache/drivers/Cache_redis.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cache/drivers/Cache_wincache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cache/drivers/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cache/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Calendar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Cart.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Email.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Encrypt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Encryption.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Form_validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Ftp.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Image_lib.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Javascript.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Javascript/Jquery.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Javascript/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Migration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Parser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Profiler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Session/Session.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Session/SessionHandlerInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Session/Session_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Session/drivers/Session_database_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Session/drivers/Session_files_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Session/drivers/Session_memcached_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Session/drivers/Session_redis_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Session/drivers/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Session/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Trackback.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Typography.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Unit_test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Upload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/User_agent.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Xmlrpc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Xmlrpcs.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/Zip.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/system/libraries/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/DCO.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_downloads/ELDocs.tmbundle.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_images/appflowchart.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_images/smile.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/basic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/ci-icon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/comment-bright.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/comment-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/comment.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/css/badge_only.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/css/theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/doctools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/down-pressed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/file.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/js/oldtheme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/js/theme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/minus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/pygments.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/searchtools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/underscore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/up-pressed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/up.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/_static/websupport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/changelog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/contributing/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/caching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/call_function.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/configuration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/connecting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/db_driver_reference.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/examples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/forge.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/helpers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/metadata.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/queries.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/query_builder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/results.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/transactions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/database/utilities.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/documentation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/alternative_php.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/ancillary_classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/autoloader.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/caching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/cli.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/common_functions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/compatibility_functions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/controllers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/core_classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/creating_drivers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/creating_libraries.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/credits.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/drivers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/environments.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/errors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/helpers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/hooks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/libraries.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/managing_apps.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/models.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/profiling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/requirements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/reserved_names.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/routing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/security.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/styleguide.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/urls.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/views.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/general/welcome.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/genindex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/array_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/captcha_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/cookie_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/date_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/directory_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/download_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/email_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/file_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/form_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/html_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/inflector_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/language_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/number_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/path_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/security_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/smiley_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/string_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/text_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/typography_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/url_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/helpers/xml_helper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/downloads.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/troubleshooting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_120.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_130.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_131.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_132.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_133.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_140.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_141.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_150.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_152.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_153.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_154.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_160.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_161.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_162.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_163.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_170.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_171.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_172.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_200.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_201.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_202.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_203.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_210.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_211.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_212.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_213.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_214.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_220.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_221.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_300.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrade_b11.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/installation/upgrading.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/benchmark.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/caching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/calendar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/cart.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/config.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/email.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/encrypt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/encryption.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/file_uploading.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/form_validation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/ftp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/image_lib.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/input.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/javascript.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/language.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/loader.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/migration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/output.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/pagination.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/parser.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/security.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/sessions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/table.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/trackback.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/typography.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/unit_testing.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/uri.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/user_agent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/xmlrpc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/libraries/zip.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/license.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/objects.inv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/overview/appflow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/overview/at_a_glance.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/overview/features.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/overview/getting_started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/overview/goals.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/overview/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/overview/mvc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/search.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/searchindex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/tutorial/conclusion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/tutorial/create_news_items.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/tutorial/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/tutorial/news_section.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/restfull/user_guide/tutorial/static_pages.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/0xfkGTyl4n858AGUmCrF.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/2naChzur7w5sQzyJZqRm.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/BKRtwKAksicaiC2ERjpm.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cing.iml" afterPath="$PROJECT_DIR$/.idea/cing.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/app.js" afterPath="$PROJECT_DIR$/admin/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/config.js" afterPath="$PROJECT_DIR$/admin/app/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/controller.js" afterPath="$PROJECT_DIR$/admin/app/js/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/directive.js" afterPath="$PROJECT_DIR$/admin/app/js/directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/routes.js" afterPath="$PROJECT_DIR$/admin/app/js/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/service.js" afterPath="$PROJECT_DIR$/admin/app/js/service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-animate/.bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-animate/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-animate/LICENSE.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular-animate/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-animate/README.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular-animate/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-animate/angular-animate.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-animate/angular-animate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-animate/angular-animate.min.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-animate/angular-animate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-animate/angular-animate.min.js.map" afterPath="$PROJECT_DIR$/admin/app/lib/angular-animate/angular-animate.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-animate/bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-animate/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-animate/index.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-animate/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-animate/package.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-animate/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-cookies/.bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-cookies/LICENSE.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-cookies/README.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-cookies/angular-cookies.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/angular-cookies.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-cookies/angular-cookies.min.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/angular-cookies.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-cookies/angular-cookies.min.js.map" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/angular-cookies.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-cookies/bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-cookies/index.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-cookies/package.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-cookies/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/.babelrc" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/.babelrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/.bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/.gitignore" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/.jshintrc" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/README.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/WebpackConfig.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/WebpackConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/dist/angular-file-upload.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/dist/angular-file-upload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/dist/angular-file-upload.min.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/dist/angular-file-upload.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/gulpfile.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/license.txt" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/package.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/config.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/directives/FileDrop.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/directives/FileDrop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/directives/FileOver.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/directives/FileOver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/directives/FileSelect.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/directives/FileSelect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/index.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileDirective.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileDirective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileDrop.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileDrop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileItem.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileLikeObject.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileLikeObject.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileOver.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileOver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileSelect.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileSelect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileUploader.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/FileUploader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/Pipeline.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/services/Pipeline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/values/options.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-file-upload/src/values/options.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/.bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/CHANGELOG.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/LICENSE" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/README.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/release/angular-ui-router.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/release/angular-ui-router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/release/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/release/angular-ui-router.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/common.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/resolve.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/resolve.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/state.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/stateDirectives.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/stateDirectives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/stateFilters.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/stateFilters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/templateFactory.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/templateFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/urlMatcherFactory.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/urlMatcherFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/urlRouter.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/urlRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/view.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/viewDirective.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/viewDirective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/viewScroll.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular-ui-router/src/viewScroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/.bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/LICENSE.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/README.md" afterPath="$PROJECT_DIR$/admin/app/lib/angular/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/angular-csp.css" afterPath="$PROJECT_DIR$/admin/app/lib/angular/angular-csp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/angular.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/admin/app/lib/angular/angular.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/index.js" afterPath="$PROJECT_DIR$/admin/app/lib/angular/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angular/package.json" afterPath="$PROJECT_DIR$/admin/app/lib/angular/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/.bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/Gruntfile.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/README.md" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/assets/js/index.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/dist/angular-datepicker.css" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/dist/angular-datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/dist/angular-datepicker.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/dist/angular-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/dist/angular-datepicker.min.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/dist/angular-datepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/index.html" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/index.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/package.json" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/src/css/angular-datepicker.css" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/src/css/angular-datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/src/js/angular-datepicker.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/src/js/angular-datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/concurrent.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/concurrent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/confs.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/confs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/connect.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/connect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/copy.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/copy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/csslint.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/csslint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/cssmin.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/cssmin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/eslint.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/eslint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/jscs.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/jscs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/uglify.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/uglify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/watch.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/tasks/watch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/themes/README.md" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/themes/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/twitter-bootstrap.html" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/twitter-bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/assets/js/index.js" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/index.html" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/datepicker.html" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/datepicker.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/day.html" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/day.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/month.html" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/month.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/popup.html" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/popup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/year.html" afterPath="$PROJECT_DIR$/admin/app/lib/angularjs-datepicker/ui-bootstrap/template/datepicker/year.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/.bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/.gitignore" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/.npmignore" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/HELP-US-OUT.txt" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/HELP-US-OUT.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/css/font-awesome.css.map" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/css/font-awesome.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/animated.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/animated.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/rotated-flipped.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/screen-reader.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/screen-reader.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_animated.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_animated.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_screen-reader.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/admin/app/lib/font-awesome/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/lodash/LICENSE.txt" afterPath="$PROJECT_DIR$/admin/app/lib/lodash/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/lodash/bower.json" afterPath="$PROJECT_DIR$/admin/app/lib/lodash/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/lodash/lodash.js" afterPath="$PROJECT_DIR$/admin/app/lib/lodash/lodash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/lib/lodash/lodash.min.js" afterPath="$PROJECT_DIR$/admin/app/lib/lodash/lodash.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/css/style.css" afterPath="$PROJECT_DIR$/admin/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/css/style.css.map" afterPath="$PROJECT_DIR$/admin/assets/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-Bold.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-Bold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-BoldItalic.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-BoldItalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-ExtraBold.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-ExtraBold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-ExtraBoldItalic.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-ExtraBoldItalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-Italic.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-Italic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-Light.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-Light.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-LightItalic.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-LightItalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-Regular.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-Regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-SemiBold.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-SemiBold.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-SemiBoldItalic.svg" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/OpenSans-SemiBoldItalic.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/stylesheet.css" afterPath="$PROJECT_DIR$/admin/assets/fonts/Open_Sans/stylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/bower.json" afterPath="$PROJECT_DIR$/admin/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/gulpfile.js" afterPath="$PROJECT_DIR$/admin/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.html" afterPath="$PROJECT_DIR$/admin/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/package.json" afterPath="$PROJECT_DIR$/admin/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/_responsive.scss" afterPath="$PROJECT_DIR$/admin/sass/_responsive.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_animation.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_animation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_buttons.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_fonts.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_fonts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_forms.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_mixins.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_navbar.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_normalize.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_normalize.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_pagination.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_pagination.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_scaff.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_scaff.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_table.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_table.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_typography.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_typography.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/components/_variables.scss" afterPath="$PROJECT_DIR$/admin/sass/components/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/sass/style.scss" afterPath="$PROJECT_DIR$/admin/sass/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/articles/add.html" afterPath="$PROJECT_DIR$/admin/views/articles/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/articles/edit.html" afterPath="$PROJECT_DIR$/admin/views/articles/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/articles/index.html" afterPath="$PROJECT_DIR$/admin/views/articles/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/home.html" afterPath="$PROJECT_DIR$/admin/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/login/index.html" afterPath="$PROJECT_DIR$/admin/views/login/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/partials/header.html" afterPath="$PROJECT_DIR$/admin/views/partials/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/view1.html" afterPath="$PROJECT_DIR$/web/views/view1.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -703,7 +24,7 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
+            <state relative-caret-position="5359">
               <caret line="262" column="44" lean-forward="false" selection-start-line="262" selection-start-column="44" selection-end-line="262" selection-end-column="44" />
               <folding>
                 <element signature="e#330#1088#0" expanded="false" />
@@ -716,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/view1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -827,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../wordpress/wp-content/themes/twentyseventeen/functions.php" />
         <option value="$PROJECT_DIR$/../wordpress/wp-admin/index.php" />
         <option value="$PROJECT_DIR$/../wordpress/wp-admin/js/common.js" />
         <option value="$PROJECT_DIR$/../wordpress/wp-admin/js/xfn.js" />
@@ -878,6 +208,7 @@
         <option value="$PROJECT_DIR$/admin/views/partials/header.html" />
         <option value="$PROJECT_DIR$/admin/app/js/controller.js" />
         <option value="$PROJECT_DIR$/web/views/view1.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -921,52 +252,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lung" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lung" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lung" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lung" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lung" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lung" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lung" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -1102,7 +387,8 @@
       <workItem from="1504369509814" duration="8483000" />
       <workItem from="1504549495647" duration="4760000" />
       <workItem from="1505581433100" duration="4751000" />
-      <workItem from="1506200180467" duration="163000" />
+      <workItem from="1506200180467" duration="367000" />
+      <workItem from="1506200608251" duration="219000" />
     </task>
     <task id="LOCAL-00001" summary="fixing stuff">
       <created>1496174475759</created>
@@ -1265,11 +551,39 @@
       <option name="project" value="LOCAL" />
       <updated>1506200252763</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="change api from codeignater to laravel lumen">
+      <created>1506200384175</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1506200384175</updated>
+    </task>
+    <task id="LOCAL-00025" summary="change api from codeignater to laravel lumen">
+      <created>1506200659298</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1506200659298</updated>
+    </task>
+    <task id="LOCAL-00026" summary="change api from codeignater to laravel lumen">
+      <created>1506200708310</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1506200708310</updated>
+    </task>
+    <task id="LOCAL-00027" summary="change api from codeignater to laravel lumen">
+      <created>1506200800754</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1506200800754</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205700000" />
+    <option name="totallyTimeSpent" value="206123000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1284,7 +598,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18516542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18729989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33044422" sideWeight="0.50213444" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1331,7 +645,8 @@
     <MESSAGE value="working on jwt authentication" />
     <MESSAGE value="working on authontecation" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="change api from codeignater to laravel lumen" />
+    <option name="LAST_COMMIT_MESSAGE" value="change api from codeignater to laravel lumen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1340,7 +655,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/upload.php" />
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiUpload.php" />
     <entry file="file://$PROJECT_DIR$/admin/sass/components/_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -1370,13 +684,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Articles/controllers/Articles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Articles/controllers/Articles.php" />
     <entry file="file://$PROJECT_DIR$/uploads/yRrcMxO0JlrzmR4d9dTM.jpg" />
     <entry file="file://$PROJECT_DIR$/uploads/JI2vUiZMtnWZ1HdBDtGA.jpg" />
     <entry file="file://$PROJECT_DIR$/uploads/GzMAJxKhHlLJdGaomMPf.jpg" />
@@ -1403,13 +711,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Uploads/controllers/Uploads.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Uploads/controllers/Uploads.php" />
     <entry file="file://$PROJECT_DIR$/admin/sass/components/_scaff.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
@@ -1417,13 +719,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Articles/models/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Articles/models/Article.php" />
     <entry file="file://$PROJECT_DIR$/admin/app/lib/angular-file-upload/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1496,13 +792,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/helpers/jwt_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/helpers/jwt_helper.php" />
     <entry file="file://$PROJECT_DIR$/admin/views/articles/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1528,73 +818,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding>
-            <element signature="e#117#3622#0" expanded="false" />
-            <element signature="e#175#703#0" expanded="false" />
-            <element signature="e#249#370#0" expanded="false" />
-            <element signature="e#418#542#0" expanded="false" />
-            <element signature="e#564#687#0" expanded="false" />
-            <element signature="e#740#1185#0" expanded="false" />
-            <element signature="e#814#897#0" expanded="false" />
-            <element signature="e#924#1036#0" expanded="false" />
-            <element signature="e#1058#1169#0" expanded="false" />
-            <element signature="e#1226#2151#0" expanded="false" />
-            <element signature="e#1300#1857#0" expanded="false" />
-            <element signature="e#1537#1839#0" expanded="false" />
-            <element signature="e#1648#1771#0" expanded="false" />
-            <element signature="e#1884#2001#0" expanded="false" />
-            <element signature="e#2023#2134#0" expanded="false" />
-            <element signature="e#2191#3114#0" expanded="false" />
-            <element signature="e#2265#2821#0" expanded="false" />
-            <element signature="e#2501#2803#0" expanded="false" />
-            <element signature="e#2612#2735#0" expanded="false" />
-            <element signature="e#2848#2965#0" expanded="false" />
-            <element signature="e#2987#3098#0" expanded="false" />
-            <element signature="e#3151#3605#0" expanded="false" />
-            <element signature="e#3225#3311#0" expanded="false" />
-            <element signature="e#3338#3455#0" expanded="false" />
-            <element signature="e#3477#3588#0" expanded="false" />
-            <element signature="e#3968#4609#0" expanded="false" />
-            <element signature="e#4674#6705#0" expanded="false" />
-            <element signature="e#6771#7090#0" expanded="false" />
-            <element signature="e#7175#7532#0" expanded="false" />
-            <element signature="e#7652#8127#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiUploads.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/controllers/Authentications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="35" column="83" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiUploads.php" />
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/models/Authentication.php" />
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Authentications/controllers/Authentications.php" />
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAuthentications.php" />
     <entry file="file://$PROJECT_DIR$/admin/app/js/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1603,14 +833,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" />
     <entry file="file://$PROJECT_DIR$/admin/app/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1629,7 +852,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
+        <state relative-caret-position="5359">
           <caret line="262" column="44" lean-forward="false" selection-start-line="262" selection-start-column="44" selection-end-line="262" selection-end-column="44" />
           <folding>
             <element signature="e#330#1088#0" expanded="false" />
@@ -1645,6 +868,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
           <folding />
         </state>
       </provider>
