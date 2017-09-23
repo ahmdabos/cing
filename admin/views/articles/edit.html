@@ -10,7 +10,7 @@
             <div class="form-group">
                 <label for="date">Date</label>
                 <datepicker date-typer="true" date-format="yyyy-MM-dd hh:mm:ss" date-set="true">
-                    <input ng-model="data.date" name="date" type="text" class="form-control"
+                    <input ng-model="data.PublishedAt" name="date" type="text" class="form-control"
                            ng-pattern="dateTimePattern"
                            id="date" required/>
                     <p class="error" ng-if="form.date.$error.required && !form.date.$pristine">This field is
@@ -54,7 +54,7 @@
                             <span><strong>{{data.image | limitTo:10}}</strong></span>
                         </div>
                         <div class="panel-body align-center">
-                            <img ng-src="http://localhost/cing/uploads/{{data.image}}">
+                            <img ng-src="http://localhost/lung/uploads/{{data.image}}">
                         </div>
                         <div class="panel-footer">
                         </div>

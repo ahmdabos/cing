@@ -28,9 +28,9 @@
                        ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
                 </th>
 
-                <th ng-click="sortBy('date')">
-                    <a href="" ng-class="{reverse: reverse}">Date</a>
-                    <i class="fa fa-arrow-down" ng-show="fieldName === 'date'"
+                <th ng-click="sortBy('publishedAt')">
+                    <a href="" ng-class="{reverse: reverse}">Published At</a>
+                    <i class="fa fa-arrow-down" ng-show="fieldName === 'publishedAt'"
                        ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
                 </th>
                 <th ng-click="sortBy('createdAt')">
@@ -45,7 +45,7 @@
             <tr ng-repeat="article in articles | orderBy:fieldName:reverse">
                 <th scope="row">{{article.id}}</th>
                 <td>{{article.title}}</td>
-                <td>{{article.date}}</td>
+                <td>{{article.publishedAt}}</td>
                 <td>{{article.createdAt}}</td>
                 <td><a href="" title="Edit" ng-click="goToEditArticles(article.id)"><i
                         class="fa fa-pencil-square-o fa-lg"></i></a>|<a href=""

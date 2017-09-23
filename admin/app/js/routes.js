@@ -39,7 +39,7 @@ angular.module('app')
                 controller: 'EditArticleController'
             });
         $urlRouterProvider.otherwise('views/home.html');
-        $locationProvider.html5Mode(true);
-        $locationProvider.hashPrefix = '!';
+       /* $locationProvider.html5Mode(true);
+        $locationProvider.hashPrefix = '!';*/
     }]);
 

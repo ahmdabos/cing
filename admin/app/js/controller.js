@@ -55,9 +55,9 @@ angular.module('app')
                 limit = 25;
             }
             if (!keyword || keyword == '') {
-                keyword == '';
+                keyword = '0';
             }
-            ArticlesService.getArticles(URL.baseApi + URL.articleApi + '/?page=' + page + '&search=' + keyword + '&limit=' + limit + '&offset=' + limit)
+            ArticlesService.getArticles(URL.baseApi + URL.articleApi + '/index/' + page + '/' + keyword + '/' + limit)
                 .then(function (res) {
                     LoaderService.hide();
                     $scope.articles = res.data.result;
@@ -75,7 +75,7 @@ angular.module('app')
         };
         $scope.getArticls(1, 25, '');
         $scope.deleteArticle = function (id) {
-            ArticlesService.deleteArticle(URL.baseApi + URL.articleApi + '/' + id)
+            ArticlesService.deleteArticle(URL.baseApi + URL.articleApi + '/delete/' + id)
                 .then(function (res) {
                     LoaderService.hide();
                     ToastService.show('Deleted successfully');
@@ -124,16 +124,16 @@ angular.module('app')
                 LoaderService.show();
                 var data = {
                     title: $scope.title,
-                    date: $scope.date,
+                    publishedAt: $scope.date,
                     content: $scope.content
                 };
                 if ($scope.isAttachments === true) {
                     uploader.uploadAll();
                     uploader.onCompleteItem = function (fileItem, response, status, headers) {
-                        var responseData = JSON.parse(response);
+                        var responseData = response;
                         if (responseData.status == 1) {
                             data.image = responseData.fileNewName;
-                            ArticlesService.postArticle(URL.baseApi + URL.articleApi, data)
+                            ArticlesService.postArticle(URL.baseApi + URL.articleApi + '/add', data)
                                 .then(function (res) {
                                     LoaderService.hide();
                                     ToastService.show('Added successfully');
@@ -151,7 +151,7 @@ angular.module('app')
                     };
                 }
                 else if ($scope.isAttachments === false) {
-                    ArticlesService.postArticle(URL.baseApi + URL.articleApi, data)
+                    ArticlesService.postArticle(URL.baseApi + URL.articleApi + '/add', data)
                         .then(function (res) {
                             LoaderService.hide();
                             ToastService.show('Added successfully');
@@ -191,14 +191,14 @@ angular.module('app')
                 $scope.isFileTypeError = false;
             }
         };
-        ArticlesService.getArticle(URL.baseApi + URL.articleApi, id)
+        ArticlesService.getArticle(URL.baseApi + URL.articleApi + '/view', id)
             .then(function (res) {
                 LoaderService.hide();
-                var article = res.data.result[0];
+                var article = res.data;
                 $scope.data = {
                     id: id,
                     title: article.title,
-                    date: article.date,
+                    PublishedAt: article.publishedAt,
                     content: article.content,
                     image: article.image
                 };
@@ -222,7 +222,7 @@ angular.module('app')
                     var responseData = JSON.parse(response);
                     if (responseData.status == 1) {
                         $scope.data.image = responseData.fileNewName;
-                        ArticlesService.putArticle(URL.baseApi + URL.articleApi, $scope.data)
+                        ArticlesService.putArticle(URL.baseApi + URL.articleApi + '/edit', $scope.data)
                             .then(function (res) {
                                 LoaderService.hide();
                                 ToastService.show('Updated successfully');
@@ -239,7 +239,7 @@ angular.module('app')
                 };
             }
             else if ($scope.isAttachments === false) {
-                ArticlesService.putArticle(URL.baseApi + URL.articleApi, $scope.data)
+                ArticlesService.putArticle(URL.baseApi + URL.articleApi + '/edit', $scope.data)
                     .then(function (res) {
                         LoaderService.hide();
                         ToastService.show('Updated successfully');
