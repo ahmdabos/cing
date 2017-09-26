@@ -24,28 +24,6 @@ class Uploads extends Controller
     public function uploadFile(Request $request)
     {
 
-       /* $file = $request->file('file');
-
-        //Display File Name
-        echo 'File Name: '.$file->getClientOriginalName();
-        echo '<br>';
-        //Display File Extension
-        echo 'File Extension: '.$file->getClientOriginalExtension();
-        echo '<br>';
-        //Display File Real Path
-        echo 'File Real Path: '.$file->getRealPath();
-        echo '<br>';
-        //Display File Size
-        echo 'File Size: '.$file->getSize();
-        echo '<br>';
-        //Display File Mime Type
-        echo 'File Mime Type: '.$file->getMimeType();
-        //Move Uploaded File
-        $destinationPath = '../../uploads/';
-        $file->move($destinationPath,$file->getClientOriginalName());
-        return json_encode($file);*/
-
-
         $data['filePath'] = '../../uploads/';
         $file = $request->file('file');
         $data['filePathWithOldName'] = $data['filePath'] . $file->getClientOriginalName();

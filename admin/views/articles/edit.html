@@ -10,7 +10,7 @@
             <div class="form-group">
                 <label for="date">Date</label>
                 <datepicker date-typer="true" date-format="yyyy-MM-dd hh:mm:ss" date-set="true">
-                    <input ng-model="data.PublishedAt" name="date" type="text" class="form-control"
+                    <input ng-model="data.publishedAt" name="date" type="text" class="form-control"
                            ng-pattern="dateTimePattern"
                            id="date" required/>
                     <p class="error" ng-if="form.date.$error.required && !form.date.$pristine">This field is
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <button type="submit" class="btn btn-primary"
-                    ng-disabled="!form.$valid || isFileTypeError || isFileSizeError">Add
+                    ng-disabled="!form.$valid || isFileTypeError || isFileSizeError">Update
             </button>
         </form>
     </div>

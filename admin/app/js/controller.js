@@ -167,7 +167,8 @@ angular.module('app')
         };
     }])
     //Edit Article Controller
-    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $stateParams, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
+    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams','$filter', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $stateParams,$filter, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
+
         $scope.dateTimePattern = /^([0-2][0-9]{3})-([0-1][0-9])-([0-3][0-9]) ([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(([\-\+]([0-1][0-9])\:00))?/;
         LoaderService.show();
         var id = $stateParams.id;
@@ -219,7 +220,7 @@ angular.module('app')
             if ($scope.isAttachments === true) {
                 uploader.uploadAll();
                 uploader.onCompleteItem = function (fileItem, response, status, headers) {
-                    var responseData = JSON.parse(response);
+                    var responseData = response;
                     if (responseData.status == 1) {
                         $scope.data.image = responseData.fileNewName;
                         ArticlesService.putArticle(URL.baseApi + URL.articleApi + '/edit', $scope.data)
