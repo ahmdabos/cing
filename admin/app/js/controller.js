@@ -2,7 +2,6 @@
 angular.module('app')
 //Login Controller
     .controller('LoginController', ['$scope', '$http', '$log', '$state', '$cookies', 'AuthService', 'URL', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, $cookies, AuthService, URL, LoaderService, ToastService) {
-
         $scope.submit = function () {
             LoaderService.show();
             var data = {
@@ -28,34 +27,34 @@ angular.module('app')
         $scope.articles = [];
         $scope.pager = {};
         $scope.limitOptions = Config.limitOptions;
-        $scope.soryBy = Config.sortBy;
+        $scope.sortBy = Config.sortBy;
         $scope.limit = Config.limit;
-        $scope.sortReverseDirection = Config.sortReverseDirection;
+        $scope.sortReverse = Config.sortReverse;
 
         $scope.setLimit = function (limit) {
             $scope.limit = limit;
-            $scope.getArticls(1, limit, $scope.searchKeyword);
+            $scope.getArticles(1, limit, $scope.searchKeyword);
         };
         $scope.setSearch = function (searchKeyword) {
             $scope.searchKeyword = searchKeyword;
-            $scope.getArticls(1, $scope.limit, $scope.searchKeyword);
+            $scope.getArticles(1, $scope.limit, $scope.searchKeyword);
         };
         $scope.setPage = function (page) {
-            $scope.getArticls(page, $scope.limit, $scope.searchKeyword);
+            $scope.getArticles(page, $scope.limit, $scope.searchKeyword);
         };
-        $scope.sortBy = function (soryBy) {
-            $scope.sortReverseDirection = ($scope.soryBy === soryBy) ? !$scope.sortReverseDirection : false;
-            $scope.soryBy = soryBy;
+        $scope.setSortBy = function (sortBy) {
+            $scope.sortReverse = ($scope.sortBy === sortBy) ? !$scope.sortReverse : false;
+            $scope.sortBy = sortBy;
         };
-        $scope.getArticls = function (page, limit, keyword) {
+        $scope.getArticles = function (page, limit, keyword) {
             LoaderService.show();
             if (!page) {
                 page = 1;
             }
-            if (!limit || limit == '') {
+            if (!limit) {
                 limit = $scope.limit;
             }
-            if (!keyword || keyword == '') {
+            if (!keyword) {
                 keyword = '';
             }
             ArticlesService.getArticles(URL.baseApi + URL.articleApi + '/index/' + page + '/' + limit + '/' + keyword)
@@ -74,7 +73,7 @@ angular.module('app')
                 return;
             }
         };
-        $scope.getArticls(1, $scope.limit, '');
+        $scope.getArticles(1, $scope.limit, '');
         $scope.deleteArticle = function (id) {
             ArticlesService.deleteArticle(URL.baseApi + URL.articleApi + '/delete/' + id)
                 .then(function (res) {
@@ -94,7 +93,6 @@ angular.module('app')
     }])
     //Add Article Controller
     .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $filter, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
-        $scope.date = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
         $scope.dateTimePattern = /^([0-2][0-9]{3})-([0-1][0-9])-([0-3][0-9]) ([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(([\-\+]([0-1][0-9])\:00))?/;
         $scope.isAttachments = false;
         var uploader = $scope.uploader = new FileUploader({
@@ -123,17 +121,17 @@ angular.module('app')
         $scope.submit = function () {
             if ($scope.form.$valid && !$scope.isFileTypeError && !$scope.isFileSizeError) {
                 LoaderService.show();
+                $scope.publishedAt = $filter('publishedAt')(new Date(), 'yyyy-MM-dd hh:mm:ss');
                 var data = {
                     title: $scope.title,
-                    publishedAt: $scope.date,
+                    publishedAt: Scope.publishedAt,
                     content: $scope.content
                 };
                 if ($scope.isAttachments === true) {
                     uploader.uploadAll();
                     uploader.onCompleteItem = function (fileItem, response, status, headers) {
-                        var responseData = response;
-                        if (responseData.status == 1) {
-                            data.image = responseData.fileNewName;
+                        if (response.status == 1) {
+                            data.image = response.fileNewName;
                             ArticlesService.postArticle(URL.baseApi + URL.articleApi + '/add', data)
                                 .then(function (res) {
                                     LoaderService.hide();
@@ -169,7 +167,6 @@ angular.module('app')
     }])
     //Edit Article Controller
     .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', '$filter', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $stateParams, $filter, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
-
         $scope.dateTimePattern = /^([0-2][0-9]{3})-([0-1][0-9])-([0-3][0-9]) ([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(([\-\+]([0-1][0-9])\:00))?/;
         LoaderService.show();
         var id = $stateParams.id;
@@ -200,7 +197,7 @@ angular.module('app')
                 $scope.data = {
                     id: id,
                     title: article.title,
-                    PublishedAt: article.publishedAt,
+                    publishedAt: article.publishedAt,
                     content: article.content,
                     image: article.image
                 };
@@ -209,7 +206,6 @@ angular.module('app')
             }, function (err) {
                 LoaderService.hide();
                 $log.debug(err);
-
             });
         $scope.onRemoveFileBeforeUpload = function () {
             $scope.isAttachments = false;
@@ -217,13 +213,11 @@ angular.module('app')
         };
         $scope.submit = function () {
             LoaderService.show();
-
             if ($scope.isAttachments === true) {
                 uploader.uploadAll();
                 uploader.onCompleteItem = function (fileItem, response, status, headers) {
-                    var responseData = response;
-                    if (responseData.status == 1) {
-                        $scope.data.image = responseData.fileNewName;
+                    if (response.status == 1) {
+                        $scope.data.image = response.fileNewName;
                         ArticlesService.putArticle(URL.baseApi + URL.articleApi + '/edit', $scope.data)
                             .then(function (res) {
                                 LoaderService.hide();

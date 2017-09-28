@@ -10,7 +10,7 @@ angular.module('app')
         limitOptions: [10, 25, 50, 100],
         sortBy: 'createdAt',
         limit: 25,
-        sortReverseDirection: true
+        sortReverse: true
     })
     .config(function ($httpProvider) {
         return $httpProvider.interceptors.push('HttpRequestInterceptorService');
