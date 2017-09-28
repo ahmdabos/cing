@@ -93,6 +93,7 @@ angular.module('app')
     }])
     //Add Article Controller
     .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $filter, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
+        var publishedAt = $filter('publishedAt')(new Date(), 'yyyy-MM-dd hh:mm:ss');
         $scope.dateTimePattern = /^([0-2][0-9]{3})-([0-1][0-9])-([0-3][0-9]) ([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(([\-\+]([0-1][0-9])\:00))?/;
         $scope.isAttachments = false;
         var uploader = $scope.uploader = new FileUploader({
@@ -121,10 +122,9 @@ angular.module('app')
         $scope.submit = function () {
             if ($scope.form.$valid && !$scope.isFileTypeError && !$scope.isFileSizeError) {
                 LoaderService.show();
-                $scope.publishedAt = $filter('publishedAt')(new Date(), 'yyyy-MM-dd hh:mm:ss');
                 var data = {
                     title: $scope.title,
-                    publishedAt: Scope.publishedAt,
+                    publishedAt: publishedAt,
                     content: $scope.content
                 };
                 if ($scope.isAttachments === true) {
