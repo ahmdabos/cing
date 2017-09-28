@@ -1,4 +1,4 @@
-﻿<section class="home">
+﻿﻿﻿<section class="home">
     <div class="container">
         <form>
             <div class="flex">
@@ -19,30 +19,30 @@
             <tr>
                 <th ng-click="sortBy('id')">
                     <a href="">#</a>
-                    <i class="fa fa-arrow-down" ng-show="fieldName === 'id'"
-                       ng-class="{'fa-caret-down' : reverse, 'fa-caret-up' : !reverse}"></i>
+                    <i class="fa fa-arrow-down" ng-show="sortBy === 'id'"
+                       ng-class="{'fa-caret-down' : sortReverseDirection, 'fa-caret-up' : !sortReverseDirection}"></i>
                 </th>
                 <th ng-click="sortBy('title')">
-                    <a href="" ng-class="{reverse: reverse}">Title</a>
-                    <i class="fa fa-arrow-down" ng-show="fieldName === 'title'"
-                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
+                    <a href="" ng-class="{sortReverseDirection: sortReverseDirection}">Title</a>
+                    <i class="fa fa-arrow-down" ng-show="sortBy === 'title'"
+                       ng-class="{'fa-arrow-down' : sortReverseDirection, 'fa-arrow-up' : !sortReverseDirection}"></i>
                 </th>
 
                 <th ng-click="sortBy('publishedAt')">
-                    <a href="" ng-class="{reverse: reverse}">Published At</a>
-                    <i class="fa fa-arrow-down" ng-show="fieldName === 'publishedAt'"
-                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
+                    <a href="" ng-class="{sortReverseDirection: sortReverseDirection}">Published At</a>
+                    <i class="fa fa-arrow-down" ng-show="sortBy === 'publishedAt'"
+                       ng-class="{'fa-arrow-down' : sortReverseDirection, 'fa-arrow-up' : !sortReverseDirection}"></i>
                 </th>
                 <th ng-click="sortBy('createdAt')">
-                    <a href="" ng-class="{reverse: reverse}">Created At</a>
-                    <i class="fa fa-arrow-down" ng-show="fieldName === 'createdAt'"
-                       ng-class="{'fa-arrow-down' : reverse, 'fa-arrow-up' : !reverse}"></i>
+                    <a href="" ng-class="{sortReverseDirection: sortReverseDirection}">Created At</a>
+                    <i class="fa fa-arrow-down" ng-show="sortBy === 'createdAt'"
+                       ng-class="{'fa-arrow-down' : sortReverseDirection, 'fa-arrow-up' : !sortReverseDirection}"></i>
                 </th>
                 <th>action</th>
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="article in articles | orderBy:fieldName:reverse">
+            <tr ng-repeat="article in articles | orderBy:sortBy:sortReverseDirection">
                 <th scope="row">{{article.id}}</th>
                 <td>{{article.title}}</td>
                 <td>{{article.publishedAt}}</td>

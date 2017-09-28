@@ -24,16 +24,17 @@ angular.module('app')
         };
     }])
     //Articles Controller
-    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URL', 'ArticlesService', 'PagerService', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, URL, ArticlesService, PagerService, LoaderService, ToastService) {
+    .controller('ArticlesController', ['$scope', '$http', '$log', '$state', 'URL', 'Config', 'ArticlesService', 'PagerService', 'LoaderService', 'ToastService', function ($scope, $http, $log, $state, URL, Config, ArticlesService, PagerService, LoaderService, ToastService) {
         $scope.articles = [];
         $scope.pager = {};
-        $scope.searchKeyword = '';
-        $scope.limitOptions = [10, 25, 50, 100];
-        $scope.fieldName = 'createdAt';
-        $scope.reverse = true;
+        $scope.limitOptions = Config.limitOptions;
+        $scope.soryBy = Config.sortBy;
+        $scope.limit = Config.limit;
+        $scope.sortReverseDirection = Config.sortReverseDirection;
+
         $scope.setLimit = function (limit) {
             $scope.limit = limit;
-            $scope.getArticls(1, $scope.limit, $scope.searchKeyword);
+            $scope.getArticls(1, limit, $scope.searchKeyword);
         };
         $scope.setSearch = function (searchKeyword) {
             $scope.searchKeyword = searchKeyword;
@@ -42,9 +43,9 @@ angular.module('app')
         $scope.setPage = function (page) {
             $scope.getArticls(page, $scope.limit, $scope.searchKeyword);
         };
-        $scope.sortBy = function (fieldName) {
-            $scope.reverse = ($scope.fieldName === fieldName) ? !$scope.reverse : false;
-            $scope.fieldName = fieldName;
+        $scope.sortBy = function (soryBy) {
+            $scope.sortReverseDirection = ($scope.soryBy === soryBy) ? !$scope.sortReverseDirection : false;
+            $scope.soryBy = soryBy;
         };
         $scope.getArticls = function (page, limit, keyword) {
             LoaderService.show();
@@ -52,17 +53,17 @@ angular.module('app')
                 page = 1;
             }
             if (!limit || limit == '') {
-                limit = 25;
+                limit = $scope.limit;
             }
             if (!keyword || keyword == '') {
-                keyword = '0';
+                keyword = '';
             }
-            ArticlesService.getArticles(URL.baseApi + URL.articleApi + '/index/' + page + '/' + keyword + '/' + limit)
+            ArticlesService.getArticles(URL.baseApi + URL.articleApi + '/index/' + page + '/' + limit + '/' + keyword)
                 .then(function (res) {
                     LoaderService.hide();
                     $scope.articles = res.data.result;
                     $scope.totalItems = res.data.length;
-                    $scope.pager = PagerService.getPager(res.data.length, page, limit);
+                    $scope.pager = PagerService.getPager($scope.totalItems, page, limit);
                     $scope.items = $scope.articles.slice($scope.pager.startIndex, $scope.pager.endIndex + 1);
                     $log.debug($scope.articles);
                 }, function (err) {
@@ -73,7 +74,7 @@ angular.module('app')
                 return;
             }
         };
-        $scope.getArticls(1, 25, '');
+        $scope.getArticls(1, $scope.limit, '');
         $scope.deleteArticle = function (id) {
             ArticlesService.deleteArticle(URL.baseApi + URL.articleApi + '/delete/' + id)
                 .then(function (res) {
@@ -87,8 +88,8 @@ angular.module('app')
                     $log.debug(err);
                 });
         };
-        $scope.goToEditArticles = function (currentId) {
-            $state.go('articles.edit', {id: currentId});
+        $scope.goToEditArticles = function (id) {
+            $state.go('articles.edit', {id: id});
         };
     }])
     //Add Article Controller
@@ -167,7 +168,7 @@ angular.module('app')
         };
     }])
     //Edit Article Controller
-    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams','$filter', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $stateParams,$filter, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
+    .controller('EditArticleController', ['$scope', '$http', '$state', '$log', '$stateParams', '$filter', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $stateParams, $filter, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
 
         $scope.dateTimePattern = /^([0-2][0-9]{3})-([0-1][0-9])-([0-3][0-9]) ([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(([\-\+]([0-1][0-9])\:00))?/;
         LoaderService.show();
