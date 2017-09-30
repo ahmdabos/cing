@@ -14,7 +14,7 @@ class ModifyArticles extends Migration
     public function up()
     {
         Schema::table('articles', function (Blueprint $table) {
-            $table->timestamp('publishedAt')->change();;
+            $table->timestamp('publishedAt')->change();
         });
     }
 

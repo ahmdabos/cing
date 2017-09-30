@@ -93,8 +93,8 @@ angular.module('app')
     }])
     //Add Article Controller
     .controller('AddArticleController', ['$scope', '$http', '$state', '$log', '$filter', 'URL', 'ArticlesService', 'LoaderService', 'ToastService', 'FileUploader', function ($scope, $http, $state, $log, $filter, URL, ArticlesService, LoaderService, ToastService, FileUploader) {
-        var publishedAt = $filter('publishedAt')(new Date(), 'yyyy-MM-dd hh:mm:ss');
         $scope.dateTimePattern = /^([0-2][0-9]{3})-([0-1][0-9])-([0-3][0-9]) ([0-5][0-9]):([0-5][0-9]):([0-5][0-9])(([\-\+]([0-1][0-9])\:00))?/;
+        $scope.date = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
         $scope.isAttachments = false;
         var uploader = $scope.uploader = new FileUploader({
             url: URL.baseApi + URL.uploadApi,
@@ -109,7 +109,7 @@ angular.module('app')
             } else {
                 $scope.isFileSizeError = false;
             }
-            if (addedFileItems.file.type != 'image/jpeg' && addedFileItems.file.type != 'image/jpg') {
+            if (addedFileItems.file.type != 'image/jpeg' && addedFileItems.file.type != 'image/jpg' && addedFileItems.file.type != 'image/png') {
                 $scope.isFileTypeError = true;
                 addedFileItems.remove();
             } else {
@@ -119,12 +119,14 @@ angular.module('app')
         $scope.onRemoveFileBeforeUpload = function () {
             $scope.isAttachments = false;
         };
+
         $scope.submit = function () {
             if ($scope.form.$valid && !$scope.isFileTypeError && !$scope.isFileSizeError) {
                 LoaderService.show();
+
                 var data = {
                     title: $scope.title,
-                    publishedAt: publishedAt,
+                    publishedAt: $scope.date,
                     content: $scope.content
                 };
                 if ($scope.isAttachments === true) {
@@ -183,7 +185,7 @@ angular.module('app')
             } else {
                 $scope.isFileSizeError = false;
             }
-            if (addedFileItems.file.type != 'image/jpeg' && addedFileItems.file.type != 'image/jpg') {
+            if (addedFileItems.file.type != 'image/jpeg' && addedFileItems.file.type != 'image/jpg' && addedFileItems.file.type != 'image/png') {
                 $scope.isFileTypeError = true;
                 addedFileItems.remove();
             } else {

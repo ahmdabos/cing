@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32bc48b2-e21e-42b2-bdb5-e32f22241f7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/2naChzur7w5sQzyJZqRm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/BKRtwKAksicaiC2ERjpm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/database/migrations/2017_09_30_150020_create_table_users.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cing.iml" afterPath="$PROJECT_DIR$/.idea/cing.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/app/js/controller.js" afterPath="$PROJECT_DIR$/admin/app/js/controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/views/articles/add.html" afterPath="$PROJECT_DIR$/admin/views/articles/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app/Http/Controllers/Articles.php" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/Articles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/api/app/Providers/AppServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/composer.json" afterPath="$PROJECT_DIR$/api/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/composer.lock" afterPath="$PROJECT_DIR$/api/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/database/migrations/2017_09_22_162613_modify_articles.php" afterPath="$PROJECT_DIR$/api/database/migrations/2017_09_22_162613_modify_articles.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,64 +29,143 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5359">
-              <caret line="262" column="44" lean-forward="false" selection-start-line="262" selection-start-column="44" selection-end-line="262" selection-end-column="44" />
+            <state relative-caret-position="297">
+              <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
               <folding>
-                <element signature="e#330#1088#0" expanded="false" />
-                <element signature="e#1636#1751#0" expanded="false" />
-                <element signature="e#1805#1936#0" expanded="false" />
-                <element signature="e#1979#2063#0" expanded="false" />
-                <element signature="e#2110#2252#0" expanded="false" />
+                <element signature="e#1161#4134#0" expanded="false" />
+                <element signature="e#1396#4133#0" expanded="false" />
+                <element signature="e#1675#1784#0" expanded="false" />
+                <element signature="e#1838#1970#0" expanded="false" />
+                <element signature="e#2013#2098#0" expanded="false" />
+                <element signature="e#2145#2283#0" expanded="false" />
+                <element signature="e#2346#3402#0" expanded="false" />
+                <element signature="e#2405#2446#0" expanded="false" />
+                <element signature="e#2471#2524#0" expanded="false" />
+                <element signature="e#2551#2596#0" expanded="false" />
+                <element signature="e#2753#3175#0" expanded="false" />
+                <element signature="e#3192#3290#0" expanded="false" />
+                <element signature="e#3353#3392#0" expanded="false" />
+                <element signature="e#3498#4015#0" expanded="false" />
+                <element signature="e#3627#3825#0" expanded="false" />
+                <element signature="e#3842#4003#0" expanded="false" />
+                <element signature="e#4065#4126#0" expanded="false" />
+                <element signature="e#4759#4842#0" expanded="false" />
+                <element signature="e#4908#5503#0" expanded="false" />
+                <element signature="e#5004#5107#0" expanded="false" />
+                <element signature="e#5113#5176#0" expanded="false" />
+                <element signature="e#5321#5424#0" expanded="false" />
+                <element signature="e#5430#5493#0" expanded="false" />
+                <element signature="e#5559#5612#0" expanded="false" />
+                <element signature="e#5811#5961#0" expanded="false" />
+                <element signature="e#6014#7182#0" expanded="false" />
+                <element signature="e#6151#7163#0" expanded="false" />
+                <element signature="e#6203#6980#0" expanded="false" />
+                <element signature="e#6422#6710#0" expanded="false" />
+                <element signature="e#6727#6952#0" expanded="false" />
+                <element signature="e#6986#7141#0" expanded="false" />
+                <element signature="e#7240#7858#0" expanded="false" />
+                <element signature="e#7380#7628#0" expanded="false" />
+                <element signature="e#7645#7838#0" expanded="false" />
+                <element signature="e#8230#11818#0" expanded="false" />
+                <element signature="e#8537#8620#0" expanded="false" />
+                <element signature="e#8686#9280#0" expanded="false" />
+                <element signature="e#8781#8884#0" expanded="false" />
+                <element signature="e#8890#8953#0" expanded="false" />
+                <element signature="e#9098#9201#0" expanded="false" />
+                <element signature="e#9207#9270#0" expanded="false" />
+                <element signature="e#9394#9811#0" expanded="false" />
+                <element signature="e#9504#9734#0" expanded="false" />
+                <element signature="e#9828#9914#0" expanded="false" />
+                <element signature="e#9971#10060#0" expanded="false" />
+                <element signature="e#10098#11812#0" expanded="false" />
+                <element signature="e#10181#11220#0" expanded="false" />
+                <element signature="e#10310#11205#0" expanded="false" />
+                <element signature="e#10358#11038#0" expanded="false" />
+                <element signature="e#10579#10788#0" expanded="false" />
+                <element signature="e#10805#11014#0" expanded="false" />
+                <element signature="e#11044#11187#0" expanded="false" />
+                <element signature="e#11274#11800#0" expanded="false" />
+                <element signature="e#11413#11590#0" expanded="false" />
+                <element signature="e#11607#11784#0" expanded="false" />
+                <element signature="e#11881#12269#0" expanded="false" />
+                <element signature="e#12082#12268#0" expanded="false" />
+                <marker date="1506759523781" expanded="false" signature="4205:7890" ph="[...]" />
+                <marker date="1506759523781" expanded="false" signature="4442:7889" ph="{...}" />
+                <marker date="1506759523781" expanded="false" signature="5651:7882" ph="{...}" />
+                <marker date="1506759523781" expanded="false" signature="5743:7872" ph="{...}" />
+                <marker date="1506759523781" expanded="false" signature="7963:11819" ph="[...]" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/view1.html">
+      <file leaf-file-name="Articles.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/Articles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="621">
+              <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/app/js/routes.js">
+      <file leaf-file-name="2017_09_30_150020_create_table_users.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/database/migrations/2017_09_30_150020_create_table_users.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+              <folding>
+                <marker date="1506784232630" expanded="true" signature="665:729" ph=" Reverse the migrations. ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/bootstrap/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="39" column="2" lean-forward="false" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/views/partials/header.html">
+      <file leaf-file-name="AppServiceProvider.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/app/Providers/AppServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="414">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/app/js/config.js">
+      <file leaf-file-name="AuthServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/app/Providers/AuthServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="587">
+              <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/views/login/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017_09_22_160123_create_table_articles.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/database/migrations/2017_09_22_160123_create_table_articles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -99,13 +183,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>login</find>
-      <find>controller</find>
-      <find>delete</find>
-      <find>postArticle</find>
-      <find>btn_export_message</find>
-      <find>csv</find>
-      <find>Export</find>
       <find>w2_contact_form</find>
       <find>We’ve assembled some</find>
       <find>Welcome to WordPress</find>
@@ -129,6 +206,13 @@
       <find>fileName</find>
       <find>ng-th</find>
       <find>null</find>
+      <find>image</find>
+      <find>providers</find>
+      <find>Facades</find>
+      <find>$app-&gt;register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);</find>
+      <find>SECRET</find>
+      <find>aliases</find>
+      <find>date</find>
     </findStrings>
     <replaceStrings>
       <replace>open-sans</replace>
@@ -158,12 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../wordpress/wp-admin/index.php" />
-        <option value="$PROJECT_DIR$/../wordpress/wp-admin/js/common.js" />
-        <option value="$PROJECT_DIR$/../wordpress/wp-admin/js/xfn.js" />
-        <option value="$PROJECT_DIR$/../wordpress/wp-content/plugins/contact/includes/list_message.php" />
-        <option value="$PROJECT_DIR$/../wordpress/wp-admin/includes/dashboard.php" />
-        <option value="$PROJECT_DIR$/admin/gulpfile.js" />
         <option value="$PROJECT_DIR$/admin/sass/components/_normalize.scss" />
         <option value="$PROJECT_DIR$/admin/assets/css/style.css" />
         <option value="$PROJECT_DIR$/admin/font.css" />
@@ -188,7 +266,6 @@
         <option value="$PROJECT_DIR$/admin/sass/pages/_home.scss" />
         <option value="$PROJECT_DIR$/admin/sass/pages/_add-article.scss" />
         <option value="$PROJECT_DIR$/admin/sass/style.scss" />
-        <option value="$PROJECT_DIR$/admin/views/articles/add.html" />
         <option value="$PROJECT_DIR$/admin/sass/components/_scaff.scss" />
         <option value="$PROJECT_DIR$/restfull/application/modules/Uploads/controllers/Uploads.php" />
         <option value="$PROJECT_DIR$/admin/views/articles/edit.html" />
@@ -206,9 +283,16 @@
         <option value="$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" />
         <option value="$PROJECT_DIR$/admin/app/js/routes.js" />
         <option value="$PROJECT_DIR$/admin/views/partials/header.html" />
-        <option value="$PROJECT_DIR$/admin/app/js/controller.js" />
         <option value="$PROJECT_DIR$/web/views/view1.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/admin/views/articles/add.html" />
+        <option value="$PROJECT_DIR$/admin/app/js/controller.js" />
+        <option value="$PROJECT_DIR$/api/app/Http/Controllers/Articles.php" />
+        <option value="$PROJECT_DIR$/api/database/migrations/2017_09_22_162613_modify_articles.php" />
+        <option value="$PROJECT_DIR$/api/database/migrations/2017_09_30_150020_create_table_users.php" />
+        <option value="$PROJECT_DIR$/api/database/migrations/2017_09_22_160123_create_table_articles.php" />
+        <option value="$PROJECT_DIR$/api/bootstrap/app.php" />
+        <option value="$PROJECT_DIR$/api/app/Providers/AppServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -388,7 +472,8 @@
       <workItem from="1504549495647" duration="4760000" />
       <workItem from="1505581433100" duration="4751000" />
       <workItem from="1506200180467" duration="367000" />
-      <workItem from="1506200608251" duration="219000" />
+      <workItem from="1506200608251" duration="245000" />
+      <workItem from="1506757065180" duration="12453000" />
     </task>
     <task id="LOCAL-00001" summary="fixing stuff">
       <created>1496174475759</created>
@@ -579,11 +664,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506200800754</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="change api from codeignater to laravel lumen">
+      <created>1506200841516</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1506200841516</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206123000" />
+    <option name="totallyTimeSpent" value="218602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,7 +690,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18729989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18943436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33044422" sideWeight="0.50213444" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -655,42 +747,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiUpload.php" />
-    <entry file="file://$PROJECT_DIR$/admin/sass/components/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/sass/components/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/sass/components/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/sass/components/_navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/restfull/application/modules/Articles/controllers/Articles.php" />
-    <entry file="file://$PROJECT_DIR$/uploads/yRrcMxO0JlrzmR4d9dTM.jpg" />
-    <entry file="file://$PROJECT_DIR$/uploads/JI2vUiZMtnWZ1HdBDtGA.jpg" />
-    <entry file="file://$PROJECT_DIR$/uploads/GzMAJxKhHlLJdGaomMPf.jpg" />
-    <entry file="file://$PROJECT_DIR$/uploads/DSC_03861.JPG" />
-    <entry file="file://$PROJECT_DIR$/uploads/DSC_0386.JPG" />
-    <entry file="file://$PROJECT_DIR$/uploads/DSC_0385.JPG" />
     <entry file="file://$PROJECT_DIR$/uploads/47548585-natural-images-h-d.jpg" />
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiAttachments.php" />
     <entry file="file://$PROJECT_DIR$/uploads/5pws9WWpwaNYOOqD66Fl.jpg" />
@@ -762,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/views/articles/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/views/articles/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -785,21 +834,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/.gitignore" />
     <entry file="file://$PROJECT_DIR$/uploads/0xfkGTyl4n858AGUmCrF.jpg" />
-    <entry file="file://$PROJECT_DIR$/admin/views/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/restfull/application/helpers/jwt_helper.php" />
-    <entry file="file://$PROJECT_DIR$/admin/views/articles/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/app/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -834,33 +869,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/restfull/application/modules/Api/controllers/ApiArticles.php" />
-    <entry file="file://$PROJECT_DIR$/admin/app/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/views/partials/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5359">
-          <caret line="262" column="44" lean-forward="false" selection-start-line="262" selection-start-column="44" selection-end-line="262" selection-end-column="44" />
-          <folding>
-            <element signature="e#330#1088#0" expanded="false" />
-            <element signature="e#1636#1751#0" expanded="false" />
-            <element signature="e#1805#1936#0" expanded="false" />
-            <element signature="e#1979#2063#0" expanded="false" />
-            <element signature="e#2110#2252#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -874,8 +887,212 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="230">
+          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/articles/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/articles/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/database/migrations/2017_09_22_162613_modify_articles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Http/Controllers/Articles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/database/migrations/2017_09_22_160123_create_table_articles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/views/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/app/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="e#1161#4134#0" expanded="false" />
+            <element signature="e#1396#4133#0" expanded="false" />
+            <element signature="e#1675#1784#0" expanded="false" />
+            <element signature="e#1838#1970#0" expanded="false" />
+            <element signature="e#2013#2098#0" expanded="false" />
+            <element signature="e#2145#2283#0" expanded="false" />
+            <element signature="e#2346#3402#0" expanded="false" />
+            <element signature="e#2405#2446#0" expanded="false" />
+            <element signature="e#2471#2524#0" expanded="false" />
+            <element signature="e#2551#2596#0" expanded="false" />
+            <element signature="e#2753#3175#0" expanded="false" />
+            <element signature="e#3192#3290#0" expanded="false" />
+            <element signature="e#3353#3392#0" expanded="false" />
+            <element signature="e#3498#4015#0" expanded="false" />
+            <element signature="e#3627#3825#0" expanded="false" />
+            <element signature="e#3842#4003#0" expanded="false" />
+            <element signature="e#4065#4126#0" expanded="false" />
+            <element signature="e#4759#4842#0" expanded="false" />
+            <element signature="e#4908#5503#0" expanded="false" />
+            <element signature="e#5004#5107#0" expanded="false" />
+            <element signature="e#5113#5176#0" expanded="false" />
+            <element signature="e#5321#5424#0" expanded="false" />
+            <element signature="e#5430#5493#0" expanded="false" />
+            <element signature="e#5559#5612#0" expanded="false" />
+            <element signature="e#5811#5961#0" expanded="false" />
+            <element signature="e#6014#7182#0" expanded="false" />
+            <element signature="e#6151#7163#0" expanded="false" />
+            <element signature="e#6203#6980#0" expanded="false" />
+            <element signature="e#6422#6710#0" expanded="false" />
+            <element signature="e#6727#6952#0" expanded="false" />
+            <element signature="e#6986#7141#0" expanded="false" />
+            <element signature="e#7240#7858#0" expanded="false" />
+            <element signature="e#7380#7628#0" expanded="false" />
+            <element signature="e#7645#7838#0" expanded="false" />
+            <element signature="e#8230#11818#0" expanded="false" />
+            <element signature="e#8537#8620#0" expanded="false" />
+            <element signature="e#8686#9280#0" expanded="false" />
+            <element signature="e#8781#8884#0" expanded="false" />
+            <element signature="e#8890#8953#0" expanded="false" />
+            <element signature="e#9098#9201#0" expanded="false" />
+            <element signature="e#9207#9270#0" expanded="false" />
+            <element signature="e#9394#9811#0" expanded="false" />
+            <element signature="e#9504#9734#0" expanded="false" />
+            <element signature="e#9828#9914#0" expanded="false" />
+            <element signature="e#9971#10060#0" expanded="false" />
+            <element signature="e#10098#11812#0" expanded="false" />
+            <element signature="e#10181#11220#0" expanded="false" />
+            <element signature="e#10310#11205#0" expanded="false" />
+            <element signature="e#10358#11038#0" expanded="false" />
+            <element signature="e#10579#10788#0" expanded="false" />
+            <element signature="e#10805#11014#0" expanded="false" />
+            <element signature="e#11044#11187#0" expanded="false" />
+            <element signature="e#11274#11800#0" expanded="false" />
+            <element signature="e#11413#11590#0" expanded="false" />
+            <element signature="e#11607#11784#0" expanded="false" />
+            <element signature="e#11881#12269#0" expanded="false" />
+            <element signature="e#12082#12268#0" expanded="false" />
+            <marker date="1506759523781" expanded="false" signature="4205:7890" ph="[...]" />
+            <marker date="1506759523781" expanded="false" signature="4442:7889" ph="{...}" />
+            <marker date="1506759523781" expanded="false" signature="5651:7882" ph="{...}" />
+            <marker date="1506759523781" expanded="false" signature="5743:7872" ph="{...}" />
+            <marker date="1506759523781" expanded="false" signature="7963:11819" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/database/migrations/2017_09_30_150020_create_table_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <marker date="1506784232630" expanded="true" signature="665:729" ph=" Reverse the migrations. ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/vendor/tymon/jwt-auth/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/vendor/tymon/jwt-auth/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/vendor/tymon/jwt-auth/src/JWTAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2139">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/vendor/tymon/jwt-auth/src/Providers/Auth/AuthInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/vendor/tymon/jwt-auth/src/Providers/JWTAuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/bootstrap/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="39" column="2" lean-forward="false" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/app/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>

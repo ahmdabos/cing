@@ -39,8 +39,9 @@ class Articles extends Controller
         $id = $request->input('id');
         $article = Article::find($id);
         $article->title = $request->input('title');
-        $article->content = $request->input('title');
+        $article->content = $request->input('content');
         $article->publishedAt = $request->input('publishedAt');
+        $article->image = $request->input('image');
         $article->save();
         return response()->json($article);
     }

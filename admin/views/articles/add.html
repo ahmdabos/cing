@@ -10,7 +10,7 @@
             <div class="form-group">
                 <label for="date">published At</label>
                 <datepicker date-typer="true" date-format="yyyy-MM-dd hh:mm:ss" date-set="true">
-                    <input ng-model="publishedAt" name="publishedAt" type="text" class="form-control" ng-pattern="dateTimePattern"
+                    <input ng-model="date" name="publishedAt" type="text" class="form-control" ng-pattern="dateTimePattern"
                            id="date" required/>
                     <p class="error" ng-if="form.publishedAt.$error.required && !form.publishedAt.$pristine">This field is
                         required</p>
